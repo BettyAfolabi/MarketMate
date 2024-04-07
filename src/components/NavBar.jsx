@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import {
   FaPhone,
@@ -10,7 +11,7 @@ import {
 
 const NavBar = () => {
   return (
-    <div className="sticky top-0 w-screen">
+    <div className="fixed top-0 w-screen z-50">
       <header className="hidden bg-darkred text-white w-full lg:flex  px-4 py-2 left-0  ">
         <div className="w-5/6 flex items-center mx-auto justify-between">
           <div className="flex items-center space-x-4">
@@ -38,53 +39,33 @@ const NavBar = () => {
         </div>
       </header>
 
-      <nav className=" bg-white py-4  justify-center">
-        <div className="w-11/12 lg:w-5/6 flex items-center mx-auto justify-between">
-          <div className="flex ">
-            <button className="md:hidden mr-1">
-              <img
-                src="./menu.png"
-                alt="menu bar icon"
-                className="hover:bg-primaryred"
-              />
-            </button>
+      <nav className=" bg-white mb-8 py-4  justify-center">
+        <div className="w-5/6 flex items-center mx-auto">
+          <div className="flex basis-3/12">
             <img src="Logo.png" alt="Market mate Logo" />
-            <h1 className="font-lobstertwo text-primaryred text-3xl md:text-4xl">
+            <h1 className="font-lobstertwo text-primaryred text-4xl pl-2s">
               MarketMate
             </h1>
           </div>
-          <div className="hidden md:flex flex-row  space-x-3 text-gray font-poppins text-xs font-bold">
-            <button className="hover:text-primaryred">Home</button>
-            <div className="flex hover:text-primaryred">
+          <div className="flex flex-row basis-4/12 space-x-3 text-gray font-poppins text-xs font-bold">
+            <button>Home</button>
+            <div className="flex">
               <button>Shop</button>
               <span className="material-symbols-outlined">expand_more</span>
             </div>
-            <button className="hover:text-primaryred">About</button>
-            <Link to="/contact">
-              {" "}
-              <button className="hover:text-primaryred">Contact</button>
-            </Link>
-            <button className="hover:text-primaryred">Pages</button>
+            <button>About</button>
+           <Link to="/contact"> <button>Contact</button></Link>
+            <button>Pages</button>
           </div>
-          <div className="flex flex-row space-x-1 lg:space-x-3 justify-end text-primaryblue font-poppins text-xs font-light">
-            <span className="material-symbols-outlined hover:text-primaryred">
-              search
-            </span>
-            <span className="material-symbols-outlined hover:text-primaryred">
-              shopping_cart
-            </span>
-            <span className="hidden md:block material-symbols-outlined hover:text-primaryred">
-              favorite
-            </span>
+          <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
+            <span className="material-symbols-outlined">search</span>
+            <span className="material-symbols-outlined">shopping_cart</span>
+            <span className="material-symbols-outlined">favorite</span>
             <div className="flex flex-row text-secblue font-bold">
-              <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
-                person
-              </span>
-              <div className="hidden md:flex pt-0.5">
-                <button className="px-0.5 hover:text-primaryred">Login</button>/
-                <button className="px-0.5 hover:text-primaryred">
-                  Register
-                </button>
+              <span className="material-symbols-outlined">person</span>
+              <div className="flex pt-0.5">
+                <button className="px-0.2">Login</button>/
+                <button className="px-0.2 ">Register</button>
               </div>
             </div>
           </div>

@@ -1,8 +1,10 @@
+
+
 function Footer() {
   return (
     <>
-      <div className="w-screen bg-terblue bottom-0 ">
-        <div className="hidden md:block  w-4/5 items-center mx-auto font-poppins text-white pt-6">
+      <div className="w-screen bg-terblue">
+        <div className="w-4/5 items-center mx-auto font-poppins text-white pt-6">
           <div className="flex justify-between">
             <div>
               <h3 className="text-2xl">Your all in one shopping site</h3>
@@ -103,21 +105,6 @@ function Footer() {
               <i className="bx bxl-twitter"></i>
             </div>
           </div>
-        </div>
-        <div className="md:hidden bg-white w-screen items-center py-3 flex flex-col justify-center mt-5">
-          <p className="font-poppins text-secblue text-base py-2 text-center w-4/5">
-            For further support, you may visit the Help Center or contact our
-            customer service team
-          </p>
-          <div className="flex mb-2">
-            <img src="Logo.png" alt="Market mate Logo" />
-            <h1 className="font-lobstertwo text-primaryred text-3xl md:text-4xl">
-              MarketMate
-            </h1>
-          </div>
-          <p className="font-bold text-base text-secblue">
-            All Right Reserved{" "}
-          </p>
         </div>
       </div>
     </>

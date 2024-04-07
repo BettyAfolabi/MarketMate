@@ -2,9 +2,9 @@ import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import InputField from "../components/InputField";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import InputField from "./InputField";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -35,36 +35,36 @@ const Login = () => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <div className="w-full overflow-x-hidden bg-white">
-      <NavBar />
-      <div className="flex flex-col lg:gap-10 lg:flex-row mb-3">
-        <div className="hidden lg:block basis-1/2">
-          <img
-            src="./login.png"
-            alt="login image"
-            className="rounded-tr-lg rounded-lg"
-          />
-        </div>
 
+    
+    <div className="w-screen">
+      <NavBar />
+      <div className="w-5/6 flex flex-col lg:flex-row justify-between items-center lg:space-x-4  mt-6">
+        <img
+          src="./login.png"
+          alt="login image"
+          className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg p-4"
+        />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className="mx-auto lg:mx-0 lg:w-[380px] my-auto space-y-2 flex flex-col"
+          className=" lg:w-1/2 space-y-4 md: p-5 align-center "
+
         >
-          <h2 className="hidden md:block lg:text-[38px] font-catamaran">
+          <h2 className=" md:hidden lg:block lg:text-[38px] h-[58px] font-catamaran text-[] ">
             Login to MarketMate
           </h2>
-          <h3 className=" md:hidden lg:w-[299px] text-[42px] ">
-            Log in to
-            <span className="text-mred font-bold font-lobstertwo pl-1">
+          <h3 className="lg:hidden md: w-[299px] text-[38px] ">
+            Log in to{" "}
+            <span className="text-mred font-bold font-lobstertwo">
               MarketMate
             </span>
           </h3>
-          <p className="lg:text-[16px] text-textcol font-poppins">
-            Enter your details below
-          </p>
-
           <div>
+            <p className="block mb-2 lg:text-[16px] text-textcol font-poppins">
+              Enter your details below
+            </p>
+
             <InputField
               placeholder="Email or Phone Number"
               id="email"
@@ -92,17 +92,14 @@ const Login = () => {
               patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
             />
           </div>
-          <div className="flex justify-between">
+          <div>
             <button
               disabled={isSubmitting}
-              className="w-[143px] h-[56px] bg-mred text-white p-2 rounded-lg hover:bg-mred  py-[16px] px-[48px] m-4"
+              className="w-[143px] h-[56px] bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] m-4"
             >
               Log in
             </button>
-            <Link
-              to="/forgot-password"
-              className="text-mred items-center self-center"
-            >
+            <Link to="/forgot-password" className="text-mred">
               Forgot Password?
             </Link>
           </div>
@@ -115,6 +112,7 @@ const Login = () => {
           </button>
         </form>
       </div>
+
       <Footer />
     </div>
   );

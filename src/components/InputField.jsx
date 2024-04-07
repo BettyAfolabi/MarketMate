@@ -1,3 +1,4 @@
+
 import PropTypes from "prop-types";
 
 const InputField = ({
@@ -11,7 +12,7 @@ const InputField = ({
   patternMessage,
 }) => (
   <div>
-    <div className={`${error ? "border-primaryred" : ""}`}>
+    <div className={`${error ? "error-input" : ""}`}>
       <input
         placeholder={placeholder}
         type={type || "text"}
@@ -23,10 +24,10 @@ const InputField = ({
             message: patternMessage || "Invalid input format",
           },
         })}
-        className="w-full p-2 bg-white border-b border-gray hover:border-secblue focus:border-secblue focus:outline-none"
+        className="w-[270px] p-2 border-b border-gray"
       />
     </div>
-    <p className="text-primaryred text-xs tracking-normal ">{error?.message}</p>
+    <p className="text-primaryred text-xs tracking-normal">{error?.message}</p>
   </div>
 );
 

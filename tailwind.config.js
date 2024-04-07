@@ -54,7 +54,6 @@ export default {
         mred: "#BC2B2A",
         darkred: "#920100",
         primaryred: "#AF0100",
-        primaryblue: "#436B9D",
         secblue: "#184172",
         terblue: "#0E2744",
         dgray: "#D0D0D0",
@@ -97,5 +96,7 @@ export default {
       },
     },
   },
+
   plugins: [],
+
 };

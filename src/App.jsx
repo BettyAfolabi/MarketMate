@@ -6,6 +6,7 @@ import ContactComponent from "./components/ContactComponent";
 import ErrorPage from "./pages/ErrorPage";
 import Account from "./pages/Account";
 import OngoingOrders from "./pages/OngoingOrders";
+import About from "./pages/About";
 const App = () => {
   return (
     <div className="bg-white">
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/error" element={<ErrorPage />} />
         <Route path="/account/*" element={<Account />} />
         <Route path="/ongoing-orders/*" element={<OngoingOrders />} />
+        <Route path="/about" element={<About/>} />
       </Routes>
     </div>
   );

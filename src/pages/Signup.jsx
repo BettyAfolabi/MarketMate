@@ -49,7 +49,7 @@ function Signup() {
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className="mx-auto mt-3 lg:mx-0 lg:w-[380px] lg:my-auto lg:mt-0 space-y-2 flex flex-col"
+          className="mx-auto mt-3 lg:mx-0 lg:w-[380px] lg:mt-5 space-y-3 flex flex-col"
         >
           <h3 className="text-[38px] font-catamaran text-black font-bold">
             Create an account
@@ -65,6 +65,7 @@ function Signup() {
               register={register}
               error={errors.name}
               pattern={/[A-Za-z0-9]{3,16}$/}
+              required={true}
               patternMessage="Name should contain 3-16 characters and shouldn't contain any special characters"
             />
             <InputField
@@ -77,6 +78,7 @@ function Signup() {
               pattern={
                 /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
               }
+              required={true}
               patternMessage="Please enter a valid email address"
             />
             <InputField
@@ -89,20 +91,21 @@ function Signup() {
               pattern={
                 /^(?=.*)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,16}$/
               }
+              required={true}
               patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
             />
           </div>
 
           <button
             disabled={isSubmitting}
-            className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] my-2 font-poppins w-full"
+            className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-2 px-6 font-poppins w-full"
           >
             Create Account
           </button>
 
           <button
             type="button"
-            className="flex items-center font-medium text-gray-800 border rounded-lg border-gray hover:border-primaryred lg:w-full gap-2 px-8 text-center"
+            className="flex items-center font-medium text-gray-800 border rounded-lg border-gray hover:border-primaryred lg:w-full gap-2 px-8 py-1 text-center"
           >
             <img src="./google.svg" alt="Google logo" className=" w-2 h-5 " />
             Sign in with Google

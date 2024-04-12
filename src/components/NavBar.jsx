@@ -48,7 +48,7 @@ const NavBar = () => {
                 className="hover:bg-primaryred"
               />
             </button>
-            <img src="Logo.png" alt="Market mate Logo" />
+            <img src="../Logo.png" alt="Market mate Logo" />
             <h1 className="font-lobstertwo text-primaryred text-3xl md:text-4xl">
               MarketMate
             </h1>
@@ -84,11 +84,11 @@ const NavBar = () => {
                 </span>
               </Link>
               <div className="hidden md:flex pt-0.5">
-                <Link to="/" className="px-0.5 hover:text-primaryred">
+                <Link to="/login" className="px-0.5 hover:text-primaryred">
                   Login
                 </Link>
                 /
-                <Link to="/sign-up" className="px-0.5 hover:text-primaryred">
+                <Link to="/" className="px-0.5 hover:text-primaryred">
                   Register
                 </Link>
               </div>

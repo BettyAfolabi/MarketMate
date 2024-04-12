@@ -39,7 +39,7 @@ function Profile() {
       <form
         onSubmit={handleSubmit(onSubmit, onError)}
         noValidate
-        className="font-poppins shadow-md p-4 pl-6"
+        className="font-poppins shadow-md p-4 pl-6 px-auto mt-5"
       >
         <h1 className="text-darkblue text-[20px] font-medium py-2">
           Edit Your Profile
@@ -53,7 +53,9 @@ function Profile() {
             register={register}
             error={errors.firstname}
             pattern={/[A-Za-z0-9]{3,16}$/}
+            required={true}
             patternMessage="Name should contain 3-16 characters and shouldn't contain any special characters"
+            className="border-none bg-lightgray rounded w-[330px]"
           />
           <InputField
             label="Last Name"
@@ -63,7 +65,9 @@ function Profile() {
             register={register}
             error={errors.lastname}
             pattern={/[A-Za-z0-9]{3,16}$/}
+            required={true}
             patternMessage="Name should contain 3-16 characters and shouldn't contain any special characters"
+            className="border-none bg-lightgray rounded w-[330px]"
           />
         </div>
         <div className="flex gap-[50px] mb-4">
@@ -78,7 +82,9 @@ function Profile() {
             pattern={
               /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
             }
+            required={true}
             patternMessage="Please enter a valid email address"
+            className="border-none bg-lightgray rounded w-[330px]"
           />
           <InputField
             label="Address"
@@ -89,10 +95,12 @@ function Profile() {
             register={register}
             error={errors.address}
             pattern={/[A-Za-z0-9]{3,16}$/}
+            required={true}
             patternMessage="Enter your address"
+            className="border-none bg-lightgray rounded w-[330px]"
           />
         </div>
-        <div className="space-y-0.5 my-2">
+        <div className="space-y-2 my-2">
           <h2 className="text-base">Password changes</h2>
           <InputField
             placeholder="Current password"
@@ -104,7 +112,9 @@ function Profile() {
             pattern={
               /^(?=.*)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,16}$/
             }
+            required={true}
             patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
+            className="border-none bg-lightgray w-[710px] rounded"
           />
           <InputField
             placeholder="New Password"
@@ -116,7 +126,9 @@ function Profile() {
             pattern={
               /^(?=.*)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,16}$/
             }
+            required={true}
             patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
+            className="border-none bg-lightgray w-[710px] rounded"
           />
           <InputField
             placeholder="Confirm Password"
@@ -125,11 +137,17 @@ function Profile() {
             type="password"
             register={register}
             error={errors.cpassword}
-            pattern={
-              /^(?=.*)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,16}$/
-            }
-            patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
+            pattern={/values.password/}
+            required={true}
+            patternMessage="Password doesn't match"
+            className="border-none bg-lightgray w-[710px] rounded"
           />
+        </div>
+        <div className="flex flex-row gap-3 justify-end">
+          <button className="text-darkblue text-base">Cancel</button>
+          <button className="bg-mred text-white p-2 hover:bg-mred px-4 my-2 py-2">
+            Save Changes
+          </button>
         </div>
       </form>
     </div>

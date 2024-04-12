@@ -75,6 +75,7 @@ const Login = () => {
               pattern={
                 /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
               }
+              required={true}
               patternMessage="Please enter a valid email address"
             />
           </div>
@@ -89,6 +90,7 @@ const Login = () => {
               pattern={
                 /^(?=.*)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,16}$/
               }
+              required={true}
               patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
             />
           </div>

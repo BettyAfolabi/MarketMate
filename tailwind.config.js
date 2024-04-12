@@ -61,7 +61,9 @@ export default {
         darkblue: "#13345B",
         textcol: "#06101B",
         gray: "#828282",
+        lightgray: "#F6F6F6",
         deepgray: "#191919",
+        lightblack: "#1C1C1C",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

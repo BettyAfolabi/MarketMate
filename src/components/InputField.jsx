@@ -10,6 +10,8 @@ const InputField = ({
   error,
   pattern,
   patternMessage,
+  className,
+  required,
 }) => (
   <div>
     <label htmlFor={id}>{label}</label>
@@ -19,16 +21,22 @@ const InputField = ({
         type={type || "text"}
         id={id}
         {...register(name, {
-          required: `${id} is required`,
-          pattern: {
-            value: pattern,
-            message: patternMessage || "Invalid input format",
-          },
+          ...(required && { required: `${id} is required` }),
+          ...(pattern && {
+            pattern: {
+              value: pattern,
+              message: patternMessage || "Invalid input format",
+            },
+          }),
         })}
-        className="w-full p-2 bg-white border-b border-gray hover:border-secblue focus:border-secblue focus:outline-none"
+        className={`w-full p-2 border-b border-gray hover:border-secblue focus:border-secblue focus:outline-none  ${
+          className || ""
+        }`}
       />
     </div>
-    <p className="text-primaryred text-xs tracking-normal ">{error?.message}</p>
+    <p className="text-primaryred text-xs tracking-normal w-5/6">
+      {error?.message}
+    </p>
   </div>
 );
 
@@ -42,6 +50,8 @@ InputField.propTypes = {
   pattern: PropTypes.instanceOf(RegExp),
   patternMessage: PropTypes.string,
   id: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  required: PropTypes.bool,
 };
 
 export default InputField;

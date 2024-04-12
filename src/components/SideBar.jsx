@@ -55,9 +55,11 @@ function SideBar() {
             <h3 className="text-terblue font-medium pb-0.5">My Orders</h3>
             <ul className="px-3 space-y-0.5">
               <li>
-                <button className="hover:text-primaryred focus:text-primaryred">
+                <Link 
+                to="ongoing"
+                 className="hover:text-primaryred focus:text-primaryred">
                   Ongoing/Delivered
-                </button>
+                </Link>
               </li>
               <li>
                 <button className="hover:text-primaryred focus:text-primaryred">

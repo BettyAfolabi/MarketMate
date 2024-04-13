@@ -51,10 +51,62 @@ const About = () => {
         <p className="font-poppins font-bold text-[18px] text-[#4D4D4D] h-[28px] mt-8">Explore. Connect. Succeed.</p>
         <p className="text-catamara font-bold text-[36px] mt-2 mb-4">Revolutionizing Service Marketplaces</p>
       </div>
-      
+      <div className="w-[1288px] h-[430px] gap-[48px] m-auto flex flex-wrap">
+        <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6]">
+          <div className="flex flex-row  gap-[12px]">
+            <img src="md.png"className="w-[44px] h-[44px] border-1"></img>
+            <p className="font-poppins font-semibold text-[18px]">Browse Easily</p>
+
+          </div>
+          <p className="ml-[28px] text-justify"> 
+         Dive into a world where finding services is as easy as pie, with categories that simplify your search
+          </p>
+          <button className="ml-[28px] border-none text-[#1D4E89] mt-[15px] font-poppins text-[18px] font-semibold">Learn More</button>
+        </div>
+        <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6]">
+          <div className="flex flex-row  gap-[12px]">
+            <img src="md1.png"className="w-[44px] h-[44px] border-1"></img>
+            <p className="font-poppins font-semibold text-[18px]">Instant Chat</p>
+
+          </div>
+          <p className="ml-[28px] text-justify"> 
+         Bridge the gap with direct communication, making transactions smoother and more personal
+          </p>
+          <button className="ml-[28px] border-none text-[#1D4E89] mt-[15px] font-poppins text-[18px] font-semibold">Chat Now</button>
+        </div>
+        <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] flex-row">
+          <div className="flex flex-row  gap-[12px]">
+            <img src="md2.png"className="w-[44px] h-[44px] border-1"></img>
+            <p className="font-poppins font-semibold text-[18px]">Seller Hub</p>
+
+          </div>
+          <p className="ml-[28px] text-justify"> 
+          A seamless platform for sellers to showcase their <br />services, manage listings, and update details on the go.
+          </p>
+          <button className="ml-[28px] border-none text-[#1D4E89] mt-[15px] font-poppins text-[18px] font-semibold">Discover How</button>
+        </div>
+        <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6]">
+          <div className="flex flex-row  gap-[12px]">
+            <img src="md3.png"className="w-[44px] h-[44px] border-1"></img>
+            <p className="font-poppins font-semibold text-[18px]">Ad Performance</p>
+
+          </div>
+          <p className="ml-[28px] text-justify"> 
+          Track your success with detailed analytics on advertisement performance, turning insights into action.
+          </p>
+          <button className="ml-[28px] border-none text-[#1D4E89] mt-[15px] font-poppins text-[18px] font-semibold">View Stats</button>
+        </div>
+      </div>
+      <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
+        <img src="about.png"></img>
+        <div></div>
+      </div>
      </div> 
     <Footer/>
     </div>
+
+
+
   )
 }
 

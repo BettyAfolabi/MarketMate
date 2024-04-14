@@ -8,6 +8,7 @@ import Account from "./pages/Account";
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import About from "./pages/About";
+import Services from "./pages/Services";
 const App = () => {
   return (
     <div className="bg-white h-full">
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/account/*" element={<Account />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
     </div>

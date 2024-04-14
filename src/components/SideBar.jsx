@@ -62,9 +62,11 @@ function SideBar() {
                 </Link>
               </li>
               <li>
-                <button className="hover:text-primaryred focus:text-primaryred">
-                  Returns/Cancellations
-                </button>
+              <Link 
+                to="returns"
+                 className="hover:text-primaryred focus:text-primaryred">
+                Returns/Cancellations
+                </Link>
               </li>
               <li>
                 <Link

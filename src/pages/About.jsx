@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 
@@ -19,7 +20,7 @@ const About = () => {
       <button className="ml-1  border-1 border-[#AF0100] bg-[#AF0100] rounded-[6px] px-2  gap-1 text-[18px] font-semibold text-white h-[44px]  mt-2 mb-2">Get Started</button>
       </div> 
       <div style={{
-                backgroundImage: `url(home1.png)`,
+                backgroundImage: `url(home2.png)`,
                 width: '100%', 
                 height: '546px', 
                 opacity: 1 
@@ -99,7 +100,19 @@ const About = () => {
       </div>
       <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
         <img src="about.png"></img>
-        <div></div>
+        <div>
+          <h4 className="font-catamaran font-bold text-[36px]">Explore Top Services</h4>
+          <p className="font-poppins font-normal text-[18px] mt-2 mb-4">Discover a world of services tailored to your needs. From home improvement to digital marketing, find everything in one place.</p>
+          <button className="border-2 border-[#949494] ] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">Learn More</button>
+          <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">Get Started</button>
+        
+          <div className="flex mt-6">
+            <img src="a1.png"/>
+            <img src="a2.png"/>
+            <img src="a3.png"/>
+            <p className="font-poppins font-normal text-[18px] ml-2">Join our community today and unlock endless possibilities!</p>
+          </div>
+          </div>
       </div>
      </div> 
     <Footer/>

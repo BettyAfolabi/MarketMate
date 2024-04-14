@@ -1,13 +1,13 @@
 
-  import Sidebar from "../components/SideBar"
+  
 const OngoingOrders = () => {
   return (
     <div>
-    <Sidebar/>
+   
     <div className="flex flex-col items-center justify-center flex-1 w-full px-10"> 
     <div className="flex flex-col items-center justify-center w-full max-w-[465px] h-[671px] "> 
   <div className="w-[465px] h-[366px]">  
-    <img src="cart.png" alt="No Orders"></img> 
+    <img src="../cart.png" alt="Saved Orders"/> 
   </div>
   <div>
     <h3 className="font-poppins font-medium text-[25px] text-[#000000] text-center m-2">No Orders have been placed yet</h3>

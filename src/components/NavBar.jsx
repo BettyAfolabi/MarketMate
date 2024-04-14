@@ -61,7 +61,8 @@ const NavBar = () => {
               <button>Shop</button>
               <span className="material-symbols-outlined">expand_more</span>
             </Link>
-            <button className="hover:text-primaryred">About</button>
+            <Link to="/about" className="hover:text-primaryred">About
+            </Link>
             <Link to="/contact" className="hover:text-primaryred pt-0.5">
               Contact
             </Link>

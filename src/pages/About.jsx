@@ -114,6 +114,120 @@ const About = () => {
           </div>
           </div>
       </div>
+      <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg- flex flex-row m-auto">
+        
+        <div>
+          <h4 className="font-catamaran font-bold text-[36px]">Create Your Listing</h4>
+          <p className="font-poppins font-normal text-[18px] mt-2 mb-4">Easily list your services, manage your offerings, and connect with buyers. Our platform makes it simple and efficient.</p>
+          <button className="border-2 border-[#949494] bg-[#949494] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">Details</button>
+          <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">List Now</button>
+        
+          <div className="flex mt-6">
+            <img src="a1.png"/>
+            <img src="a2.png"/>
+            <img src="a3.png"/>
+            <p className="font-poppins font-normal text-[18px] ml-2">Start your seller journey with us and grow your business!</p>
+          </div>
+          </div>
+          <img src="about3.png"></img>
+      </div>
+      <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
+        <img src="about4.png"></img>
+        <div>
+          <h4 className="font-catamaran font-bold text-[36px]">Connect Instantly</h4>
+          <p className="font-poppins font-normal text-[18px] mt-2 mb-4">Communicate with sellers or service providers directly through our platform. Get your questions answered in real-time.</p>
+          <button className="border-2 border-[#949494] bg-[#949494] ml-2 rounded-[6px] w-[140px] h-[44px] text-[15px] font-poppins font-semibold">Chat Now</button>
+          <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[15px] font-poppins font-semibold text-white">Start Conversation </button>
+        
+          <div className="flex mt-6">
+            <img src="a1.png"/>
+            <img src="a2.png"/>
+            <img src="a3.png"/>
+            <p className="font-poppins font-normal text-[18px] ml-2">Experience seamless communication today. Connect, ask, and receive answers effortlessly</p>
+          </div>
+          </div>
+         
+      </div>
+      <div className="mt-4">
+      <p className="font-poppins font-normal text-[18px] ml-6">Discover Services That Elevate Your Business!</p>
+      <p className="font-catamaran ml-6 font-bold text-[36px]"> Browse Top Categories</p>
+     </div>
+     <div className="flex flex-wrap p-8">
+      <div className="ml-14 ">
+        <img src="m1.png"/>
+        <p className="font-poppins font-semibold text-[20px]">Web Development</p>
+        <p className="font-poppins font-[500] text-[15px] text-[#949494]"> Build Your Online Presence</p>
+      </div>
+      <div className="ml-4">
+        <img src="m2.png"/>
+        <p className="font-poppins font-semibold text-[20px]">Graphics Design</p>
+        <p className="font-poppins font-[500] text-[15px] text-[#949494]"> Visualize Your Brand</p>
+      </div>
+      <div className="ml-4">
+        <img src="m3.png"/>
+        <p className="font-poppins font-semibold text-[20px]">Digital Marketing</p>
+        <p className="font-poppins font-[500] text-[15px] text-[#949494]">Expand Your Reach</p>
+      </div>
+     </div>
+     <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
+        <img src="m4.png"></img>
+        <div>
+          <h4 className="font-catamaran font-bold text-[36px]">Your Catalog Showcase</h4>
+          <p className="font-poppins font-normal text-[18px] mt-2 mb-4">Highlight all your services in a personalized catalog. Let customers browse your unique offerings at a glance.</p>
+          <button className="border-2 border-[#949494] ] ml-2 rounded-[6px] w-[136px] h-[44px] text-[16px] font-poppins font-semibold">View Catalog </button>
+          <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">Create Yours</button>
+        
+          <div className="flex mt-6">
+            <img src="a1.png"/>
+            <img src="a2.png"/>
+            <img src="a3.png"/>
+            <p className="font-poppins font-normal text-[18px] ml-2">Build your brand with a comprehensive and attractive catalog. Show the world what you've got!</p>
+          </div>
+          </div>
+      </div>
+     <div className="mt-4">
+      <p className="font-poppins font-normal text-[18px] ml-6">Your One-Stop Marketplace for Proffesional Services!</p>
+      <p className="font-catamaran ml-6 font-bold text-[36px]"> Our Featured Services</p>
+     </div>
+     <div className="flex">
+     <div className="ml-8">
+        <img src="m6.png" 
+        className="rounded-[12px]"/>
+        <p className="font-poppins font-semibold text-[20px]">Content Writing</p>
+        <p className="font-poppins font-[500] text-[15px] text-[#949494]">Craft Your Message</p>
+      </div>
+      <div>
+      <div className="ml-8">
+        <img src="m9.png" 
+        className="rounded-[12px]"/>
+        <p className="font-poppins font-semibold text-[20px]">SEO Optimization</p>
+        <p className="font-poppins font-[500] text-[15px] text-[#949494]">Rank Higher in Search</p>
+      </div>
+      <div className="ml-8">
+        <img src="m8.png" 
+        className="rounded-[12px]"/>
+        <p className="font-poppins font-semibold text-[20px]">App Development</p>
+        <p className="font-poppins font-[500] text-[15px] text-[#949494]">Innovate with Apps</p>
+      </div>
+      </div>
+     </div>
+     <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
+       
+        <div>
+          <h4 className="font-catamaran font-bold text-[36px]">Ad Performance Analytics</h4>
+          <p className="font-poppins font-normal text-[18px] mt-2 mb-4">Track your success and optimize your strategy with our detailed ad performance analytics. Understand your audience bette..</p>
+          <button className="border-2 border-[#949494] ] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">Learn Insights</button>
+          <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">Analyze Now</button>
+        
+          <div className="flex mt-6">
+            <img src="a1.png"/>
+            <img src="a2.png"/>
+            <img src="a3.png"/>
+            <p className="font-poppins font-normal text-[18px] ml-2">Empower your advertising efforts with actionable data. See what works and refine your approach for maximum impact.</p>
+          </div>
+          </div>
+          <img src="mm.png"></img>
+      </div>
      </div> 
     <Footer/>
     </div>

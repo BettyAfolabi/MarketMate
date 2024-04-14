@@ -48,7 +48,7 @@ function Track() {
           noValidate
           className="space-y-2"
         >
-          <div className="flex gap-[50px] mb-2">
+          <div className="flex gap-[50px]">
             <InputField
               label="Order ID"
               placeholder="Enter Order ID"
@@ -59,7 +59,7 @@ function Track() {
               pattern={/^\d{10}$/}
               required={true}
               patternMessage="Enter your order id only in numbers"
-              className="border-none bg-lightgray rounded w-[330px]"
+              className="border-none bg-lightgray rounded w-[400px] p-1"
             />
             <InputField
               label="Billing Email"
@@ -74,11 +74,14 @@ function Track() {
               }
               required={true}
               patternMessage="Please enter a valid email address"
-              className="border-none bg-lightgray rounded w-[330px]"
+              className="border-none bg-lightgray rounded w-[400px] p-1"
             />
           </div>
-          <p>A copy of the Order ID was sent to your email</p>
-          <button className="px-[40px] py-[15px] bg-secblue hover:bg-primaryblue text-white rounded">
+          <p className="text-sm text-gray">
+            <span className="text-gray pr-1 font-semibold">&#x24D8;</span> A
+            copy of the Order ID was sent to your email
+          </p>
+          <button className="px-[40px] py-[15px] mt-2 bg-secblue hover:bg-primaryblue text-white rounded">
             Track Order
           </button>
         </form>

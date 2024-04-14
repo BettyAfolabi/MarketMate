@@ -6,4 +6,13 @@
 
 body {
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'CircularXXWeb-Book';
+    src: url('path/to/font.woff2') format('woff2');
+    font-display: swap;
+
 }

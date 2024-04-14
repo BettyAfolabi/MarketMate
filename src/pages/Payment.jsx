@@ -9,14 +9,14 @@ function Payment() {
       <div className="flex gap-4 basis-2/6">
         <div className="basis-1/2">
           <img src="../CreditCard.png" alt="credit-card image" />
-          <div className="flex justify-between mt-1">
+          <div className="flex justify-between mt-1 mx-2">
             <h3 className="text-darkblue text-[22px]">Edit</h3>
-            <h3 className="text-mred text-[22px]">Delete</h3>
+            <h3 className="text-mred text-[22px] pr-2">Delete</h3>
           </div>
         </div>
 
         <div className="basis-1/2">
-          <div className="h-[180px] bg-lightgray flex justify-center items-center rounded-md">
+          <div className="h-[200px] bg-lightgray flex justify-center items-center rounded-lg">
             <button>
               <img src="../gala_add.png" alt="" />
             </button>

@@ -43,7 +43,7 @@ const NavBar = () => {
           <div className="flex ">
             <button className="md:hidden mr-1">
               <img
-                src="./menu.png"
+                src="../menu.png"
                 alt="menu bar icon"
                 className="hover:bg-primaryred"
               />
@@ -54,13 +54,13 @@ const NavBar = () => {
             </h1>
           </div>
           <div className="hidden md:flex flex-row  space-x-3 text-gray font-poppins text-xs font-bold">
-            <Link to="/error" className="hover:text-primaryred pt-0.5">
+            <Link to="/home" className="hover:text-primaryred pt-0.5">
               Home
             </Link>
-            <div className="flex hover:text-primaryred">
+            <Link to='/error'className="flex hover:text-primaryred">
               <button>Shop</button>
               <span className="material-symbols-outlined">expand_more</span>
-            </div>
+            </Link>
             <button className="hover:text-primaryred">About</button>
             <Link to="/contact" className="hover:text-primaryred pt-0.5">
               Contact

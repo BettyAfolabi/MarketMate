@@ -5,9 +5,11 @@ import Signup from "./pages/Signup";
 import ContactComponent from "./components/ContactComponent";
 import ErrorPage from "./pages/ErrorPage";
 import Account from "./pages/Account";
+import Home from "./pages/Home";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 const App = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white h-full">
       <Routes>
         <Route path="/" element={<Signup />} />
         <Route path="login" element={<Login />} />
@@ -15,6 +17,8 @@ const App = () => {
         <Route path="/contact" element={<ContactComponent />} />
         <Route path="/error" element={<ErrorPage />} />
         <Route path="/account/*" element={<Account />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );

@@ -22,42 +22,42 @@ const Services = () => {
         className="bg-lightgray rounded-[15px] "/>
       </div>
     </div>
-      <div className="flex flex-wrap w-[1300px] m-auto gap-[18px]">
+      <div className="flex flex-wrap w-[1300px] m-auto gap-[18px] mb-4 justify-center">
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
           <img src="a.png"/>
-        <p>Fashion Designer</p>
-        <p>From #5,000</p>
-        <p>Garments by Dee</p>
+        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
+        <p className="ml-2">From #5,000</p>
+        <p className="ml-2">Garments by Dee</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
-          <img src="a.png"/>
-        <p>Fashion Designer</p>
-        <p>From #5,000</p>
-        <p>Garments by Dee</p>
+        <img src="b.png"/>
+        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
+        <p className="ml-2">From #5,000</p>
+        <p className="ml-2">Garments by Dee</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
-          <img src="a.png"/>
-        <p>Fashion Designer</p>
-        <p>From #5,000</p>
-        <p>Garments by Dee</p>
+          <img src="c.png"/>
+        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
+        <p className="ml-2">From #5,000</p>
+        <p className="ml-2">Garments by Dee</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
-          <img src="a.png"/>
-        <p>Fashion Designer</p>
-        <p>From #5,000</p>
-        <p>Garments by Dee</p>
+        <img src="d.png"/>
+        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
+        <p className="ml-2">From #5,000</p>
+        <p className="ml-2">Garments by Dee</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
-          <img src="a.png"/>
-        <p>Fashion Designer</p>
-        <p>From #5,000</p>
-        <p>Garments by Dee</p>
+        <img src="e.png"/>
+        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
+        <p className="ml-2">From #5,000</p>
+        <p className="ml-2">Garments by Dee</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
-          <img src="a.png"/>
-        <p>Fashion Designer</p>
-        <p>From #5,000</p>
-        <p>Garments by Dee</p>
+        <img src="f.png"/>
+        <p className="text-center font-semibold font-poppins mt-2"> Fashion Designer</p>
+        <p className="ml-2">From #5,000</p>
+        <p className="ml-2">Garments by Dee</p>
         </div>
       </div>
     </div>

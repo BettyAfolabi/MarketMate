@@ -82,8 +82,8 @@ const About = () => {
             Revolutionizing Service Marketplaces
           </p>
         </div>
-        <div className="w-[1288px] h-[430px] gap-[48px] m-auto flex flex-wrap">
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6]">
+        <div className="w-[1288px] h-[430px] gap-[48px] m-auto flex flex-wrap mb-8">
+          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -98,7 +98,7 @@ const About = () => {
               Learn More
             </button>
           </div>
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6]">
+          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md1.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -113,7 +113,7 @@ const About = () => {
               Chat Now
             </button>
           </div>
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] flex-row">
+          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] flex-row rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md2.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -128,7 +128,7 @@ const About = () => {
               Discover How
             </button>
           </div>
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6]">
+          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md3.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -294,7 +294,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-8">
           <p className="font-poppins font-normal text-[18px] ml-6">
             Your One-Stop Marketplace for Proffesional Services!
           </p>
@@ -303,7 +303,7 @@ const About = () => {
             Our Featured Services
           </p>
         </div>
-        <div className="flex">
+        <div className="flex mb-8">
           <div className="ml-8">
             <img src="m6.png" className="rounded-[12px]" />
             <p className="font-poppins font-semibold text-[20px]">
@@ -334,7 +334,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
+        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto mb-[120px]">
           <div>
             <h4 className="font-catamaran font-bold text-[36px]">
               Ad Performance Analytics
@@ -351,9 +351,9 @@ const About = () => {
             </button>
 
             <div className="flex mt-6">
-              <img src="a1.png" />
-              <img src="a2.png" />
-              <img src="a3.png" />
+              <img src="a1.png"className="flex-nonew-12 h-12" />
+              <img src="a2.png"className="flex-none" />
+              <img src="a3.png" className="flex-none"/>
               <p className="font-poppins font-normal text-[18px] ml-2">
                 Empower your advertising efforts with actionable data. See what
                 works and refine your approach for maximum impact.

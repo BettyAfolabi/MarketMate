@@ -6,7 +6,7 @@ import Billing from "./Billing";
 import { Route, Routes, Link } from "react-router-dom";
 import Payment from "./Payment";
 import Track from "./Track";
-import Ongoing from "./Ongoing";
+import OngoingOrders from "./OngoingOrders";
 import ReturnedOrders from "./ReturnedOrders";
 
 function Account() {
@@ -44,8 +44,8 @@ function Account() {
             <Route path="billing-address" element={<Billing />} />
             <Route path="payment" element={<Payment />} />
             <Route path="track" element={<Track />} />
-            <Route path="ongoing-order" element={<Ongoing />} />
-            <Route path="returned-order" element={<ReturnedOrders />} />
+            <Route path="ongoing" element={<OngoingOrders />} />
+            <Route path="returns" element={<ReturnedOrders />} />
           </Routes>
         </div>
       </div>

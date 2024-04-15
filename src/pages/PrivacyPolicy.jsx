@@ -2,7 +2,7 @@ import React from "react";
 
 function PrivacyPolicy() {
   return (
-    <div className="w-screen mx-auto font-poppins">
+    <div className="w-5/6 mx-auto font-poppins">
       <h1 className="font-bold text-2xl py-2">TERMS AND CONDITIONS</h1>
       <h1 className="font-bold text-xl">Last updated 04/13/2024</h1>
       <h2 className="font-bold text-2xl py-2">AGREEMENT TO OUR LEGAL TERMS</h2>

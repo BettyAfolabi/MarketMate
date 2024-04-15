@@ -48,13 +48,13 @@ const Contact = () => {
       <NavBar />
 
       <div className="min-h-screen">
-        <div className="flex pt-14 ml-10 mt-10 pl-10">
+        <div className="flex ml-10 mt-10 pl-10">
           <button className="pr-2 font-bold">Login</button>/
           <button className="pl-2 font-bold">Register</button>
         </div>
 
         <div
-          className="flex items-center h-[460px] justify-center space-x-4  rounded-md mx-auto mt-6"
+          className="flex items-center h-[460px] justify-center space-x-4  rounded-md mx-auto mt-1"
           style={{
             width: "1000px",
             //  height: '100px',
@@ -93,7 +93,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="mt-2 flex flex-col items-center">
-          <form className="space-y-4" onSubmit={handleSubmit}>
+          <form className="space-y-4 mb-3" onSubmit={handleSubmit}>
             <div className="flex justify-between gap-2">
               <div>
                 <input

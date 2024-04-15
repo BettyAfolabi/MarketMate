@@ -38,7 +38,7 @@ const NavBar = () => {
         </div>
       </header>
 
-      <nav className=" bg-white py-4  justify-center">
+      <nav className=" bg-white py-4 justify-center">
         <div className="w-11/12 flex items-center mx-auto justify-between">
           <div className="flex ">
             <button className="md:hidden mr-1">
@@ -57,24 +57,26 @@ const NavBar = () => {
             <Link to="/home" className="hover:text-primaryred pt-0.5">
               Home
             </Link>
-            <Link to='/error'className="flex hover:text-primaryred">
+            <Link to="/error" className="flex hover:text-primaryred">
               <button>Shop</button>
               <span className="material-symbols-outlined">expand_more</span>
             </Link>
-            <button className="hover:text-primaryred">About</button>
+            <Link to="/about" className="hover:text-primaryred pt-0.5">
+              About
+            </Link>
             <Link to="/contact" className="hover:text-primaryred pt-0.5">
               Contact
             </Link>
             <button className="hover:text-primaryred">Pages</button>
           </div>
-          <div className="flex flex-row space-x-1 lg:space-x-3 justify-end text-primaryblue font-poppins text-xs font-light">
-            <span className="material-symbols-outlined hover:text-primaryred">
+          <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
+            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
               search
             </span>
-            <span className="material-symbols-outlined hover:text-primaryred">
+            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
               shopping_cart
             </span>
-            <span className="hidden md:block material-symbols-outlined hover:text-primaryred">
+            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
               favorite
             </span>
             <div className="flex flex-row text-secblue font-bold">

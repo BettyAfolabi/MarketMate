@@ -4,8 +4,8 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="w-screen bg-terblue bottom-0 ">
-        <div className="hidden md:block  w-4/5 items-center mx-auto font-poppins text-white pt-6">
+      <div className="w-screen bg-terblue bottom-0">
+        <div className="hidden lg:block w-4/5 items-center mx-auto font-poppins text-white pt-6">
           <div className="flex justify-between">
             <div>
               <h3 className="text-2xl">Your all in one shopping site</h3>
@@ -107,8 +107,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="md:hidden text-white w-4/5  mx-auto font-poppins py-6">
-          <ul className="flex gap-3 font-bold">
+        <div className="lg:hidden text-white w-4/5  mx-auto font-poppins py-6">
+          <ul className="flex gap-3 font-bold justify-center items-center">
             <li className="text-base pb-1.2">Company Info</li>
             <li className="text-base pb-1.2">Legal</li>
             <li className="text-base pb-1.2">Features</li>

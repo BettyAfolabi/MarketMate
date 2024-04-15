@@ -8,7 +8,7 @@ function ErrorPage() {
     <div className="w-screen">
       <NavBar />
       <div className="flex-col flex justify-center items-center font-poppins mt-8 mx-auto">
-        <img src="./404.png" alt="error404 image" className="w-[500px] mb-4" />
+        <img src="../404.png" alt="error404 image" className="w-[500px] mb-4" />
         <h2 className=" font-[500] text-black text-[48px] h-[115px] text-center">
           404 Not Found
         </h2>

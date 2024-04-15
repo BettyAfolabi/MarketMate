@@ -48,9 +48,13 @@ const Contact = () => {
       <NavBar />
 
       <div className="min-h-screen">
-        <button>Home</button>
+        <div className="flex pt-14 ml-10 mt-10 pl-10">
+          <button className="pr-2 font-bold">Login</button>/
+          <button className="pl-2 font-bold">Register</button>
+        </div>
+
         <div
-          className="flex items-center h-[460px] justify-center space-x-4  rounded-md mx-auto mt-10"
+          className="flex items-center h-[460px] justify-center space-x-4  rounded-md mx-auto mt-6"
           style={{
             width: "1000px",
             //  height: '100px',

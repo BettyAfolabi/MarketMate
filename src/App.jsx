@@ -2,11 +2,13 @@ import ForgotPassword from "./pages/ForgotPassword";
 import Login from "./pages/Login";
 import { Route, Routes } from "react-router-dom";
 import Signup from "./pages/Signup";
-import ContactComponent from "./components/ContactComponent";
+import ContactComponent from "./components/ScreenSizes/ContactComponent";
 import ErrorPage from "./pages/ErrorPage";
 import Account from "./pages/Account";
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import About from "./pages/About";
+
 const App = () => {
   return (
     <div className="bg-white h-full">
@@ -19,6 +21,7 @@ const App = () => {
         <Route path="/account/*" element={<Account />} />
         <Route path="/home" element={<Home />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </div>
   );

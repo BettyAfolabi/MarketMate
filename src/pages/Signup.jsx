@@ -35,29 +35,26 @@ function Signup() {
   const name = watch("name");
 
   return (
-    <div className="w-full overflow-x-hidden bg-white">
+    <div className="w-screen">
       <NavBar />
-      <div className="flex flex-col lg:gap-12 lg:flex-row mb-3">
-        <div className="hidden lg:block basis-1/2">
-          <img
-            src="./login.png"
-            alt="login image"
-            className="rounded-tr-lg rounded-lg"
-          />
-        </div>
-
+      <div className="w-5/6 flex flex-col lg:flex-row items-center lg:space-x-4 justify-between">
+        <img
+          src="./login.png"
+          alt="signup image"
+          className="hidden lg:block w-[705px] h-[685px] pt-[75px] rounded-tr-lg rounded-lg p-4"
+        />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
           className="mx-auto mt-3 lg:mx-0 lg:w-[380px] lg:mt-5 space-y-3 flex flex-col"
         >
-          <h3 className="text-[38px] font-catamaran text-black font-bold">
+          <h3 className="font-catamaran text-black font-bold lg:text-[38px] h-[60px]">
             Create an account
           </h3>
-          <p className="font-poppins text-[16px] font-normal items-start py-1">
+          <p className="font-poppins text-[16px] font-normal h-[24px]">
             Enter your details below
           </p>
-          <div>
+          <div className="space-y-2 mt-3">
             <InputField
               placeholder="First and Last name"
               id="name"
@@ -95,7 +92,6 @@ function Signup() {
               patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
             />
           </div>
-
           <button
             disabled={isSubmitting}
             className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-2 px-6 font-poppins w-full"
@@ -110,7 +106,7 @@ function Signup() {
             <img src="./google.svg" alt="Google logo" className=" w-2 h-5 " />
             Sign in with Google
           </button>
-          <div className="flex flex-row gap-4 pt-2 justify-center">
+          <div className="flex flex-row space-x-1 pt-2">
             <p>Already have account?</p>
             <Link
               to="/"

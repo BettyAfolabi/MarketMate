@@ -3,17 +3,18 @@ import Footer from "../components/Footer";
 import SideBar from "../components/SideBar";
 import Profile from "./Profile";
 import Billing from "./Billing";
-
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import Payment from "./Payment";
 import Track from "./Track";
+import Ongoing from "./Ongoing";
+import ReturnedOrders from "./ReturnedOrders";
 
 function Account() {
   return (
     <div className="w-full overflow-x-hidden">
       <NavBar />
       <div className="flex justify-between w-5/6 mx-auto">
-        <div className="flex">
+        <div className="hidden lg:flex">
           <p className="px-2 text-sm">Home</p>/
           <p className="px-2 text-terblue">My Account</p>
         </div>
@@ -22,17 +23,29 @@ function Account() {
         </h2>
       </div>
 
-      <div className="flex flex-row w-5/6 mx-auto my-4 h-full">
+      <div className="flex flex-row w-screen lg:w-5/6 mx-auto my-4 h-full">
         <div className="basis-full lg:basis-1/4 flex flex-col font-poppins">
           <SideBar />
         </div>
         <div className="hidden lg:block lg:basis-3/4">
+          <div className="lg:hidden w-5/6 mx-auto">
+            <Link
+              to="/account"
+              onClick={() => setSidebarVisible(true)}
+              className="flex gap-3"
+            >
+              <i className="bx bx-sm bx-chevron-left"></i>
+              <h3 className="text-primaryblue text-sm font-semibold">Back</h3>
+            </Link>
+          </div>
           <Routes>
-            <Route path="/account" element={<Profile />} exact />
+            <Route exact path="/account" element={<Profile />} />
             <Route path="profile" element={<Profile />} />
             <Route path="billing-address" element={<Billing />} />
             <Route path="payment" element={<Payment />} />
             <Route path="track" element={<Track />} />
+            <Route path="ongoing-order" element={<Ongoing />} />
+            <Route path="returned-order" element={<ReturnedOrders />} />
           </Routes>
         </div>
       </div>

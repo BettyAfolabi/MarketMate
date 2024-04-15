@@ -7,8 +7,8 @@ function SideBar() {
 
   return (
     <div>
-      <div className="pt-6 gap-0.5">
-        <div className="relative w-[82px] h-[82px] mx-3">
+      <div className="pt-3 lg:pt-6 gap-0.5">
+        <div className="relative w-[82px] h-[82px] mx-auto lg:mx-3 ">
           <img
             src="https://randomuser.me/api/portraits/women/79.jpg"
             alt="random user"
@@ -18,84 +18,105 @@ function SideBar() {
             <img src="../Icon Box.png" alt="camera icon" className="h-4 w-4" />
           </button>
         </div>
-        <h3 className="text-[20px] font-semibold py-2">
+        <h3 className="text-[20px] font-semibold py-2 text-center lg:text-start">
           {name || "Jane Amokoko"}
         </h3>
       </div>
       <div className="py-[10px] gap-2 text-base font-normal text-lightblack">
         <div className="mb-2">
-          <h3 className="text-terblue font-medium pb-0.5">Manage my Account</h3>
+          <h3 className="text-terblue text-[15px] font-medium py-2 px-2 lg:py-1 lg:px-0 bg-lightgray lg:bg-inherit">
+            Manage my Account
+          </h3>
           <ul className="px-3 space-y-1">
-            <li>
+            <li className="flex justify-between">
               <Link
                 className="hover:text-primaryred focus:text-primaryred"
                 to="profile"
               >
                 My Profile
               </Link>
+              <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
             </li>
-            <li>
+            <li className="flex justify-between">
               <Link
                 to="billing-address"
                 className="hover:text-primaryred focus:text-primaryred"
               >
                 Billing Address
               </Link>
+              <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
             </li>
-            <li>
+            <li className="flex justify-between">
               <Link
                 to="payment"
                 className="hover:text-primaryred focus:text-primaryred"
               >
                 Payment Details
               </Link>
+              <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
             </li>
           </ul>
           <div className="my-2">
-            <h3 className="text-terblue font-medium pb-0.5">My Orders</h3>
+            <h3 className="text-terblue text-[15px] font-medium py-2 px-2 lg:py-1 lg:px-0 bg-lightgray lg:bg-inherit">
+              My Orders
+            </h3>
             <ul className="px-3 space-y-0.5">
-              <li>
-                <button className="hover:text-primaryred focus:text-primaryred">
+              <li className="flex justify-between">
+                <Link
+                  to="ongoing-order"
+                  className="hover:text-primaryred focus:text-primaryred"
+                >
                   Ongoing/Delivered
-                </button>
+                </Link>
+                <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
-              <li>
-                <button className="hover:text-primaryred focus:text-primaryred">
+              <li className="flex justify-between">
+                <Link
+                  to="returned-order"
+                  className="hover:text-primaryred focus:text-primaryred"
+                >
                   Returns/Cancellations
-                </button>
+                </Link>
+                <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
-              <li>
+              <li className="flex justify-between">
                 <Link
                   to="track"
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   Track Order
                 </Link>
+                <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
             </ul>
           </div>
           <div className="my-2">
-            <h3 className="text-terblue font-medium pb-0.5">My Store</h3>
+            <h3 className="text-terblue text-[15px] font-medium py-2 px-2 lg:py-1 lg:px-0 bg-lightgray lg:bg-inherit">
+              My Store
+            </h3>
             <ul className="px-3 space-y-0.5">
-              <li>
+              <li className="flex justify-between">
                 <button className="hover:text-primaryred focus:text-primaryred">
                   Catalog
                 </button>
+                <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
-              <li>
+              <li className="flex justify-between">
                 <button className="hover:text-primaryred focus:text-primaryred">
                   My Advert
                 </button>
+                <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
-              <li>
+              <li className="flex justify-between">
                 <button className="hover:text-primaryred focus:text-primaryred">
                   Performance
                 </button>
+                <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
             </ul>
           </div>
         </div>
-        <button className="text-red-400 text-left hover:text-mred">
+        <button className="text-red-400 text-left hover:text-mred px-2 lg:px-0">
           Delete Account
         </button>
       </div>

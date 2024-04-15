@@ -48,7 +48,7 @@ function Track() {
           noValidate
           className="space-y-2"
         >
-          <div className="flex gap-[50px]">
+          <div className="flex gap-[50px] w-full">
             <InputField
               label="Order ID"
               placeholder="Enter Order ID"

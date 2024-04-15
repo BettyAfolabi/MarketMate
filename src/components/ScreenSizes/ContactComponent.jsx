@@ -1,6 +1,6 @@
-import windowSize from "./ScreenSizes/windowSize";
-import Contact from "../pages/Contact";
-import ContactMobile from "../pages/ContactMobile";
+import windowSize from "./windowSize";
+import Contact from "../../pages/Contact";
+import ContactMobile from "../../pages/ContactMobile";
 const ContactComponent = () => {
   const [width] = windowSize();
 

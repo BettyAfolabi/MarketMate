@@ -1,5 +1,6 @@
 import Modal from "../components/Modal"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 const Services = () => {
@@ -98,11 +99,19 @@ const Services = () => {
           className="absolute left-3 top-1/2 transform -translate-y-1/2 h- bg-dgray w-[20px] "
         />
       </div>
+     
+    </div>
+    <div className="ml-4 mt-4 flex">
+      <p className="font-poppins text-[#6A6A6A] text-[14px]">Try Searching for a </p>
+      <Link to="/tailor" className="btn ml-1 font-poppins text-[14px] text-[#1B61B6]">Tailor,</Link>
+      <Link to="/electrician" className="btn ml-1 font-poppins text-[14px] text-[#1B61B6]">Electrician,</Link>
+      <Link to="/plumber" className="btn ml-1 font-poppins text-[14px] text-[#1B61B6]">Plumber</Link>
     </div>
       </div>
       <div>
        <img src="frame1.png" className="mt-0"/>
       </div>
+
     </div>
         <div>
         <h4 className="font-poppins text-[15px] font-bold ml-4 pl-10 mb-2 text-[30px]"> Explore More Services</h4></div>

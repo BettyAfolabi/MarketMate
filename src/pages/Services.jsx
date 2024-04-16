@@ -105,7 +105,7 @@ const Services = () => {
       </div>
     </div>
         <div>
-        <h4 className="font-poppins text-[15px] font-bold ml-4 pl-10 mb-2"> Explore More Services</h4></div>
+        <h4 className="font-poppins text-[15px] font-bold ml-4 pl-10 mb-2 text-[30px]"> Explore More Services</h4></div>
       <div className="flex flex-wrap w-[1300px] m-auto gap-[18px] mb-4 justify-center">
       
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
@@ -135,7 +135,7 @@ const Services = () => {
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
         <img src="e.png"/>
         <p className="text-center font-semibold font-poppins mt-2">Caterer</p>
-        <p className="ml-2">From #5,000</p>
+        <p className="ml-2">Contact for Price</p>
         <p className="ml-2">Tasty Cuisine</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
@@ -156,7 +156,42 @@ const Services = () => {
         className="ml-10 p-4"/>
         </div>
       </div>
-      <div>gggggg</div>
+      <div>
+        
+        <h4 className="text-right mr-12 pr-12 mb-4 font-bold font-poppins text-[30px]">Trending Now</h4>
+
+      <div className="flex flex-wrap m-auto gap-[28px] mb-10 justify-center ">
+      
+      <div className="flex  flex-col  h-auto border-[#949494] border-2 rounded-[12px]">
+        <img src="13.png"/>
+      <p className="text-left font-semibold font-poppins mt-2">Clean Cutz Salon</p>
+      
+      <p className="">224, Avenue babs, Lagos Nigeria</p>
+      </div>
+      <div className="flex  flex-col  h-auto border-[#949494] border-2 rounded-[12px]">
+      <img src="14.png"/>
+      <p className="text-left font-semibold font-poppins mt-2">Wood Work</p>
+      
+      <p className="">324, Avenue, Ikeja Lagos Nigeria</p>
+      </div>
+      <div className="flex  flex-col  h-auto border-[#949494] border-2 rounded-[12px]">
+        <img src="15.png"/>
+      <p className="text-left font-semibold font-poppins mt-2"> Relax Spa</p>
+      
+      <p className="">444, Avenue VI, Lagos Nigeria </p>
+      </div>
+      <div className="flex  flex-col  h-auto border-[#949494] border-2 rounded-[12px]">
+      <img src="16.png"/>
+      <p className="text-left font-semibold font-poppins mt-2">Shutter Studio</p>
+      
+      <p className="">444, Avenue babs cresent suit Lagos nigeria</p>
+      </div>
+      </div>
+      </div>
+      <div className="ml-4 bg-[#EFCCCC] mb-4 shadow-sm rounded-[4px]"> 
+
+        <img src="ga.png"/>
+      </div>
     </div>
     <Footer/>
     </div>

@@ -65,28 +65,49 @@ const Services = () => {
           <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">Catering </p>
           <p className="text-[12px] font-poppins text-[#5F6C72]">Printing</p>
            </div>
-          
-          
-          
-         
-          
-  
-          
         </div>
       </Modal>
     </div>
     </div>
     <div className="flex mb-4">
-      <div className=" m-auto">
-        <h4 className="font-catamaran font-bold text-[32px] w-[580px]">Your One-stop Solutions for all things Services</h4>
-        <p>Discover and hire a professional service provider near you</p>
-        <input placeholder="Search Services" 
-        className="bg-lightgray rounded-[15px] "/>
-         <input placeholder="Search Services" 
-        className="bg-lightgray rounded-[15px] "/>
+      <div className=" ">
+        <h4 className="font-catamaran font-bold text-[#0E2744] text-[32px] w-[580px] ml-4">Your One-stop Solutions for all things Services</h4>
+        <p className="ml-4 font-poppins font-normal text-[#0E2744] text-[12px]">Discover and hire a professional service provider near you</p>
+        
+        <div className="w-[695px] ml-4 rounded-[16px] border-[1.5px] border-gray flex mt-3 gap-[10px]">
+        <div className="relative">
+        <input
+          placeholder="Search Services..."
+          className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] w-[297px] h-[47px]"
+        />
+        <img
+          src="/stroke.png" 
+          alt="Search Icon"
+          className="absolute left-3 top-1/2 transform -translate-y-1/2 h- bg-dgray w-[20px] "
+        />
+      </div>
+        <div className="h-[87px] border-[1.5px] border-dgray ml-2"></div>
+        <div className="relative">
+        <input
+          placeholder="Where ?"
+          className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] w-[297px] h-[47px]"
+        />
+        <img
+          src="/vec.png" 
+          alt="Search Icon"
+          className="absolute left-3 top-1/2 transform -translate-y-1/2 h- bg-dgray w-[20px] "
+        />
       </div>
     </div>
+      </div>
+      <div>
+       <img src="frame1.png" className="mt-0"/>
+      </div>
+    </div>
+        <div>
+        <h4 className="font-poppins text-[15px] font-bold ml-4 pl-10 mb-2"> Explore More Services</h4></div>
       <div className="flex flex-wrap w-[1300px] m-auto gap-[18px] mb-4 justify-center">
+      
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
           <img src="a.png"/>
         <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
@@ -95,35 +116,47 @@ const Services = () => {
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
         <img src="b.png"/>
-        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
-        <p className="ml-2">From #5,000</p>
-        <p className="ml-2">Garments by Dee</p>
+        <p className="text-center font-semibold font-poppins mt-2">Carpenter</p>
+        <p className="ml-2">Contact for Price</p>
+        <p className="ml-2">Wood Working</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
           <img src="c.png"/>
-        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
-        <p className="ml-2">From #5,000</p>
-        <p className="ml-2">Garments by Dee</p>
+        <p className="text-center font-semibold font-poppins mt-2">Knitter</p>
+        <p className="ml-2">From #3,000</p>
+        <p className="ml-2">Shade's Knittery </p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
         <img src="d.png"/>
-        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
+        <p className="text-center font-semibold font-poppins mt-2">Hair Dresser</p>
         <p className="ml-2">From #5,000</p>
-        <p className="ml-2">Garments by Dee</p>
+        <p className="ml-2">Styling Hub</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
         <img src="e.png"/>
-        <p className="text-center font-semibold font-poppins mt-2">Fashion Designer</p>
+        <p className="text-center font-semibold font-poppins mt-2">Caterer</p>
         <p className="ml-2">From #5,000</p>
-        <p className="ml-2">Garments by Dee</p>
+        <p className="ml-2">Tasty Cuisine</p>
         </div>
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
         <img src="f.png"/>
-        <p className="text-center font-semibold font-poppins mt-2"> Fashion Designer</p>
+        <p className="text-center font-semibold font-poppins mt-2"> Bricklayer</p>
         <p className="ml-2">From #5,000</p>
-        <p className="ml-2">Garments by Dee</p>
+        <p className="ml-2">Building Rocks</p>
+        </div>
+        <div className="mt-4 w-[1216px] h-[456px] rounded-[30px] shadow-md flex mb-4" >
+        <div>
+        <img src="group.png"
+        className="m-2"/>
+        <p className="font-poppins font-bold ml-4 text-[15px]mt-4">Turn on location</p>
+        <p className="font-poppins  ml-4 text-[10px] mt-4">Get recommendation of great services! Turn on your location so we <br/>can show you what’s nearby.</p>
+        <button className="rounded-[5px]  bg-[#F95959] px-4 w-[210] h-[54px] mt-10 ml-4 text-white font-poppins text-[12px]">Search near me</button>
+        </div>
+        <img src="man.png"
+        className="ml-10 p-4"/>
         </div>
       </div>
+      <div>gggggg</div>
     </div>
     <Footer/>
     </div>

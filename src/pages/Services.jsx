@@ -1,8 +1,9 @@
 import Modal from "../components/Modal"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Routes, Route, Link } from "react-router-dom"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
+import ServicesDetails from "./ServicesDetails";
 const Services = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -114,7 +115,7 @@ const Services = () => {
 
     </div>
         <div>
-        <h4 className="font-poppins text-[15px] font-bold ml-4 pl-10 mb-2 text-[30px]"> Explore More Services</h4></div>
+        <h4 className="font-poppins font-bold ml-4 pl-10 mb-2 text-[30px]"> Explore More Services</h4></div>
       <div className="flex flex-wrap w-[1300px] m-auto gap-[18px] mb-4 justify-center">
       
         <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
@@ -201,6 +202,9 @@ const Services = () => {
 
         <img src="ga.png"/>
       </div>
+      <Routes>
+      <Route path="/tailor" element={<ServicesDetails/>} />
+      </Routes>
     </div>
     <Footer/>
     </div>

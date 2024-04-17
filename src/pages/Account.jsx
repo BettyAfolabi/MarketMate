@@ -8,6 +8,8 @@ import Payment from "./Payment";
 import Track from "./Track";
 import OngoingOrders from "./OngoingOrders";
 import ReturnedOrders from "./ReturnedOrders";
+import CatalogProfile from "./CatalogProfile";
+
 
 function Account() {
   return (
@@ -46,6 +48,8 @@ function Account() {
             <Route path="track" element={<Track />} />
             <Route path="ongoing" element={<OngoingOrders />} />
             <Route path="returns" element={<ReturnedOrders />} />
+            <Route path="catalog" element={<CatalogProfile />} />
+           
           </Routes>
         </div>
       </div>

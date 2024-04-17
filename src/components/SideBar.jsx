@@ -96,9 +96,10 @@ function SideBar() {
             </h3>
             <ul className="px-3 space-y-0.5">
               <li className="flex justify-between">
-                <button className="hover:text-primaryred focus:text-primaryred">
+                <Link
+                to="catalog" className="hover:text-primaryred focus:text-primaryred">
                   Catalog
-                </button>
+                </Link>
                 <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
               <li className="flex justify-between">

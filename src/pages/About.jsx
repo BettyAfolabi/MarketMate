@@ -8,7 +8,7 @@ const About = () => {
       <div className="min-h-screen">
         <div className="  ">
           <div className="flex justify-center items-center gap-[10px]">
-            <button className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt-2 mb-2">
+            <button className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt-2 mb-2 ">
               Products
             </button>
             <button className="text-[#464646] font-semibold text-[18px] ml-2">
@@ -16,7 +16,7 @@ const About = () => {
             </button>
           </div>
 
-          <div className="mx-auto text-center bg-[#0E2744] w-full pr-4">
+          <div className="mx-auto text-center bg-[#0E2744] lg:w-full sm:w-3/4 md:w-[400px] md:h-[296px] lg:p-4 sm:p-4 md:pr-4">
             <h1 className="font-catamaran font-bold text-[52px] text-white">
               Find the Perfect Service
             </h1>

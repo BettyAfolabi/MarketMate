@@ -41,7 +41,7 @@ const Login = () => {
         <img
           src="./login.png"
           alt="login image"
-          className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg p-4"
+          className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg pb-4 px-3"
         />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}

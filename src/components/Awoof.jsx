@@ -33,6 +33,7 @@ function Awoof() {
         productPrice="₦16,598"
         tag="Ritemall"
         review="⭐⭐⭐⭐☆"
+        
       />
     </div>
   );

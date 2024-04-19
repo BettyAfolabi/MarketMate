@@ -208,10 +208,10 @@ const About = () => {
               Communicate with sellers or service providers directly through our
               platform. Get your questions answered in real-time.
             </p>
-            <button className="border-2 border-[#949494] bg-[#949494] ml-2 rounded-[6px] w-[140px] h-[44px] text-[15px] font-poppins font-semibold">
+            <button className="border-2 border-[#949494] bg-[#949494] ml-2 rounded-[6px] w-[140px] h-[44px] text-[15px] font-poppins font-semibold ">
               Chat Now
             </button>
-            <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[15px] font-poppins font-semibold text-white">
+            <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[145px] h-[44px] text-[15px] font-poppins font-semibold text-white ">
               Start Conversation{" "}
             </button>
 

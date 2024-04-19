@@ -62,6 +62,7 @@ export default {
         gray: "#828282",
         lightgray: "#F6F6F6",
         deepgray: "#191919",
+        notactive: "#5F6C72",
         lightblack: "#1C1C1C",
       },
       fontFamily: {
@@ -100,5 +101,4 @@ export default {
   },
 
   plugins: [],
-
 };

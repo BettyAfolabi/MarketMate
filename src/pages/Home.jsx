@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Card from "../components/Card";
 import Awoof from "../components/Awoof";
+import CategoryList from "../components/CategoryList";
 
 function Home() {
   return (
@@ -10,10 +11,7 @@ function Home() {
       <NavBar />
       <div className="flex flex-col mx-auto bg-[#FCFCFC] font-poppins">
         <nav className="flex flex-row gap-5 my-2 w-5/6 mx-10">
-          <button className="bg-secblue hover:bg-blue-900 text-white px-3 py-[14px] flex gap-1">
-            <p>All Category</p>
-            <i className="bx bx-sm bx-chevron-down self-center"></i>
-          </button>
+          <CategoryList />
           <button className="hover:underline">Beauty & Cosmetics</button>
           <button className="hover:underline">Phones & Gadgets</button>
           <button className="hover:underline">Appliances</button>

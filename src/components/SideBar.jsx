@@ -1,6 +1,6 @@
 import { useLocation, Link } from "react-router-dom";
 
-function SideBar() {
+function SideBar({ onLinkClick }) {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const name = searchParams.get("name");
@@ -32,6 +32,7 @@ function SideBar() {
               <Link
                 className="hover:text-primaryred focus:text-primaryred"
                 to="profile"
+                onClick={onLinkClick}
               >
                 My Profile
               </Link>

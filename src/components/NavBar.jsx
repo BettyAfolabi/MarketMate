@@ -7,6 +7,8 @@ import {
   FaFacebook,
   FaTwitter,
 } from "react-icons/fa6";
+import AccountList from "./AccountList";
+import Menu from "./Menu";
 
 const NavBar = () => {
   return (
@@ -41,13 +43,7 @@ const NavBar = () => {
       <nav className=" bg-white py-4 justify-center">
         <div className="w-11/12 flex items-center mx-auto justify-between">
           <div className="flex ">
-            <button className="md:hidden mr-1">
-              <img
-                src="../menu.png"
-                alt="menu bar icon"
-                className="hover:bg-primaryred"
-              />
-            </button>
+            <Menu />
             <img src="../Logo.png" alt="Market mate Logo" />
             <h1 className="font-lobstertwo text-primaryred text-3xl md:text-4xl">
               MarketMate
@@ -68,32 +64,37 @@ const NavBar = () => {
               Contact
             </Link>
             <button className="hover:text-primaryred">Pages</button>
+            <Link to="/newsfeed" className="hover:text-primaryred pt-0.5">
+              NewsFeed
+            </Link>
           </div>
           <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
-            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
-              search
-            </span>
+            <div className="relative">
+              <input
+                type="text"
+                placeholder="Search"
+                className="pl-10 pr-3 py-1 w-[200px] bg-[#E2E2E2] text-primaryblue rounded-md border border-[#F5F5F5] focus:outline-none focus:border-primaryred"
+              />
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <span className="material-symbols-outlined">search</span>
+              </div>
+            </div>
             <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
               shopping_cart
             </span>
             <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
               favorite
             </span>
-            <div className="flex flex-row text-secblue font-bold">
-              <Link to="/account">
-                <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
-                  person
-                </span>
+            <AccountList />
+
+            <div className="hidden md:flex pt-0.5 flex-row text-secblue font-bold">
+              <Link to="/login" className="px-0.5 hover:text-primaryred">
+                Login
               </Link>
-              <div className="hidden md:flex pt-0.5">
-                <Link to="/login" className="px-0.5 hover:text-primaryred">
-                  Login
-                </Link>
-                /
-                <Link to="/" className="px-0.5 hover:text-primaryred">
-                  Register
-                </Link>
-              </div>
+              /
+              <Link to="/" className="px-0.5 hover:text-primaryred">
+                Register
+              </Link>
             </div>
           </div>
         </div>

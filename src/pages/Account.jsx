@@ -3,7 +3,8 @@ import Footer from "../components/Footer";
 import SideBar from "../components/SideBar";
 import Profile from "./Profile";
 import Billing from "./Billing";
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, Link, Outlet } from "react-router-dom";
+import { useState } from "react";
 import Payment from "./Payment";
 import Track from "./Track";
 import OngoingOrders from "./OngoingOrders";
@@ -12,6 +13,11 @@ import CatalogProfile from "./CatalogProfile";
 
 
 function Account() {
+  const [isSidebarVisible, setSidebarVisible] = useState(true);
+
+  const toggleSidebar = () => {
+    setSidebarVisible((prev) => !prev);
+  };
   return (
     <div className="w-full overflow-x-hidden">
       <NavBar />
@@ -26,10 +32,16 @@ function Account() {
       </div>
 
       <div className="flex flex-row w-screen lg:w-5/6 mx-auto my-4 h-full">
+        {/* <div
+          className={`${
+            isSidebarVisible ? "hidden" : "block"
+          } lg:block lg:basis-1/4 side`}
+        > */}
         <div className="basis-full lg:basis-1/4 flex flex-col font-poppins">
-          <SideBar />
+          <SideBar onLinkClick={toggleSidebar} />
+          <Outlet />
         </div>
-        <div className="hidden lg:block lg:basis-3/4">
+        <div className="hidden lg:block lg:basis-3/4 ">
           <div className="lg:hidden w-5/6 mx-auto">
             <Link
               to="/account"
@@ -40,16 +52,19 @@ function Account() {
               <h3 className="text-primaryblue text-sm font-semibold">Back</h3>
             </Link>
           </div>
+
           <Routes>
-            <Route exact path="/account" element={<Profile />} />
             <Route path="profile" element={<Profile />} />
             <Route path="billing-address" element={<Billing />} />
             <Route path="payment" element={<Payment />} />
             <Route path="track" element={<Track />} />
             <Route path="ongoing" element={<OngoingOrders />} />
             <Route path="returns" element={<ReturnedOrders />} />
-            <Route path="catalog" element={<CatalogProfile />} />
+
            
+
+            <Route index element={<Profile />} />
+
           </Routes>
         </div>
       </div>

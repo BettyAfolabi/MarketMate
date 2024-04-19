@@ -41,14 +41,14 @@ function Signup() {
         <img
           src="./login.png"
           alt="signup image"
-          className="hidden lg:block w-[705px] h-[685px] pt-[75px] rounded-tr-lg rounded-lg p-4"
+          className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg pb-4 px-3"
         />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className="mx-auto mt-3 lg:mx-0 lg:w-[380px] lg:mt-5 space-y-3 flex flex-col"
+          className=" lg:w-1/2 space-y-4 md: p-5 align-center mt-6"
         >
-          <h3 className="font-catamaran text-black font-bold lg:text-[38px] h-[60px]">
+          <h3 className="font-catamaran lg:block lg:text-[38px] h-[58px] w-[312px] font-bold">
             Create an account
           </h3>
           <p className="font-poppins text-[16px] font-normal h-[24px]">

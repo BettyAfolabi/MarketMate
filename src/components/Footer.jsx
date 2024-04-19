@@ -11,9 +11,9 @@ function Footer() {
               <h3 className="text-2xl">Your all in one shopping site</h3>
               <p className="text-sm">The quick fox jumps over the lazy dog</p>
             </div>
-            <button className="bg-primaryred text-sm font-bold py-2 px-6">
+            <Link to="/contact" className="bg-mred text-sm font-bold py-2 px-6">
               Contact Us
-            </button>
+            </Link>
           </div>
           <div className="grid md:grid-cols-5 grid-cols-2 gap-4 py-6">
             <ul>

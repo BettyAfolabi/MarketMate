@@ -64,7 +64,7 @@ function SideBar({ onLinkClick }) {
             <ul className="px-3 space-y-0.5">
               <li className="flex justify-between">
                 <Link
-                  to="ongoing-order"
+                  to="ongoing"
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   Ongoing/Delivered
@@ -73,7 +73,7 @@ function SideBar({ onLinkClick }) {
               </li>
               <li className="flex justify-between">
                 <Link
-                  to="returned-order"
+                  to="returns"
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   Returns/Cancellations

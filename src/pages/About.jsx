@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -10,10 +11,12 @@ const About = () => {
           <div className="flex justify-center items-center gap-[10px]">
             <button className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt-2 mb-2 ">
               Products
-            </button>
-            <button className="text-[#464646] font-semibold text-[18px] ml-2">
+              </button>
+            <Link 
+            to="/services"
+            className="text-[#464646] font-semibold text-[18px] ml-2">
               Services
-            </button>
+            </Link>
           </div>
 
           <div className="mx-auto text-center bg-[#0E2744] lg:w-full sm:w-3/4 md:w-[400px] md:h-[296px] lg:p-4 sm:p-4 md:pr-4">

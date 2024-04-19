@@ -14,6 +14,9 @@ const Services = () => {
   const handleCloseModal = () => {
     setModalOpen(false);
   };
+  const [input, setInput] = useState("")
+  
+
 
   return (
     <div className="w-screen">
@@ -80,6 +83,8 @@ const Services = () => {
         <div className="relative">
         <input
           placeholder="Search Services..."
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
           className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] w-[297px] h-[47px]"
         />
         <img

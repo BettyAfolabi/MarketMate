@@ -63,7 +63,9 @@ const NavBar = () => {
             <Link to="/contact" className="hover:text-primaryred pt-0.5">
               Contact
             </Link>
-            <button className="hover:text-primaryred">Pages</button>
+            <Link to="/services" className="hover:text-primaryred pt-0.5">
+              Services
+            </Link>
             <Link to="/newsfeed" className="hover:text-primaryred pt-0.5">
               NewsFeed
             </Link>

@@ -111,7 +111,7 @@ function Signup() {
           <div className="flex flex-row space-x-1 pt-2">
             <p>Already have account?</p>
             <Link
-              to="/"
+              to="/login"
               className="text-textcol text-[16px] font-poppins border-b border-textcol"
             >
               Log in

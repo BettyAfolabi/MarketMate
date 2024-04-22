@@ -55,9 +55,10 @@ function Account() {
             <Route path="profile" element={<Profile />} />
             <Route path="billing-address" element={<Billing />} />
             <Route path="payment" element={<Payment />} />
-            <Route path="track" element={<Track />} />
+            <Route path="track/*" element={<Track />} />
             <Route path="ongoing" element={<OngoingOrders />} />
             <Route path="returns" element={<ReturnedOrders />} />
+
             <Route index element={<Profile />} />
           </Routes>
         </div>

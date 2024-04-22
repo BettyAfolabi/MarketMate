@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 import InputField from "../components/InputField";
+import TrackedOrder from "./TrackedOrder";
 
 function Track() {
   const form = useForm({
@@ -15,8 +16,11 @@ function Track() {
   const { register, handleSubmit, reset, formState } = form;
   const { errors, isSubmitSuccessful, isSubmitting } = formState;
 
+  const [isTracking, setIsTracking] = useState(false);
+
   const onSubmit = (data) => {
     console.log("submitted", data);
+    setIsTracking(true);
   };
 
   const onError = (errors) => {
@@ -28,6 +32,10 @@ function Track() {
       reset();
     }
   }, [isSubmitSuccessful, reset]);
+
+  if (isTracking) {
+    return <TrackedOrder />;
+  }
 
   return (
     <div className="font-poppins shadow-md px-4 pl-6 px-auto py-4 mt-5 flex flex-col">
@@ -58,7 +66,7 @@ function Track() {
               error={errors.orderid}
               pattern={/^\d{10}$/}
               required={true}
-              patternMessage="Enter your order id only in numbers"
+              patternMessage="Enter your order id only in numbers min of ten digits"
               className="border-none bg-lightgray rounded w-[400px] p-1"
             />
             <InputField
@@ -81,7 +89,10 @@ function Track() {
             <span className="text-gray pr-1 font-semibold">&#x24D8;</span> A
             copy of the Order ID was sent to your email
           </p>
-          <button className="px-[40px] py-[15px] mt-2 bg-secblue hover:bg-primaryblue text-white rounded">
+          <button
+            disabled={isSubmitting}
+            className="px-[40px] py-[15px] mt-2 bg-secblue hover:bg-primaryblue text-white rounded"
+          >
             Track Order
           </button>
         </form>

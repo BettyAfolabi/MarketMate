@@ -144,7 +144,10 @@ function Home() {
           </div>
         </div>
         <div className="my-3 mx-4">
-          <h2 className="py-3 font-bold text-[24px]">Sponsored Products</h2>
+          <h2 className="py-2 font-bold text-[24px]">Sponsored Products</h2>
+          <h3 className="text-sm font-normal pb-3">
+            From accessories to trending outfits, we got you covered.
+          </h3>
           <div className="bg-white shadow-lg flex justify-center items-center p-2">
             <img src="../watcha.png" alt="watcha" />
             <img src="../watchb.png" alt="watchb" />

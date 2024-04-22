@@ -11,14 +11,15 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import NewsFeed from "./pages/NewsFeed";
 import TechFeed from "./pages/TechFeed";
+import Cart from "./pages/Cart";
 
 const App = () => {
   return (
     <div className="bg-white h-full">
       <Routes>
         <Route path="/" element={<Signup />} />
-        <Route path="login" element={<Login />} />
-        <Route path="forgot-password" element={<ForgotPassword />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<ContactComponent />} />
         <Route path="/account/*" element={<Account />} />
         <Route path="/home" element={<Home />} />
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/newsfeed" element={<NewsFeed />} />
         <Route path="/techfeed" element={<TechFeed />} />
+        <Route path="/cart" elemrnt={<Cart />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>

@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -11,9 +12,12 @@ const About = () => {
             <button className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt-2 mb-2">
               Products
             </button>
-            <button className="text-[#464646] font-semibold text-[18px] ml-2">
+            <Link
+              to="/services"
+              className="text-[#464646] font-semibold text-[18px] ml-2"
+            >
               Services
-            </button>
+            </Link>
           </div>
 
           <div className="mx-auto text-center bg-[#0E2744] w-full pr-4">
@@ -351,9 +355,9 @@ const About = () => {
             </button>
 
             <div className="flex mt-6">
-              <img src="a1.png"className="flex-nonew-12 h-12" />
-              <img src="a2.png"className="flex-none" />
-              <img src="a3.png" className="flex-none"/>
+              <img src="a1.png" className="flex-nonew-12 h-12" />
+              <img src="a2.png" className="flex-none" />
+              <img src="a3.png" className="flex-none" />
               <p className="font-poppins font-normal text-[18px] ml-2">
                 Empower your advertising efforts with actionable data. See what
                 works and refine your approach for maximum impact.

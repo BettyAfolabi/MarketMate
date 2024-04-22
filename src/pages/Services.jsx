@@ -1,8 +1,9 @@
 import Modal from "../components/Modal";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import ServicesDetails from "./ServicesDetails";
 const Services = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -13,6 +14,7 @@ const Services = () => {
   const handleCloseModal = () => {
     setModalOpen(false);
   };
+  const [input, setInput] = useState("");
 
   return (
     <div className="w-screen">
@@ -155,6 +157,8 @@ const Services = () => {
               <div className="relative">
                 <input
                   placeholder="Search Services..."
+                  value={input}
+                  onChange={(e) => setInput(e.target.value)}
                   className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] w-[297px] h-[47px]"
                 />
                 <img
@@ -205,7 +209,7 @@ const Services = () => {
           </div>
         </div>
         <div>
-          <h4 className="font-poppins text-[15px] font-bold ml-4 pl-10 mb-2 lg:text-[30px]">
+          <h4 className="font-poppins font-bold ml-4 pl-10 mb-2 text-[30px]">
             {" "}
             Explore More Services
           </h4>
@@ -322,6 +326,9 @@ const Services = () => {
         <div className="ml-4 bg-[#EFCCCC] mb-4 shadow-sm rounded-[4px]">
           <img src="ga.png" />
         </div>
+        <Routes>
+          <Route path="/tailor" element={<ServicesDetails />} />
+        </Routes>
       </div>
       <Footer />
     </div>

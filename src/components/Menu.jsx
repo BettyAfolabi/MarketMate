@@ -28,17 +28,14 @@ function Menu() {
               <Link to="/home" className="hover:text-primaryred p-1">
                 Home
               </Link>
-              <Link to="/error" className="flex hover:text-primaryred p-1">
-                <button>Shop</button>
-                <span className="material-symbols-outlined">expand_more</span>
-              </Link>
+
               <Link to="/about" className="hover:text-primaryred p-1">
                 About
               </Link>
               <Link to="/contact" className="hover:text-primaryred p-1">
                 Contact
               </Link>
-              <Link className="hover:text-primaryred p-1">Pages</Link>
+
               <Link to="/newsfeed" className="hover:text-primaryred p-1">
                 NewsFeed
               </Link>

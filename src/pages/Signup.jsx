@@ -3,9 +3,10 @@ import { useEffect } from "react";
 import InputField from "../components/InputField";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Signup() {
+  const navigate = useNavigate();
   const form = useForm({
     defaultValues: {
       name: "",
@@ -20,6 +21,7 @@ function Signup() {
 
   const onSubmit = (data) => {
     console.log("submitted", data);
+    navigate("/login");
   };
 
   const onError = (errors) => {
@@ -41,7 +43,7 @@ function Signup() {
         <img
           src="./login.png"
           alt="signup image"
-          className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg pb-4 px-3"
+          className="hidden lg:block w-[805px] h-[781px] pt-[20px] rounded-tr-lg rounded-lg pb-4 px-3"
         />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
@@ -109,7 +111,7 @@ function Signup() {
           <div className="flex flex-row space-x-1 pt-2">
             <p>Already have account?</p>
             <Link
-              to="/"
+              to="/login"
               className="text-textcol text-[16px] font-poppins border-b border-textcol"
             >
               Log in

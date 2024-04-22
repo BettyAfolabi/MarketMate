@@ -53,10 +53,7 @@ const NavBar = () => {
             <Link to="/home" className="hover:text-primaryred pt-0.5">
               Home
             </Link>
-            <Link to="/error" className="flex hover:text-primaryred">
-              <button>Shop</button>
-              <span className="material-symbols-outlined">expand_more</span>
-            </Link>
+
             <Link to="/about" className="hover:text-primaryred pt-0.5">
               About
             </Link>
@@ -71,7 +68,7 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
-            <div className="relative">
+            <div className="relative hidden lg:block">
               <input
                 type="text"
                 placeholder="Search"
@@ -81,9 +78,14 @@ const NavBar = () => {
                 <span className="material-symbols-outlined">search</span>
               </div>
             </div>
-            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
-              shopping_cart
+            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred lg:hidden">
+              search
             </span>
+            <Link to="/cart">
+              <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
+                shopping_cart
+              </span>
+            </Link>
             <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
               favorite
             </span>

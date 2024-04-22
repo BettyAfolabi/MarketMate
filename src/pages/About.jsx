@@ -11,10 +11,11 @@ const About = () => {
           <div className="flex justify-center items-center gap-[10px]">
             <button className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt-2 mb-2 ">
               Products
-              </button>
-            <Link 
-            to="/services"
-            className="text-[#464646] font-semibold text-[18px] ml-2">
+            </button>
+            <Link
+              to="/services"
+              className="text-[#464646] font-semibold text-[18px] ml-2"
+            >
               Services
             </Link>
           </div>
@@ -334,6 +335,7 @@ const About = () => {
               Post Ad
             </button>
 
+
             <div className="flex items-center mt-6  space-x-2">
             <div className="relative ml-10">
               <img src="a1.png" className="  absolute w-[50px] h-[50px] -left-8" />
@@ -343,7 +345,8 @@ const About = () => {
               <p className="font-poppins font-normal text-[18px] ml-2 text-justify">
                 Empower your advertising efforts with <br></br> actionable data. See what
                 works and <br></br>refine your approach for maximum impact.
-              </p>
+          
+             </p>
             </div>
           </div>
           <img src="mm.png"></img>

@@ -21,7 +21,7 @@ const Login = () => {
 
   const onSubmit = (data) => {
     console.log("submitted", data);
-    navigate("/sign-up");
+    navigate("/home");
   };
 
   const onError = (errors) => {
@@ -41,7 +41,7 @@ const Login = () => {
         <img
           src="./login.png"
           alt="login image"
-          className="hidden lg:block w-[805px] h-[781px] pt-[75px] rounded-tr-lg rounded-lg pb-4 px-3"
+          className="hidden lg:block w-[805px] h-[781px] pt-[25px] rounded-tr-lg rounded-lg pb-4 px-3"
         />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}

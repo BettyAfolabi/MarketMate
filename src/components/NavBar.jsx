@@ -86,9 +86,11 @@ const NavBar = () => {
                 shopping_cart
               </span>
             </Link>
-            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
-              favorite
-            </span>
+            <Link to="/wishlist">
+              <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
+                favorite
+              </span>
+            </Link>
             <AccountList />
 
             <div className="hidden md:flex pt-0.5 flex-row text-secblue font-bold">

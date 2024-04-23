@@ -18,9 +18,13 @@ function SideBar({ onLinkClick }) {
             <img src="../Icon Box.png" alt="camera icon" className="h-4 w-4" />
           </button>
         </div>
-        <h3 className="text-[20px] font-semibold py-2 text-center lg:text-start">
+        <Link
+          to="catalog"
+          onClick={onLinkClick}
+          className="text-[20px] font-semibold py-2 text-center lg:text-start"
+        >
           {name || "Jane Amokoko"}
-        </h3>
+        </Link>
       </div>
       <div className="py-[10px] gap-2 text-base font-normal text-lightblack">
         <div className="mb-2">
@@ -98,7 +102,9 @@ function SideBar({ onLinkClick }) {
             <ul className="px-3 space-y-0.5">
               <li className="flex justify-between">
                 <Link
-                to="catalog" className="hover:text-primaryred focus:text-primaryred">
+                  to="catalog"
+                  className="hover:text-primaryred focus:text-primaryred"
+                >
                   Catalog
                 </Link>
                 <i className="bx bx-sm bx-chevron-right lg:hidden"></i>

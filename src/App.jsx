@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import NewsFeed from "./pages/NewsFeed";
 import TechFeed from "./pages/TechFeed";
 import Cart from "./pages/Cart";
+import CheckOut from "./pages/CheckOut";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/newsfeed" element={<NewsFeed />} />
         <Route path="/techfeed" element={<TechFeed />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<CheckOut />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>

@@ -36,7 +36,7 @@ const About = () => {
           </div>
           <div
             style={{
-              backgroundImage: `url(home2.png)`,
+              backgroundImage: `url(home3.png)`,
               width: "100%",
               height: "546px",
               opacity: 1,
@@ -148,63 +148,40 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
-          <img src="about.png"></img>
-          <div>
-            <h4 className="font-catamaran font-bold text-[36px]">
-              Explore Top Services
-            </h4>
-            <p className="font-poppins font-normal text-[18px] mt-2 mb-4">
-              Discover a world of services tailored to your needs. From home
-              improvement to digital marketing, find everything in one place.
-            </p>
-            <button className="border-2 border-[#949494] ] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">
-              Learn More
-            </button>
-            <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">
-              Get Started
-            </button>
-
-            <div className="flex mt-6">
-              <img src="a1.png" />
-              <img src="a2.png" />
-              <img src="a3.png" />
-              <p className="font-poppins font-normal text-[18px] ml-2">
-                Join our community today and unlock endless possibilities!
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg- flex flex-row m-auto">
-          <div>
+            <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#] flex flex-row m-auto">
+            <div className="mt-8">
             <h4 className="font-catamaran font-bold text-[36px]">
               Create Your Listing
             </h4>
             <p className="font-poppins font-normal text-[18px] mt-2 mb-4">
-              Easily list your services, manage your offerings, and connect with
-              buyers. Our platform makes it simple and efficient.
+            Easily list your services, manage your offerings, and connect with buyers. Our platform makes it simple and efficient.
             </p>
-            <button className="border-2 border-[#949494] bg-[#949494] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">
+            <button className="border-2 border-[#184172] text-[#184172] ml-2 rounded-[5px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">
               Details
             </button>
-            <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">
+            <button className="border-1 border-[#BC2B2A] bg-[#BC2B2A] ml-2 rounded-[5px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">
               List Now
             </button>
 
-            <div className="flex mt-6">
-              <img src="a1.png" />
-              <img src="a2.png" />
-              <img src="a3.png" />
-              <p className="font-poppins font-normal text-[18px] ml-2">
-                Start your seller journey with us and grow your business!
-              </p>
+            <div className="flex items-center mt-6  space-x-2">
+            <div className="relative ml-10">
+              <img src="a1.png" className="  absolute w-[48px] h-[48px] -left-8" />
+              <img src="a2.png" className="absolute w-[48px] h-[48px] -left-4" />
+              <img src="a3.png" className="relative w-[48px] h-[48px]" />
+            </div>
+            <p className="font-poppins font-normal text-[18px] text-[#8d8d8d]">
+            Start your seller journey with us and grow your business!
+            </p>
             </div>
           </div>
-          <img src="about3.png"></img>
+          <img src="abbout.png" 
+          className="w-[568px] h-[524px]"></img>
+      
         </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
-          <img src="about4.png"></img>
-          <div>
+       
+        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px]  flex flex-row m-auto bg-[#EFCCCC]">
+          <img src="aboutt.png"></img>
+          <div className="mt-10">
             <h4 className="font-catamaran font-bold text-[36px]">
               Connect Instantly
             </h4>
@@ -212,27 +189,28 @@ const About = () => {
               Communicate with sellers or service providers directly through our
               platform. Get your questions answered in real-time.
             </p>
-            <button className="border-2 border-[#949494] bg-[#949494] ml-2 rounded-[6px] w-[140px] h-[44px] text-[15px] font-poppins font-semibold ">
+            <button className="border-2 border-[#184172] text-[#184172] ml-2 rounded-[5px]  w-[140px] h-[44px] text-[15px] font-poppins font-semibold ">
               Chat Now
             </button>
-            <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[145px] h-[44px] text-[15px] font-poppins font-semibold text-white ">
+            <button className="border-1 border-[#BC2B2A] bg-[#BC2B2A] ml-2 rounded-[5px] w-[216px] h-[44px] text-[15px] font-poppins font-semibold text-white ">
               Start Conversation{" "}
             </button>
 
-            <div className="flex mt-6">
-              <img src="a1.png" />
-              <img src="a2.png" />
-              <img src="a3.png" />
-              <p className="font-poppins font-normal text-[18px] ml-2">
-                Experience seamless communication today. Connect, ask, and
-                receive answers effortlessly
-              </p>
+            <div className="flex items-center mt-6  space-x-2">
+            <div className="relative ml-10">
+              <img src="a1.png" className="  absolute w-[50px] h-[50px] -left-8" />
+              <img src="a2.png" className="absolute w-[48px] h-[48px] -left-4" />
+              <img src="a3.png" className="relative w-[48px] h-[48px]" />
+            </div>
+            <p className="font-poppins font-normal text-[18px] text-[#8d8d8d]">
+            Experience seamless communication today.<br></br> Connect, ask, and receive answers effortlessly.
+            </p>
             </div>
           </div>
         </div>
         <div className="mt-4">
           <p className="font-poppins font-normal text-[18px] ml-6">
-            Discover Services That Elevate Your Business!
+            Discover Services That Elevate Your Lifestyle
           </p>
           <p className="font-catamaran ml-6 font-bold text-[36px]">
             {" "}
@@ -241,13 +219,13 @@ const About = () => {
         </div>
         <div className="flex flex-wrap p-8">
           <div className="ml-14 ">
-            <img src="m1.png" />
+            <img src="m11.png" />
             <p className="font-poppins font-semibold text-[20px]">
-              Web Development
+              Fashion Design
             </p>
             <p className="font-poppins font-[500] text-[15px] text-[#949494]">
               {" "}
-              Build Your Online Presence
+             Express Yourself Through Style
             </p>
           </div>
           <div className="ml-4">
@@ -261,7 +239,7 @@ const About = () => {
             </p>
           </div>
           <div className="ml-4">
-            <img src="m3.png" />
+            <img src="m22.png" />
             <p className="font-poppins font-semibold text-[20px]">
               Digital Marketing
             </p>
@@ -270,32 +248,35 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto">
+        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#EFCCCC] flex flex-row m-auto">
           <img src="m4.png"></img>
-          <div>
+          <div className="mt-10">
             <h4 className="font-catamaran font-bold text-[36px]">
               Your Catalog Showcase
             </h4>
             <p className="font-poppins font-normal text-[18px] mt-2 mb-4">
-              Highlight all your services in a personalized catalog. Let
-              customers browse your unique offerings at a glance.
+              Highlight all your services in a personalized catalog. Let customers browse your unique offerings at a glance.
             </p>
-            <button className="border-2 border-[#949494] ] ml-2 rounded-[6px] w-[136px] h-[44px] text-[16px] font-poppins font-semibold">
+            <button className="border-2 border-[#1D4E89] text-[#1D4E89]  ml-2 rounded-[6px] w-[136px] h-[44px] text-[16px] font-poppins font-semibold">
               View Catalog{" "}
             </button>
-            <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">
+            <button className="border-1 border-[#BC2B2A] bg-[#BC2B2A] ml-2 rounded-[6px] w-[151px] h-[44px] text-[18px] font-poppins font-semibold text-white">
               Create Yours
             </button>
 
-            <div className="flex mt-6">
-              <img src="a1.png" />
-              <img src="a2.png" />
-              <img src="a3.png" />
-              <p className="font-poppins font-normal text-[18px] ml-2">
-                Build your brand with a comprehensive and attractive catalog.
-                Show the world what you've got!
-              </p>
+            <div className="flex items-center mt-6  space-x-2">
+            <div className="relative ml-10">
+              <img src="a1.png" className="  absolute w-[48px] h-[48px] -left-8" />
+              <img src="a2.png" className="absolute w-[48px] h-[48px] -left-4" />
+              <img src="a3.png" className="relative w-[48px] h-[48px]" />
             </div>
+            <p className="font-poppins font-normal text-[18px] text-[#8d8d8d]">
+            Build your brand with a comprehensive <br></br>and attractive catalog.
+                Show the world <br></br>what you've got!
+            </p>
+            </div>
+
+           
           </div>
         </div>
         <div className="mt-8">
@@ -338,7 +319,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#D2DCE7] flex flex-row m-auto mb-[120px]">
+        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#EFCCCC] flex flex-row m-auto mb-[120px]">
           <div>
             <h4 className="font-catamaran font-bold text-[36px]">
               Ad Performance Analytics
@@ -347,21 +328,25 @@ const About = () => {
               Track your success and optimize your strategy with our detailed ad
               performance analytics. Understand your audience bette..
             </p>
-            <button className="border-2 border-[#949494] ] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">
-              Learn Insights
+            <button className="border-2 border-[#184172] ] ml-2 rounded-[5px] w-[164px] h-[44px] text-[18px] text-[#184172] font-poppins font-semibold">
+              View Insights
             </button>
-            <button className="border-1 border-[#1D4E89] bg-[#1D4E89] ml-2 rounded-[6px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold text-white">
-              Analyze Now
+            <button className="border-1 border-[#BC2B2A] bg-[#BC2B2A] ml-2 rounded-[5px] w-[110px] h-[44px] text-[18px] font-poppins font-semibold text-white">
+              Post Ad
             </button>
 
-            <div className="flex mt-6">
-              <img src="a1.png" className="flex-nonew-12 h-12" />
-              <img src="a2.png" className="flex-none" />
-              <img src="a3.png" className="flex-none" />
-              <p className="font-poppins font-normal text-[18px] ml-2">
-                Empower your advertising efforts with actionable data. See what
-                works and refine your approach for maximum impact.
-              </p>
+
+            <div className="flex items-center mt-6  space-x-2">
+            <div className="relative ml-10">
+              <img src="a1.png" className="  absolute w-[50px] h-[50px] -left-8" />
+              <img src="a2.png" className="absolute w-[48px] h-[48px] -left-4" />
+              <img src="a3.png" className="relative w-[48px] h-[48px]" />
+            </div>
+              <p className="font-poppins font-normal text-[18px] ml-2 text-justify">
+                Empower your advertising efforts with <br></br> actionable data. See what
+                works and <br></br>refine your approach for maximum impact.
+          
+             </p>
             </div>
           </div>
           <img src="mm.png"></img>

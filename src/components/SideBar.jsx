@@ -14,9 +14,18 @@ function SideBar({ onLinkClick }) {
             alt="random user"
             className="h-20 w-20 rounded-full"
           />
-          <button className="absolute bottom-0 right-0">
+          <label
+            htmlFor="file-upload"
+            className="absolute bottom-0 right-0 cursor-pointer focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500"
+          >
             <img src="../Icon Box.png" alt="camera icon" className="h-4 w-4" />
-          </button>
+            <input
+              id="file-upload"
+              name="file-upload"
+              type="file"
+              className="sr-only"
+            />
+          </label>
         </div>
         <Link
           to="catalog"

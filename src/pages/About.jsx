@@ -8,7 +8,7 @@ const About = () => {
       <NavBar />
       <div className="min-h-screen">
         <div className="  ">
-          <div className="flex justify-center items-center gap-[10px]">
+          {/* <div className="flex justify-center items-center gap-[10px]">
             <button className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt-2 mb-2 ">
               Products
             </button>
@@ -18,11 +18,11 @@ const About = () => {
             >
               Services
             </Link>
-          </div>
+          </div> */}
 
           <div className="mx-auto text-center bg-[#0E2744] lg:w-full sm:w-3/4 md:w-[400px] md:h-[296px] lg:p-4 sm:p-4 md:pr-4">
             <h1 className="font-catamaran font-bold text-[52px] text-white">
-              Find the Perfect Service
+            Find All You Need 
             </h1>
             <p className="text-[20px] font-poppins font-normal text-white text-center">
               Discover, Connect and Thrive in Our Marketplace
@@ -54,32 +54,64 @@ const About = () => {
         </div>
         <div className="bg-[#D2DCE7] w-[1312px] h-[184px]  flex border-1 border-[#949494] rounded-[12px] flex-row gap-[24px] p-[32px] m-auto">
           <div className="flex flex-col gap-[12px] p-4">
-            <p className="font-poppins font-bold text-[36px]">15K+</p>
-            <p className="font-poppins font-semibold text-[18px] text-[#949494]">
-              10,000+ Services Offered
+            <p className="font-poppins font-bold text-[36px]">150K+</p>
+            <p className="font-poppins font-[500] text-[18px] text-[#949494]">
+              Services & Products Offered
             </p>
           </div>
           <div className="flex flex-col gap-[12px] p-4">
             <p className="font-poppins font-bold text-[36px]">20K+</p>
-            <p className="font-poppins font-semibold text-[18px] text-[#949494]">
-              5,000+ Happy Sellers
+            <p className="font-poppins font-[500] text-[18px] text-[#949494]">
+              Happy Vendors
             </p>
           </div>
           <div className="flex flex-col gap-[12px] p-4">
             <p className="font-poppins font-bold text-[36px] ">99.9%</p>
-            <p className="font-poppins font-semibold text-[18px] text-[#949494]">
-              95% Customer Satisfaction
+            <p className="font-poppins font-[500] text-[18px] text-[#949494]">
+              Customer Satisfaction
             </p>
           </div>
           <div className="flex flex-col gap-[12px] p-4">
             <p className="font-poppins font-bold text-[36px]">100M</p>
-            <p className="font-poppins font-semibold text-[18px] text-[#949494]">
-              1 Million+ Users Nationwide
+            <p className="font-poppins font-[500] text-[18px] text-[#949494]">
+               Users Nationwide
             </p>
           </div>
         </div>
+        <div className="flex mt-14 w-[1440x] gap-[45px] ">
+          <div className="w-[664px] h-[560px] ">
+            <button className="ml-16 w-[123px] h-[36px] rounded-[2px] px-[8px] py-[8px] font-poppins font-semibold text-[#FFFFFF] bg-[#CA5655]">WHO WE ARE</button>
+            <h1 className="font-poppins font-semibold text-[40px] ml-12 p-2">MarketMate, Largest Product and Service Ecommerce Platform in Nigeria.</h1>
+            <p className="font-poppins font-normal text-[20px] ml-12 p-2 text-[#475156]">Your dynamic ecommerce platform, seamlessly combines shopping and information. Explore our user-friendly interface to discover products and services tailored to your needs. From personalized choices to in-depth insights, MarketMate ensures a smooth journey. Stay informed with our engaging newsfeed feature, which delivers exciting updates and experiences.</p>
+            <div className="w-[665px] h-[144px] flex ml-12 p-2 mt-2 flex-col ">
+              <div className="flex gap-2 mb-1">
+                <img src="Checks.png"
+                className="w-[24px] h-[24px]"/>
+                <p className="font-poppins text-[16px]">Great 24/7 customer service</p>
+              </div>
+              <div className="flex gap-2 mb-1">
+                <img src="Checks.png"
+                className="w-[24px] h-[24px]"/>
+                <p className="font-poppins text-[16px]">30k+ Businesses registered</p>
+              </div>
+              <div className="flex gap-2 mb-1">
+                <img src="Checks.png"
+                className="w-[24px] h-[24px]"/>
+                <p className="font-poppins text-[16px]">50+ Branches in Nigeria</p>
+              </div>
+              <div className="flex gap-2 ">
+                <img src="Checks.png"
+                className="w-[24px] h-[24px]"/>
+                <p className="font-poppins text-[16px]">Over 10 Million listings available</p>
+              </div>
+            </div>
+          </div>
+          <div className="ml-10 pl-8 h-[632px]">
+            <img src="unsplash.png"/>
+          </div>
+        </div>
         <div className="justify-center text-center gap-[12px]">
-          <p className="font-poppins font-bold text-[18px] text-[#4D4D4D] h-[28px] mt-8">
+          <p className="font-poppins font-bold text-[18px] text-[#4D4D4D] h-[28px] mt-16">
             Explore. Connect. Succeed.
           </p>
           <p className="text-catamara font-bold text-[36px] mt-2 mb-4">

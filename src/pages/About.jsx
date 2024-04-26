@@ -20,7 +20,7 @@ const About = () => {
             </Link>
           </div> */}
 
-          <div className="mx-auto text-center bg-[#0E2744] lg:w-full sm:w-3/4 md:w-[400px] md:h-[296px] lg:p-4 sm:p-4 md:pr-4">
+          <div className="mx-auto text-center bg-[#0E2744] w-full">
             <h1 className="font-catamaran font-bold text-[52px] text-white">
             Find All You Need 
             </h1>

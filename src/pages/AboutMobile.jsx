@@ -8,16 +8,14 @@ const AboutMobile = () => {
       <NavBar />
       <div className="min-h-screen">
         <div className="  ">
-          
-
-          <div className="mx-auto text-center bg-[#0E2744] lg:w-full sm:w-3/4 md:w-[400px] md:h-[296px] lg:p-4 sm:p-4 md:pr-4">
-            <h1 className="font-catamaran font-bold text-[52px] text-white">
-            Find All You Need 
+          <div className="  text-center bg-[#0E2744] w-full  h-[244px]">
+            <h1 className="font-catamaran font-bold text-[36px] text-white">
+            Find All You Need- 
             </h1>
-            <p className="text-[20px] font-poppins font-normal text-white text-center">
-              Discover, Connect and Thrive in Our Marketplace
+            <p className="text-[18px] mt-2 font-poppins font-normal text-white text-center">
+              Discover, Connect and Thrive in Our <br></br>Marketplace
             </p>
-            <button className=" border-2 border-[#06101B] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white  h-[44px] mt-2 mb-2">
+            <button className=" border-2 border-[#436B9D] rounded-[6px] px-2 ml-1 gap-1 text-[18px] w-full font-semibold text-white  h-[44px] mt-2 mb-2">
               Learn More
             </button>
             <button className="ml-1  border-1 border-[#AF0100] bg-[#AF0100] rounded-[6px] px-2  gap-1 text-[18px] font-semibold text-white h-[44px]  mt-2 mb-2">

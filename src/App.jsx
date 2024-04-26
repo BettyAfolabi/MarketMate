@@ -15,6 +15,7 @@ import Cart from "./pages/Cart";
 import CheckOut from "./pages/CheckOut";
 import Wishlist from "./pages/WishlistProduct";
 import Complete from "./pages/Complete";
+import AboutComponent from "./components/ScreenSizes/AboutComponent";
 
 const App = () => {
   return (
@@ -26,7 +27,7 @@ const App = () => {
         <Route path="/contact" element={<ContactComponent />} />
         <Route path="/account/*" element={<Account />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutComponent />} />
         <Route path="/services" element={<Services />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/about" element={<About />} />

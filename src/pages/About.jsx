@@ -52,7 +52,7 @@ const About = () => {
             Unlock Your Business Potential
           </p>
         </div>
-        <div className="bg-[#D2DCE7] w-[1312px] h-[184px]  flex border-1 border-[#949494] rounded-[12px] flex-row gap-[24px] p-[32px] m-auto">
+        <div className="bg-[#D2DCE7] w-[1312px] h-[184px]  flex border-1 border-[#949494] rounded-[12px] flex-row gap-[24px] p-[32px] m-auto mb-14">
           <div className="flex flex-col gap-[12px] p-4">
             <p className="font-poppins font-bold text-[36px]">150K+</p>
             <p className="font-poppins font-[500] text-[18px] text-[#949494]">
@@ -81,8 +81,8 @@ const About = () => {
         <div className="flex mt-14 w-[1440x] gap-[45px] ">
           <div className="w-[664px] h-[560px] ">
             <button className="ml-16 w-[123px] h-[36px] rounded-[2px] px-[8px] py-[8px] font-poppins font-semibold text-[#FFFFFF] bg-[#CA5655]">WHO WE ARE</button>
-            <h1 className="font-poppins font-semibold text-[40px] ml-12 p-2">MarketMate, Largest Product and Service Ecommerce Platform in Nigeria.</h1>
-            <p className="font-poppins font-normal text-[20px] ml-12 p-2 text-[#475156]">Your dynamic ecommerce platform, seamlessly combines shopping and information. Explore our user-friendly interface to discover products and services tailored to your needs. From personalized choices to in-depth insights, MarketMate ensures a smooth journey. Stay informed with our engaging newsfeed feature, which delivers exciting updates and experiences.</p>
+            <h1 className="font-poppins font-semibold text-[35px] ml-12 p-2">MarketMate, Largest Product and Service Ecommerce Platform in Nigeria.</h1>
+            <p className="font-poppins font-normal text-[16px] ml-12 p-2 text-[#475156] text-justify">Your dynamic ecommerce platform, seamlessly combines shopping and information. Explore our user-friendly interface to discover products and services tailored to your needs. From personalized choices to in-depth insights, MarketMate ensures a smooth journey. Stay informed with our engaging newsfeed feature, which delivers exciting updates and experiences.</p>
             <div className="w-[665px] h-[144px] flex ml-12 p-2 mt-2 flex-col ">
               <div className="flex gap-2 mb-1">
                 <img src="Checks.png"
@@ -320,20 +320,20 @@ const About = () => {
             Our Featured Services
           </p>
         </div>
-        <div className="flex mb-8">
-          <div className="ml-8">
-            <img src="m6.png" className="rounded-[12px]" />
-            <p className="font-poppins font-semibold text-[20px]">
+        <div className="flex mb-8 ">
+          <div className="ml-8 border-2 border-[#8D8D8D] rounded-lg  ">
+            <img src="m6.png" className="rounded-[12px] h-[740px]" />
+            <p className="font-poppins font-semibold text-[20px] m-[10px]">
               Content Writing
             </p>
-            <p className="font-poppins font-[500] text-[15px] text-[#949494]">
+            <p className="font-poppins font-[500] text-[15px] text-[#949494] ml-[10px]">
               Craft Your Message
             </p>
           </div>
           <div>
             <div className="ml-8">
-              <img src="m9.png" className="rounded-[12px]" />
-              <p className="font-poppins font-semibold text-[20px]">
+              <img src="m9.png" className="rounded-[12px] h-[351px]" />
+              <p className="font-poppins font-semibold text-[20px] ">
                 SEO Optimization
               </p>
               <p className="font-poppins font-[500] text-[15px] text-[#949494]">
@@ -341,7 +341,7 @@ const About = () => {
               </p>
             </div>
             <div className="ml-8">
-              <img src="m8.png" className="rounded-[12px]" />
+              <img src="m8.png" className="rounded-[12px] h-[351px]" />
               <p className="font-poppins font-semibold text-[20px]">
                 App Development
               </p>

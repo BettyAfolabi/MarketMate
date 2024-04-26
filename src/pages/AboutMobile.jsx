@@ -7,47 +7,40 @@ const AboutMobile = () => {
     <div className="w-screen">
       <NavBar />
       <div className="min-h-screen">
-        <div className="  ">
-          <div className="  text-center bg-[#0E2744] w-full  h-[244px]">
+        <div className=" ">
+          <div className="  text-center bg-[#0E2744] w-full  h-[300px]">
             <h1 className="font-catamaran font-bold text-[36px] text-white">
             Find All You Need- 
             </h1>
             <p className="text-[18px] mt-2 font-poppins font-normal text-white text-center">
               Discover, Connect and Thrive in Our <br></br>Marketplace
             </p>
-            <button className=" border-2 border-[#436B9D] rounded-[6px] px-2 ml-1 gap-1 text-[18px] w-full font-semibold text-white  h-[44px] mt-2 mb-2">
+            <button className=" border-2 border-[#436B9D] rounded-[6px] px-2 ml-1 gap-1 text-[18px] w-80 font-semibold text-white  h-[44px] mt-2 mb-1">
               Learn More
             </button>
-            <button className="ml-1  border-1 border-[#AF0100] bg-[#AF0100] rounded-[6px] px-2  gap-1 text-[18px] font-semibold text-white h-[44px]  mt-2 mb-2">
+            <button className="ml-1  border-1 border-[#AF0100] bg-[#AF0100] rounded-[6px] px-2 w-80 gap-1 text-[18px] font-semibold text-white h-[44px]  mt-2 mb-1">
               Get Started
             </button>
           </div>
-          <div
-            style={{
-              backgroundImage: `url(home3.png)`,
-              width: "100%",
-              height: "546px",
-              opacity: 1,
-            }}
-            className="bg-cover "
-          ></div>
+          
+          <div className="bg-[url('home3.png')] h-[300px] bg-cover  bg-[size:100%_] bg-no-repeat mt-2 mb-0"></div>
         </div>
         <div className="justify-center text-center gap-[12px]">
-          <p className="font-poppins font-bold text-[18px] text-[#4D4D4D] h-[28px] mt-8">
+          <p className="font-poppins font-bold text-[18px] text-[#4D4D4D] h-[28px]">
             Transform Your Marketplace
           </p>
-          <p className="text-catamara font-bold text-[36px] mt-2 mb-4">
-            Unlock Your Business Potential
+          <p className="text-catamara font-bold text-[26px] mt-2 mb-4">
+            Unlock Your Business <br></br>Potential
           </p>
         </div>
-        <div className="bg-[#D2DCE7] w-[1312px] h-[184px]  flex border-1 border-[#949494] rounded-[12px] flex-row gap-[24px] p-[32px] m-auto mb-14">
-          <div className="flex flex-col gap-[12px] p-4">
+        <div className="bg-[#D2DCE7] w-[500px] h-[600px]  flex flex-col border-1 border-[#949494] rounded-[12px] p-[10px] m-auto mb-2">
+          <div className="flex flex-col gap-[12px] p-2">
             <p className="font-poppins font-bold text-[36px]">150K+</p>
             <p className="font-poppins font-[500] text-[18px] text-[#949494]">
               Services & Products Offered
             </p>
           </div>
-          <div className="flex flex-col gap-[12px] p-4">
+          <div className="flex flex-col gap-[12px] p-2">
             <p className="font-poppins font-bold text-[36px]">20K+</p>
             <p className="font-poppins font-[500] text-[18px] text-[#949494]">
               Happy Vendors
@@ -66,12 +59,13 @@ const AboutMobile = () => {
             </p>
           </div>
         </div>
-        <div className="flex mt-14 w-[1440x] gap-[45px] ">
+        <div className="flex flex-wrap mt-14 w-[1440x] gap-[45px] ">
           <div className="w-[664px] h-[560px] ">
-            <button className="ml-16 w-[123px] h-[36px] rounded-[2px] px-[8px] py-[8px] font-poppins font-semibold text-[#FFFFFF] bg-[#CA5655]">WHO WE ARE</button>
-            <h1 className="font-poppins font-semibold text-[35px] ml-12 p-2">MarketMate, Largest Product and Service Ecommerce Platform in Nigeria.</h1>
-            <p className="font-poppins font-normal text-[16px] ml-12 p-2 text-[#475156] text-justify">Your dynamic ecommerce platform, seamlessly combines shopping and information. Explore our user-friendly interface to discover products and services tailored to your needs. From personalized choices to in-depth insights, MarketMate ensures a smooth journey. Stay informed with our engaging newsfeed feature, which delivers exciting updates and experiences.</p>
-            <div className="w-[665px] h-[144px] flex ml-12 p-2 mt-2 flex-col ">
+            <button className=" w-[123px] h-[36px] rounded-[2px] px-[8px] py-[8px] font-poppins font-semibold text-[#FFFFFF] bg-[#CA5655]">WHO WE ARE</button>
+
+            <h1 className="font-poppins font-semibold text-[30px] ml-1 p-1 w-[358px]">MarketMate, Largest <br></br>Product and Service <br></br>Ecommerce Platform <br></br>in Nigeria.</h1>
+            <p className="font-poppins font-normal text-[18px] p- text-[#475156] p-1 m-auto">Your dynamic ecommerce platform, seamlessly combines<br></br> shopping and information. Explore our user-friendly interface <br></br>to discover products and services tailored to your needs. From personalized choices to in-depth insights, MarketMate ensures <br></br>a smooth journey. Stay informed with our engaging newsfeed <br></br>feature, which delivers exciting updates and experiences.</p>
+            <div className="w-[665px] h-[144px] flex ml-1 p-1 flex-col ">
               <div className="flex gap-2 mb-1">
                 <img src="Checks.png"
                 className="w-[24px] h-[24px]"/>
@@ -94,7 +88,7 @@ const AboutMobile = () => {
               </div>
             </div>
           </div>
-          <div className="ml-10 pl-8 h-[632px]">
+          <div className="ml-1 pl-1 h-[632px]">
             <img src="unsplash.png"/>
           </div>
         </div>
@@ -168,8 +162,8 @@ const AboutMobile = () => {
             </button>
           </div>
         </div>
-            <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#] flex flex-row m-auto">
-            <div className="mt-8">
+            <div className="w-[800px] h-[652px] p-[64px] gap-[64px] bg-[#] flex flex-wrap m-auto">
+            <div className="mt-">
             <h4 className="font-catamaran font-bold text-[36px]">
               Create Your Listing
             </h4>

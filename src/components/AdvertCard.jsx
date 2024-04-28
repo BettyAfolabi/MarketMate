@@ -8,19 +8,16 @@ const AdvertCard = ({
   productType,
   productPrice,
   viewsCount,
+  width = "w-[251px]",
+  height = "h-[403px]",
+  imgHeight = "h-[210px]",
 }) => {
   <div
     className={`mx-auto font-poppins font-medium flex flex-col bg-white justify-center items-center p-2 rounded-2xl ${height} ${width}`}
   >
-    {showImage && (
-      <div>
-        <img
-          src={imageSrc}
-          alt={productName}
-          className={`w-full ${imgHeight}`}
-        />
-      </div>
-    )}
+    <div>
+      <img src={imageSrc} alt={productName} className={`w-full ${imgHeight}`} />
+    </div>
 
     <h2 className="text-[10px] leading-[12px] p-1 text-darkblue bg-[#EFCCCC] ">
       {productType}
@@ -29,7 +26,7 @@ const AdvertCard = ({
     <div className="flex gap-2 mt-1 mb-2 self-start">
       <p className="text-[12.6px] leading-[18px] text-[#4E5566]">⭐ 4.6</p>
       <div className="flex gap-1">
-        <i class="bx bx-show"></i>
+        <i className="bx bx-show"></i>
         <p className="text-[#4E5566] text-[12.6px] leading-[18px]">
           {viewsCount} <span className="text-[#8C94A3] font-normal">views</span>
         </p>
@@ -52,5 +49,8 @@ AdvertCard.propTypes = {
   more: PropTypes.string,
   review: PropTypes.string,
   viewsCount: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string,
+  imgHeight: PropTypes.string,
 };
 export default AdvertCard;

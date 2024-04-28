@@ -3,7 +3,7 @@ import AdvertCard from "../components/AdvertCard";
 
 function Advert() {
   return (
-    <div>
+    <div className="font-poppins shadow-md px-4 pl-6 px-auto py-4 mt-5 flex flex-col">
       <div className="flex justify-end my-2">
         <div className="flex self-center font-semibold leading-[23.4px] mr-2">
           <p className="text-base pr-0.5">Sort by</p>
@@ -20,7 +20,7 @@ function Advert() {
           <img src="/ToolbarB.png" alt="horiontal toolbar" />
         </div>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 my-10 justify-center self-center">
+      <div className="grid grid-cols-3 gap-5 my-10 justify-center self-center">
         <AdvertCard
           imageSrc="/knit.png"
           productName="Knitted Wears"

@@ -23,7 +23,7 @@ const AboutMobile = () => {
             </button>
           </div>
           
-          <div className="bg-[url('home3.png')] h-[300px] bg-cover  bg-[size:100%_] bg-no-repeat mt-2 mb-0"></div>
+          <div className="bg-[url('home3.png')] h-[300px] bg-[size:100%_auto] bg-no-repeat mt-2 mb-0"></div>
         </div>
         <div className="justify-center text-center gap-[12px]">
           <p className="font-poppins font-bold text-[18px] text-[#4D4D4D] h-[28px]">
@@ -34,20 +34,20 @@ const AboutMobile = () => {
           </p>
         </div>
         <div className="bg-[#D2DCE7] w-[500px] h-[600px]  flex flex-col border-1 border-[#949494] rounded-[12px] p-[10px] m-auto mb-2">
-          <div className="flex flex-col gap-[12px] p-2">
+          <div className="flex flex-col gap-[12px] p-4">
             <p className="font-poppins font-bold text-[36px]">150K+</p>
             <p className="font-poppins font-[500] text-[18px] text-[#949494]">
               Services & Products Offered
             </p>
           </div>
-          <div className="flex flex-col gap-[12px] p-2">
-            <p className="font-poppins font-bold text-[36px]">20K+</p>
+          <div className="flex flex-col gap-[12px] p-4">
+            <p className="font-poppins font-semibold text-[36px]">20K+</p>
             <p className="font-poppins font-[500] text-[18px] text-[#949494]">
               Happy Vendors
             </p>
           </div>
           <div className="flex flex-col gap-[12px] p-4">
-            <p className="font-poppins font-bold text-[36px] ">99.9%</p>
+            <p className="font-poppins font-semibold text-[36px] ">99.9%</p>
             <p className="font-poppins font-[500] text-[18px] text-[#949494]">
               Customer Satisfaction
             </p>
@@ -63,8 +63,8 @@ const AboutMobile = () => {
           <div className="w-[664px] h-[560px] ">
             <button className=" w-[123px] h-[36px] rounded-[2px] px-[8px] py-[8px] font-poppins font-semibold text-[#FFFFFF] bg-[#CA5655]">WHO WE ARE</button>
 
-            <h1 className="font-poppins font-semibold text-[30px] ml-1 p-1 w-[358px]">MarketMate, Largest <br></br>Product and Service <br></br>Ecommerce Platform <br></br>in Nigeria.</h1>
-            <p className="font-poppins font-normal text-[18px] p- text-[#475156] p-1 m-auto">Your dynamic ecommerce platform, seamlessly combines<br></br> shopping and information. Explore our user-friendly interface <br></br>to discover products and services tailored to your needs. From personalized choices to in-depth insights, MarketMate ensures <br></br>a smooth journey. Stay informed with our engaging newsfeed <br></br>feature, which delivers exciting updates and experiences.</p>
+            <h1 className="font-poppins font-semibold text-[30px] ml-1 p-1 w-[358px] ">MarketMate, Largest <br></br>Product and Service <br></br>Ecommerce Platform <br></br>in Nigeria.</h1>
+            <p className="font-poppins font-normal text-[16px] p- text-[#475156] p-1 m-auto text-justify">Your dynamic ecommerce platform, seamlessly combines<br></br> shopping and information. Explore our user-friendly interface <br></br>to discover products and services tailored to your needs. <br></br>From personalized choices to in-depth insights, MarketMate ensures <br></br>a smooth journey. Stay informed with our engaging newsfeed <br></br>feature, which delivers exciting updates and experiences.</p>
             <div className="w-[665px] h-[144px] flex ml-1 p-1 flex-col ">
               <div className="flex gap-2 mb-1">
                 <img src="Checks.png"
@@ -100,8 +100,8 @@ const AboutMobile = () => {
             Revolutionizing Service Marketplaces
           </p>
         </div>
-        <div className="w-[1288px] h-[430px] gap-[48px] m-auto flex flex-wrap mb-8">
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
+        <div className=" md:w-[1288px] md:h-[430px] gap-[48px] m-auto flex flex-wrap mb-2">
+          <div className="w-[620px] h-[150px]  p-[20px]  bg-[#F6F6F6] rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -116,7 +116,7 @@ const AboutMobile = () => {
               Learn More
             </button>
           </div>
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
+          <div className="w-[620px] h-[150px]  p-[15px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md1.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -131,7 +131,7 @@ const AboutMobile = () => {
               Chat Now
             </button>
           </div>
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] flex-row rounded-[12px]">
+          <div className="w-[620px] h-[150px]  p-[15px] gap-[16px] bg-[#F6F6F6] flex-row rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md2.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -146,7 +146,7 @@ const AboutMobile = () => {
               Discover How
             </button>
           </div>
-          <div className="w-[620px] h-[190px]  p-[24px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
+          <div className="w-[620px] h-[150px]  p-[15px] gap-[16px] bg-[#F6F6F6] rounded-[12px]">
             <div className="flex flex-row  gap-[12px]">
               <img src="md3.png" className="w-[44px] h-[44px] border-1"></img>
               <p className="font-poppins font-semibold text-[18px]">
@@ -162,13 +162,13 @@ const AboutMobile = () => {
             </button>
           </div>
         </div>
-            <div className="w-[800px] h-[652px] p-[64px] gap-[64px] bg-[#] flex flex-wrap m-auto">
-            <div className="mt-">
-            <h4 className="font-catamaran font-bold text-[36px]">
+            <div className="w-[800px] h-[652px] p-[60px] gap-[64px] bg-[#] flex flex-wrap m-auto">
+            <div className="mt-1">
+            <h4 className="font-catamaran font-bold text-[30px] ">
               Create Your Listing
             </h4>
-            <p className="font-poppins font-normal text-[18px] mt-2 mb-4">
-            Easily list your services, manage your offerings, and connect with buyers. Our platform makes it simple and efficient.
+            <p className="font-poppins text-[18px] mt-2 mb-4">
+            Easily list your services, manage your offerings, and connect <br></br>with buyers. Our platform makes it simple and efficient.
             </p>
             <button className="border-2 border-[#184172] text-[#184172] ml-2 rounded-[5px] w-[136px] h-[44px] text-[18px] font-poppins font-semibold">
               Details
@@ -183,19 +183,19 @@ const AboutMobile = () => {
               <img src="a2.png" className="absolute w-[48px] h-[48px] -left-4" />
               <img src="a3.png" className="relative w-[48px] h-[48px]" />
             </div>
-            <p className="font-poppins font-normal text-[18px] text-[#8d8d8d]">
-            Start your seller journey with us and grow your business!
+            <p className="font-poppins font-normal text-[16px] text-[#8d8d8d]">
+            Start your seller journey with us and grow your <br></br>business!
             </p>
             </div>
           </div>
           <img src="abbout.png" 
-          className="w-[568px] h-[524px]"></img>
+          className="w-[568px] h-[400px]"></img>
       
         </div>
-       
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px]  flex flex-row m-auto bg-[#EFCCCC]">
+{/*        
+        <div className="md:w-[1440px] md:h-[652px] p-[60px] gap-[64px]  flex flex-row  bg-[#EFCCCC]">
           <img src="aboutt.png"></img>
-          <div className="mt-10">
+          <div className="mt-1">
             <h4 className="font-catamaran font-bold text-[36px]">
               Connect Instantly
             </h4>
@@ -221,18 +221,18 @@ const AboutMobile = () => {
             </p>
             </div>
           </div>
-        </div>
-        <div className="mt-4">
-          <p className="font-poppins font-normal text-[18px] ml-6">
+        </div> */}
+        <div className="mt-14 pt-8">
+          <p className="font-poppins font-normal text-[18px] ml-6 pl-2">
             Discover Services That Elevate Your Lifestyle
           </p>
-          <p className="font-catamaran ml-6 font-bold text-[36px]">
+          <p className="font-catamaran ml-6 font-bold text-[30px] pl-2">
             {" "}
             Browse Top Categories
           </p>
         </div>
         <div className="flex flex-wrap p-8">
-          <div className="ml-14 ">
+          <div className="ml-4 ">
             <img src="m11.png" />
             <p className="font-poppins font-semibold text-[20px]">
               Fashion Design
@@ -262,7 +262,7 @@ const AboutMobile = () => {
             </p>
           </div>
         </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#EFCCCC] flex flex-row m-auto">
+        {/* <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#EFCCCC] flex flex-row m-auto">
           <img src="m4.png"></img>
           <div className="mt-10">
             <h4 className="font-catamaran font-bold text-[36px]">
@@ -292,7 +292,7 @@ const AboutMobile = () => {
 
            
           </div>
-        </div>
+        </div> */}
         <div className="mt-8">
           <p className="font-poppins font-normal text-[18px] ml-6">
             Your One-Stop Marketplace for Proffesional Services!
@@ -302,16 +302,16 @@ const AboutMobile = () => {
             Our Featured Services
           </p>
         </div>
-        <div className="flex mb-8 ">
-          <div className="ml-8 border-2 border-[#8D8D8D] rounded-lg  ">
-            <img src="m6.png" className="rounded-[12px] h-[740px]" />
+        <div className="flex mb-4 ">
+          {/* <div className="ml-8 border] rounded-lg  ">
+            <img src="m6.png" className="rounded-[12px] h-[340px]" />
             <p className="font-poppins font-semibold text-[20px] m-[10px]">
               Content Writing
             </p>
             <p className="font-poppins font-[500] text-[15px] text-[#949494] ml-[10px]">
               Craft Your Message
             </p>
-          </div>
+          </div> */}
           <div>
             <div className="ml-8">
               <img src="m9.png" className="rounded-[12px] h-[351px]" />
@@ -333,7 +333,7 @@ const AboutMobile = () => {
             </div>
           </div>
         </div>
-        <div className="w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#EFCCCC] flex flex-row m-auto mb-[120px]">
+        <div className="md:w-[1440px] h-[652px] p-[64px] gap-[64px] bg-[#EFCCCC] flex flex-col m-auto mb-[120px]">
           <div>
             <h4 className="font-catamaran font-bold text-[36px]">
               Ad Performance Analytics
@@ -351,19 +351,19 @@ const AboutMobile = () => {
 
 
             <div className="flex items-center mt-6  space-x-2">
-            <div className="relative ml-10">
+            {/* <div className="relative ml-10">
               <img src="a1.png" className="  absolute w-[50px] h-[50px] -left-8" />
               <img src="a2.png" className="absolute w-[48px] h-[48px] -left-4" />
               <img src="a3.png" className="relative w-[48px] h-[48px]" />
-            </div>
+            </div> */}
               <p className="font-poppins font-normal text-[18px] ml-2 text-justify">
-                Empower your advertising efforts with <br></br> actionable data. See what
-                works and <br></br>refine your approach for maximum impact.
+                Empower your advertising efforts with actionable data. See what
+                works and refine your approach for maximum impact.
           
              </p>
             </div>
           </div>
-          <img src="mm.png"></img>
+          {/* <img src="mm.png"></img> */}
         </div>
       </div>
       <Footer />

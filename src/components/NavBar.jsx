@@ -10,7 +10,9 @@ import {
 import AccountList from "./AccountList";
 import Menu from "./Menu";
 
+
 const NavBar = () => {
+  
   return (
     <div className="sticky top-0 w-screen">
       <header className="hidden bg-darkred text-white w-full lg:flex  px-4 py-2 left-0  ">

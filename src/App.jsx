@@ -16,6 +16,7 @@ import CheckOut from "./pages/CheckOut";
 import Wishlist from "./pages/WishlistProduct";
 import Complete from "./pages/Complete";
 import AboutComponent from "./components/ScreenSizes/AboutComponent";
+import WishlistService from "./pages/WishlistService";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<CheckOut />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/wishlistservice" element={<WishlistService />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/complete" element={<Complete />} />
       </Routes>

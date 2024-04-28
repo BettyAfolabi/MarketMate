@@ -8,7 +8,7 @@ function AccountList() {
     <div>
       <Popover>
         <Popover.Button className="relative focus:outline-none">
-          <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
+          <span className="material-symbols-outlined text-darkblue hover:text-primaryred">
             person
           </span>
         </Popover.Button>
@@ -45,7 +45,10 @@ function AccountList() {
               >
                 <i className="bx bx-xs bx-map pr-2"></i>Track Order
               </Link>
-              <Link className="p-1 hover:bg-secblue hover:text-white">
+              <Link
+                to="/wishlist"
+                className="p-1 hover:bg-secblue hover:text-white"
+              >
                 <i className="bx bx-xs bx-heart pr-2"></i>WishList
               </Link>
               <Link className="p-1 hover:bg-secblue hover:text-white flex flex-row gap-2">

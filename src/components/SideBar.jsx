@@ -27,13 +27,9 @@ function SideBar({ onLinkClick }) {
             />
           </label>
         </div>
-        <Link
-          to="catalog"
-          onClick={onLinkClick}
-          className="text-[20px] font-semibold py-2 text-center lg:text-start"
-        >
+        <h2 className="text-[20px] font-semibold py-2 text-center lg:text-start">
           {name || "Jane Amokoko"}
-        </Link>
+        </h2>
       </div>
       <div className="py-[10px] gap-2 text-base font-normal text-lightblack">
         <div className="mb-2">
@@ -119,9 +115,12 @@ function SideBar({ onLinkClick }) {
                 <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
               <li className="flex justify-between">
-                <button className="hover:text-primaryred focus:text-primaryred">
+                <Link
+                  to="advert"
+                  className="hover:text-primaryred focus:text-primaryred"
+                >
                   My Advert
-                </button>
+                </Link>
                 <i className="bx bx-sm bx-chevron-right lg:hidden"></i>
               </li>
               <li className="flex justify-between">

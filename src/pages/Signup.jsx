@@ -50,7 +50,7 @@ function Signup() {
           noValidate
           className=" lg:w-1/2 space-y-4 md: p-5 align-center mt-6"
         >
-          <h3 className="font-catamaran lg:block lg:text-[38px] h-[58px] w-[312px] font-bold">
+          <h3 className="font-catamaran block text-[38px] h-[58px] w-[312px] font-bold">
             Create an account
           </h3>
           <p className="font-poppins text-[16px] font-normal h-[24px]">
@@ -108,12 +108,9 @@ function Signup() {
             <img src="./google.svg" alt="Google logo" className=" w-2 h-5 " />
             Sign in with Google
           </button>
-          <div className="flex flex-row space-x-1 pt-2">
+          <div className="flex flex-row space-x-1 pt-2 justify-center text-[16px] font-poppins">
             <p>Already have account?</p>
-            <Link
-              to="/login"
-              className="text-textcol text-[16px] font-poppins border-b border-textcol"
-            >
+            <Link to="/login" className="text-textcol  border-b border-textcol">
               Log in
             </Link>
           </div>

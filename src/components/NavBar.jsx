@@ -49,7 +49,7 @@ const NavBar = () => {
               MarketMate
             </h1>
           </div>
-          <div className="hidden md:flex flex-row  space-x-3 text-gray font-poppins text-xs font-bold">
+          <div className="hidden md:flex flex-row space-x-3 text-gray font-poppins text-xs font-bold">
             <Link to="/home" className="hover:text-primaryred pt-0.5">
               Home
             </Link>
@@ -67,27 +67,27 @@ const NavBar = () => {
               NewsFeed
             </Link>
           </div>
-          <div className="flex flex-row basis-5/12 space-x-3 justify-end text-gray font-poppins text-xs font-light">
+          <div className="flex flex-row basis-5/12 space-x-1 lg:space-x-3 justify-end text-gray font-poppins text-xs font-light">
             <div className="relative hidden lg:block">
               <input
                 type="text"
                 placeholder="Search"
-                className="pl-10 pr-3 py-1 w-[200px] bg-[#E2E2E2] text-primaryblue rounded-md border border-[#F5F5F5] focus:outline-none focus:border-primaryred"
+                className="pl-10 pr-3 py-1 w-[200px] bg-[#E2E2E2] text-darkblue rounded-md border border-[#F5F5F5] focus:outline-none focus:border-primaryred"
               />
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <span className="material-symbols-outlined">search</span>
               </div>
             </div>
-            <span className="material-symbols-outlined text-primaryblue hover:text-primaryred lg:hidden">
+            <span className="material-symbols-outlined text-darkblue hover:text-primaryred lg:hidden">
               search
             </span>
             <Link to="/cart">
-              <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
+              <span className="material-symbols-outlined text-darkblue hover:text-primaryred">
                 shopping_cart
               </span>
             </Link>
-            <Link to="/wishlist">
-              <span className="material-symbols-outlined text-primaryblue hover:text-primaryred">
+            <Link to="/wishlist" className="hidden lg:block">
+              <span className="material-symbols-outlined text-darkblue hover:text-primaryred">
                 favorite
               </span>
             </Link>

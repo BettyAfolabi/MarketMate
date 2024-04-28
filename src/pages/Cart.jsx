@@ -7,25 +7,31 @@ function Cart() {
   return (
     <div className="w-full h-screen overflow-x-hidden bg-white font-poppins">
       <NavBar />
-      <div className="w-11/12 mx-auto my-2">
+      <div className="lg:w-11/12 w-4/5 mx-auto my-2">
         <h1 className="text-center font-semibold text-4xl my-3">Cart</h1>
-        <div className="flex flex-row justify-center gap-3 my-3">
+        <div className="flex flex-row lg:justify-center gap-3 my-3 ">
           <div className="border-b border-black pb-3 flex">
-            <p className="rounded-full bg-black text-white px-1 mr-1">1</p>
-            <p className="font-semibold">Shopping cart</p>
+            <p className="rounded-full bg-black text-white px-2 py-1 mr-1">1</p>
+            <p className="font-semibold pt-1">Shopping cart</p>
           </div>
           <div className="border-b border-[#B1B5C3] pb-3 flex">
-            <p className="rounded-full bg-[#B1B5C3] text-white px-1 mr-1">2</p>
-            <p className="font-semibold">Checkout Details</p>
+            <p className="rounded-full bg-[#B1B5C3] text-white px-2 py-1 mr-1">
+              2
+            </p>
+            <p className="font-semibold hidden lg:block pt-1">
+              Checkout Details
+            </p>
           </div>
-          <div className="border-b border-[#B1B5C3] pb-3 flex">
-            <p className="rounded-full bg-[#B1B5C3] text-white px-1 mr-1">3</p>
-            <p className="font-semibold">Order Complete</p>
+          <div className="hidden border-b border-[#B1B5C3] pb-3 lg:flex">
+            <p className="rounded-full bg-[#B1B5C3] text-white px-2 py-1 mr-1">
+              3
+            </p>
+            <p className="font-semibold pt-1">Order Complete</p>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row gap-4 my-4">
-          <div className="my-3 basis-3/4 gap-3">
-            <div className="flex bg-lightgray text-[#464646] font-medium text-xs leading-[18px] p-2">
+          <div className="my-3 lg:basis-3/4 gap-3">
+            <div className="hidden lg:flex bg-lightgray text-[#464646] font-medium text-xs leading-[18px] p-2">
               <h3 className="basis-2/5">PRODUCTS</h3>
               <div className="flex justify-between basis-3/5">
                 <h3>PRICE</h3>
@@ -33,22 +39,24 @@ function Cart() {
                 <h3>SUB-TOTAL</h3>
               </div>
             </div>
-            <div className="flex p-2">
+            <div className="flex  p-2">
               <div className="basis-2/5 flex gap-2">
                 <img src="../trackOil.png" alt="oil product" />
                 <div>
                   <h3 className="font-semibold text-xs text-secblue">
                     KIngs Cooking Oil
                   </h3>
-                  <h3 className="font-normal text-sm text-[#2A2A2A] leading-[20px]">
+                  <h3 className="hidden lg:block font-normal text-sm text-[#2A2A2A] leading-[20px]">
                     Kings pure vegetable oil 1L for cooking soya....
                   </h3>
                 </div>
               </div>
-              <div className="basis-3/5 flex pt-2 justify-between font-normal text-sm text-[#464646]">
+              <div className="basis-3/5 flex justify-between pt-2 font-normal text-sm text-[#464646]">
                 <h3>#8999</h3>
                 <h3>x2</h3>
-                <h3 className="font-medium text-[#2A2A2A]">#17998</h3>
+                <h3 className="hidden lg:block font-medium text-[#2A2A2A]">
+                  #17998
+                </h3>
               </div>
             </div>
             <div className="flex p-2 mt-2">
@@ -58,7 +66,7 @@ function Cart() {
                   <h3 className="font-semibold text-xs text-secblue">
                     Nike Airmax React
                   </h3>
-                  <h3 className="font-normal text-sm text-[#2A2A2A] leading-[20px]">
+                  <h3 className="hidden lg:block font-normal text-sm text-[#2A2A2A] leading-[20px]">
                     Nike Airmax React Red Sports, Fashion size 43 ......
                   </h3>
                 </div>
@@ -66,11 +74,23 @@ function Cart() {
               <div className="basis-3/5 flex justify-between pt-2 font-normal text-sm text-[#464646]">
                 <h3>#23599</h3>
                 <h3>x1</h3>
-                <h3 className="font-medium text-[#2A2A2A]">#23599</h3>
+                <h3 className="hidden lg:block font-medium text-[#2A2A2A]">
+                  #23599
+                </h3>
               </div>
             </div>
+            <div className="flex my-7">
+              <input
+                type="text"
+                placeholder="Voucher code"
+                className="border-2 border-[#F1F3F4] text-[#262626] px-4 py-2"
+              />
+              <Link className="font-semibold text-white bg-primaryred text-[18px] px-3 py-2 text-center">
+                Redeem
+              </Link>
+            </div>
           </div>
-          <div className="basis-1/4 border-2 border-terblue mt-5 p-2 flex flex-col justify-between rounded">
+          <div className="lg:basis-1/4 lg:border-2 border-terblue h-[340px] justify-between lg:mt-5 p-2 flex flex-col rounded">
             <div className="flex justify-between">
               <h3>Subtotal</h3>
               <h3>#41.597</h3>
@@ -94,16 +114,6 @@ function Cart() {
               Check out
             </Link>
           </div>
-        </div>
-        <div className="flex my-7">
-          <input
-            type="text"
-            placeholder="Voucher code"
-            className="border-2 border-[#F1F3F4] text-[#262626] px-4 py-2"
-          />
-          <Link className="font-semibold text-white bg-primaryred text-[18px] px-3 py-2 text-center">
-            Redeem
-          </Link>
         </div>
       </div>
       <Footer />

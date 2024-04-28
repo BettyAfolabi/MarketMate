@@ -49,16 +49,18 @@ function CheckOut() {
         <h1 className="text-center font-semibold text-4xl my-3">Check Out</h1>
         <div className="flex flex-row justify-center gap-3 my-5">
           <div className="hidden border-b-2 border-[#38CB89] pb-3 lg:flex">
-            <i className="bx bx-sm bxs-check-circle text-[#38CB89] mr-1"></i>
-            <p className="font-semibold text-[#38CB89]">Shopping cart</p>
+            <i className="bx bx-sm bxs-check-circle text-[#38CB89] mr-1 px-2 py-1"></i>
+            <p className="font-semibold text-[#38CB89] pt-1">Shopping cart</p>
           </div>
           <div className="border-b-2 border-black pb-3 flex">
-            <p className="rounded-full bg-black text-white px-1 mr-1">2</p>
-            <p className="font-semibold">Checkout Details</p>
+            <p className="rounded-full bg-black text-white px-2 py-1 mr-1">2</p>
+            <p className="font-semibold pt-1">Checkout Details</p>
           </div>
           <div className="border-b border-[#B1B5C3] pb-3 flex">
-            <p className="rounded-full bg-[#B1B5C3] text-white px-1 mr-1">3</p>
-            <p className="hidden lg:block font-semibold text-[#B1B5C3]">
+            <p className="rounded-full bg-[#B1B5C3] text-white px-2 py-1 mr-1">
+              3
+            </p>
+            <p className="hidden lg:block font-semibold text-[#B1B5C3] pt-1">
               Order Complete
             </p>
           </div>
@@ -211,8 +213,14 @@ function CheckOut() {
                 </div>
               </div>
             </div>
+            <button
+              disabled={isSubmitting}
+              className="lg:hidden text-white text-center font-semibold text-[18px] leading-7 bg-primaryred hover:bg-mred py-[15px] px-5 w-full mt-2"
+            >
+              Proceed to Payment
+            </button>
           </div>
-          <fieldset className="basis-2/5 flex flex-col w-[390px] p-2">
+          <fieldset className="basis-2/5 flex flex-col w-[390px] p-2 mb-2 lg:mb-0">
             <legend className="font-semibold w-1/4 text-base">
               Logistics Summary
             </legend>
@@ -295,7 +303,7 @@ function CheckOut() {
               </div>
               <button
                 disabled={isSubmitting}
-                className="text-white text-center font-semibold text-[18px] leading-7 bg-primaryred hover:bg-mred py-[15px] px-5 w-full"
+                className="hidden lg:block text-white text-center font-semibold text-[18px] leading-7 bg-primaryred hover:bg-mred py-[15px] px-5 w-full"
               >
                 Proceed to Payment
               </button>

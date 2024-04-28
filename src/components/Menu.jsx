@@ -8,11 +8,7 @@ function Menu() {
     <div>
       <Popover>
         <Popover.Button className="md:hidden mr-1 relative focus:outline-none">
-          <img
-            src="../menu.png"
-            alt="menu bar icon"
-            className="hover:bg-primaryred"
-          />
+          <i className="bx bx-sm bx-menu-alt-right text-darkblue hover:text-primaryred focus:text-primaryred"></i>
         </Popover.Button>
         <Transition
           as={Fragment}

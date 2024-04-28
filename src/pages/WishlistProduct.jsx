@@ -15,7 +15,8 @@ function Wishlist() {
           >
             Products
           </Link>
-          <Link className="px-[20px] py-[10px] hover:underline">Services</Link>
+          <Link
+          to="/wishlistservice" className="px-[20px] py-[10px] hover:underline">Services</Link>
         </div>
         <div className="flex justify-between text-[#121212] font-semibold my-5">
           <h2 className="text-2xl ">Wishlist(4)</h2>

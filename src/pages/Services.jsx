@@ -22,123 +22,125 @@ const Services = () => {
       <div className="min-h-screen">
         <div className="  ">
           <div className="flex justify-center items-center gap-[10px]">
-            <button className="text-[#464646] font-semibold text-[18px] ml-2">
-              Products
-            </button>
+            <Link 
+            to="/servicepage"
+            className="text-[#464646] font-semibold text-[18px] ml-2">
+              Services
+            </Link>
             <button
               onClick={handleOpenModal}
-              className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt-2 mb-2"
+              className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt- mb-2"
             >
-              Services
+              Products
             </button>
             <Modal isOpen={isModalOpen} closeModal={handleCloseModal}>
               <div className="flex flex-wrap gap-2 w-[1800px]">
                 <div className="">
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1 ">
-                    Fashion Designer
+                    Advertising Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Basket Craft
+                    Automotive Service
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1 ">
-                    Capentery
+                    Beauty Sevices
                   </p>
                   <p className="text-[12px] font-poppins text-[rgb(95,108,114)] mb-1">
-                    Electrician
+                    Building Materials
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Hair Styling
+                    Chauffeur Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Digital Design
+                    Childcare Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Bead Making
+                    Cleaning Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    {" "}
-                    Hat making
+                    Computer & IT Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Artwork
+                    Design Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Printing Services
+                    DJ & Entertainment  Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72]">
-                    Publishing Services
+                    Educational Services
                   </p>
                 </div>
                 <div>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] "></p>
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">Event Planning Services</p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Mobile Accessories
+                    Financial Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Watches & Accessories
+                    Fitness & Personal Training
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Smart Phones
+                  Food & Bevarages
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Cameras
+                    Health & Beauty
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    TV & Home Appliances
+                    Hospitality Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    GPS & Navigation
+                    Legal Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
                     Computer Accessories
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Mobile Accessories
+                    Landscaping & Gardening
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    {" "}
-                    Hat making
+                  Online
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Artwork
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72]">
-                    Printing Services
+                  Personal Care
                   </p>
                 </div>
                 <div>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-4"></p>
+                
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">Photography Services</p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Watches
+                    Publishing Services
                   </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    {" "}
-                    Cameras
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Artwork
+                  <p className="text-[12px] font-poppins text-[#5F6C72]  mb-1">
+                    Pet Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Printing
+                    Real Estate Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Artwork
+                    
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Phones{" "}
+                    Rental Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Laptops
+                    Repair Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Phones{" "}
+                    Security Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Catering{" "}
+                    Shoemaking Services
                   </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72]">
-                    Printing
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
+                   Videography Services
                   </p>
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
+                    Translation Services
+                  </p>
+                  
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
+                   Other Services
+                  </p>
+                  
                 </div>
               </div>
             </Modal>
@@ -146,20 +148,20 @@ const Services = () => {
         </div>
         <div className="flex mb-4">
           <div className=" ">
-            <h4 className="font-catamaran font-bold text-[#0E2744] text-[32px] w-[580px] ml-4">
+            <h4 className="font-catamaran font-bold text-[#0E2744] text-[32px] w-[580px] ml-4 md:text-[25px]">
               Your One-stop Solutions for all things Services
             </h4>
             <p className="ml-4 font-poppins font-normal text-[#0E2744] text-[12px]">
               Discover and hire a professional service provider near you
             </p>
 
-            <div className="w-[695px] ml-4 rounded-[16px] border-[1.5px] border-gray flex mt-3 gap-[10px]">
+            <div className="w-[455px] ml-4 rounded-[16px] border-[1.5px] border-gray flex mt-3 gap-[10px] md:w-[695px]">
               <div className="relative">
                 <input
                   placeholder="Search Services..."
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] w-[297px] h-[47px]"
+                  className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] md:w-[297px] w-[190px] h-[47px]"
                 />
                 <img
                   src="/stroke.png"
@@ -171,7 +173,7 @@ const Services = () => {
               <div className="relative">
                 <input
                   placeholder="Where ?"
-                  className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] w-[297px] h-[47px]"
+                  className="bg-dgray rounded-[15px] ml-2 mt-2 pr-[10px] pl-[60px]  py-[6px] font-poppins font-normal text-[15px] md:w-[297px] w-[190px] h-[47px]"
                 />
                 <img
                   src="/vec.png"
@@ -204,7 +206,7 @@ const Services = () => {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="">
             <img src="frame1.png" className="mt-0" />
           </div>
         </div>
@@ -214,7 +216,7 @@ const Services = () => {
             Explore More Services
           </h4>
         </div>
-        <div className="flex flex-wrap w-[1300px] m-auto gap-[18px] mb-4 justify-center">
+        <div className="flex flex-wrap md:w-[1300px] m-auto gap-[18px] mb-4 justify-center">
           <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px]">
             <img src="a.png" />
             <p className="text-center font-semibold font-poppins mt-2">
@@ -250,10 +252,10 @@ const Services = () => {
           <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
             <img src="e.png" />
             <p className="text-center font-semibold font-poppins mt-2">
-              Caterer
+             Caterer 
             </p>
-            <p className="ml-2">Contact for Price</p>
-            <p className="ml-2">Tasty Cuisine</p>
+            <p className="ml-2">From #5000 Price</p>
+            <p className="ml-2">Baba Tope Tasty Cuisine</p>
           </div>
           <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
             <img src="f.png" />

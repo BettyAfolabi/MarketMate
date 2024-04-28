@@ -16,6 +16,8 @@ import CheckOut from "./pages/CheckOut";
 import Wishlist from "./pages/WishlistProduct";
 import Complete from "./pages/Complete";
 import AboutComponent from "./components/ScreenSizes/AboutComponent";
+import WishlistService from "./pages/WishlistService";
+import ServicePage from "./pages/ServicePage";
 
 const App = () => {
   return (
@@ -29,6 +31,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutComponent />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/servicepage" element={<ServicePage />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/about" element={<About />} />
         <Route path="/newsfeed" element={<NewsFeed />} />
@@ -36,6 +39,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<CheckOut />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/wishlistservice" element={<WishlistService />} />
         <Route path="/complete" element={<Complete />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>

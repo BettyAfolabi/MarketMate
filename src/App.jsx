@@ -17,6 +17,7 @@ import Wishlist from "./pages/WishlistProduct";
 import Complete from "./pages/Complete";
 import AboutComponent from "./components/ScreenSizes/AboutComponent";
 import WishlistService from "./pages/WishlistService";
+import ServicePage from "./pages/ServicePage";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutComponent />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/servicepage" element={<ServicePage />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/about" element={<About />} />
         <Route path="/newsfeed" element={<NewsFeed />} />

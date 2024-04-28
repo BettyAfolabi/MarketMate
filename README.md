@@ -2,6 +2,8 @@
 
 MarketMate is an innovative web application designed to transform the market ecosystem by connecting buyers, sellers, service providers, logistics companies, and industry players through a single, comprehensive platform. With features designed to streamline transactions, enhance delivery processes, and provide up-to-date industry insights, MarketMate empowers users to engage, share, and grow within a collaborative environment.
 
+
+
 ## Features
 
 - **Seamless Transactions**: Simplify the process of buying and selling with integrated payment solutions and user-friendly interfaces.

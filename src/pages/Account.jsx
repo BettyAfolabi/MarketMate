@@ -16,8 +16,9 @@ function Account() {
   const [isSidebarVisible, setSidebarVisible] = useState(true);
 
   const toggleSidebar = () => {
-    setSidebarVisible((prev) => !prev);
+    setSidebarVisible(false);
   };
+
   return (
     <div className="w-full overflow-x-hidden">
       <NavBar />
@@ -32,21 +33,24 @@ function Account() {
       </div>
 
       <div className="flex flex-row w-screen lg:w-5/6 mx-auto my-4 h-full">
-        {/* <div
-          className={`${
-            isSidebarVisible ? "hidden" : "block"
-          } lg:block lg:basis-1/4 side`}
-        > */}
-        <div className="basis-full lg:basis-1/4 flex flex-col font-poppins">
+        <div
+          className={`lg:block basis-full lg:basis-1/4 ${
+            isSidebarVisible ? "" : "hidden"
+          }`}
+        >
           <SideBar onLinkClick={toggleSidebar} />
           <Outlet />
         </div>
-        <div className="hidden lg:block lg:basis-3/4 ">
+        <div
+          className={`lg:block basis-full lg:basis-3/4 ${
+            isSidebarVisible ? "hidden" : "block"
+          }`}
+        >
           <div className="lg:hidden w-5/6 mx-auto">
             <Link
               to="/account"
               onClick={() => setSidebarVisible(true)}
-              className="flex gap-3"
+              className={`flex gap-3 ${isSidebarVisible ? "" : "block"}`}
             >
               <i className="bx bx-sm bx-chevron-left"></i>
               <h3 className="text-primaryblue text-sm font-semibold">Back</h3>

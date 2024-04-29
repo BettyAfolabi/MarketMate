@@ -8,25 +8,26 @@ const AdvertCard = ({
   productType,
   productPrice,
   viewsCount,
-  width = "w-[251px]",
-  height = "h-[403px]",
-  imgHeight = "h-[210px]",
-}) => {
+  width = "w-[220px]",
+  height = "h-[400px]",
+}) => (
   <div
-    className={`mx-auto font-poppins font-medium flex flex-col bg-white justify-center items-center p-2 rounded-2xl ${height} ${width}`}
+    className={`font-poppins font-medium flex flex-col bg-white justify-center p-2 rounded-2xl ${height} ${width}`}
   >
     <div>
-      <img src={imageSrc} alt={productName} className={`w-full ${imgHeight}`} />
+      <img src={imageSrc} alt={productName} className="w-full" />
     </div>
 
-    <h2 className="text-[10px] leading-[12px] p-1 text-darkblue bg-[#EFCCCC] ">
+    <h2 className="text-[10px] mt-1 leading-[12px] p-1 text-darkblue bg-[rgb(239,204,204)] self-start">
       {productType}
     </h2>
-    <h3 className="leading-5 text-[14px] my-1 text-[#1D2026]">{productName}</h3>
-    <div className="flex gap-2 mt-1 mb-2 self-start">
-      <p className="text-[12.6px] leading-[18px] text-[#4E5566]">⭐ 4.6</p>
-      <div className="flex gap-1">
-        <i className="bx bx-show"></i>
+    <h3 className="leading-5 text-[14px] my-1 text-[#1D2026] self-start">
+      {productName}
+    </h3>
+    <div className="flex mt-1 mb-2 justify-between px-1">
+      <p className="text-[12.6px] leading-[18px] text-[#4E5566]">⭐4.6</p>
+      <div className="flex gap-0.2">
+        <i className="bx bx-show text-notactive"></i>
         <p className="text-[#4E5566] text-[12.6px] leading-[18px]">
           {viewsCount} <span className="text-[#8C94A3] font-normal">views</span>
         </p>
@@ -38,8 +39,8 @@ const AdvertCard = ({
       </p>
       <More />
     </div>
-  </div>;
-};
+  </div>
+);
 
 AdvertCard.propTypes = {
   imageSrc: PropTypes.string,

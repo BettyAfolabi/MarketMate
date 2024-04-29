@@ -50,6 +50,7 @@ function SideBar({ onLinkClick }) {
             <li className="flex justify-between">
               <Link
                 to="billing-address"
+                onClick={onLinkClick}
                 className="hover:text-primaryred focus:text-primaryred"
               >
                 Billing Address
@@ -59,6 +60,7 @@ function SideBar({ onLinkClick }) {
             <li className="flex justify-between">
               <Link
                 to="payment"
+                onClick={onLinkClick}
                 className="hover:text-primaryred focus:text-primaryred"
               >
                 Payment Details
@@ -74,6 +76,7 @@ function SideBar({ onLinkClick }) {
               <li className="flex justify-between">
                 <Link
                   to="ongoing"
+                  onClick={onLinkClick}
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   Ongoing/Delivered
@@ -83,6 +86,7 @@ function SideBar({ onLinkClick }) {
               <li className="flex justify-between">
                 <Link
                   to="returns"
+                  onClick={onLinkClick}
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   Returns/Cancellations
@@ -92,6 +96,7 @@ function SideBar({ onLinkClick }) {
               <li className="flex justify-between">
                 <Link
                   to="track"
+                  onClick={onLinkClick}
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   Track Order
@@ -108,6 +113,7 @@ function SideBar({ onLinkClick }) {
               <li className="flex justify-between">
                 <Link
                   to="catalog"
+                  onClick={onLinkClick}
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   Catalog
@@ -117,6 +123,7 @@ function SideBar({ onLinkClick }) {
               <li className="flex justify-between">
                 <Link
                   to="advert"
+                  onClick={onLinkClick}
                   className="hover:text-primaryred focus:text-primaryred"
                 >
                   My Advert

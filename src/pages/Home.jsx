@@ -10,7 +10,7 @@ function Home() {
     <div className="w-full h-screen overflow-x-hidden bg-white">
       <NavBar />
       <div className="flex flex-col mx-auto bg-[#FCFCFC] font-poppins">
-        <nav className="flex flex-row gap-5 my-2 w-5/6 mx-10">
+        <nav className="hidden lg:flex flex-row gap-5 my-2 w-5/6 mx-10">
           <CategoryList />
           <button className="hover:underline">Beauty & Cosmetics</button>
           <button className="hover:underline">Phones & Gadgets</button>
@@ -18,11 +18,29 @@ function Home() {
           <button className="hover:underline">Groceries & household</button>
           <button className="hover:underline">Others</button>
         </nav>
-        <div className="self-center">
+        <div className="hidden lg:block self-center">
           <img src="../home1.png" alt="carousel of trend items" />
         </div>
-        <div className="grid grid-cols-4 gap-5 my-10 justify-center self-center">
-          <img src="../Featured.png" alt="featured img" />
+        <div className="lg:hidden">
+          <img
+            src="/homemobile.png"
+            alt="carousel of trend items"
+            className="w-full"
+          />
+        </div>
+        <div className="lg:hidden mt-1">
+          <img
+            src="/Featured2.png"
+            alt="featured image info"
+            className="w-full"
+          />
+        </div>
+        <div className="grid lg:grid-cols-4 gap-5 my-10 justify-center self-center px-3">
+          <img
+            src="../Featured.png"
+            alt="featured img"
+            className="hidden lg:block"
+          />
           <Card
             width="w-[270px]"
             height="h-[340px]"
@@ -80,7 +98,7 @@ function Home() {
           />
         </div>
         <div className="self-center my-2">
-          <h2 className="font-extrabold pb-3">Awoof deals for you</h2>
+          <h2 className="font-extrabold pb-3 px-1">Awoof deals for you</h2>
           <div>
             <Awoof />
             <Awoof />
@@ -88,7 +106,7 @@ function Home() {
         </div>
         <div className="my-2 self-center">
           <h2 className="font-extrabold text-[24px] pb-4">Trending products</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-2">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-2 px-1">
             <Card
               width="w-[250px]"
               height="h-[350px]"
@@ -148,7 +166,7 @@ function Home() {
           <h3 className="text-sm font-normal pb-3">
             From accessories to trending outfits, we got you covered.
           </h3>
-          <div className="bg-white shadow-lg flex justify-center items-center p-2">
+          <div className="bg-white shadow-lg flex flex-row justify-center items-center p-2 w-fit">
             <img src="../watcha.png" alt="watcha" />
             <img src="../watchb.png" alt="watchb" />
             <img src="../watches.png" alt="watches img" />

@@ -1,7 +1,15 @@
-import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import AdvertCard from "../components/AdvertCard";
+import NewAd from "./NewAd";
 
 function Advert() {
+  const [isTracking, setIsTracking] = useState(false);
+
+  if (isTracking) {
+    return <NewAd />;
+  }
+
   return (
     <div className="font-poppins shadow-md px-auto py-4 mt-5 flex flex-col">
       <div className="flex ml-2 lg:ml-0 lg:justify-end my-2">
@@ -68,7 +76,10 @@ function Advert() {
           viewsCount="236,568"
         />
       </div>
-      <div className="flex flex-col justify-center items-center mb-3">
+      <Link
+        to="/NewAd"
+        className="flex flex-col justify-center items-center mb-3"
+      >
         <div className="bg-[#EFCCCC] flex justify-center items-center w-[200px] h-[150px]">
           <img src="/gala_add.png" alt="add more icon" />
         </div>
@@ -76,7 +87,7 @@ function Advert() {
         <p className="text-secblue text-[22px] leading-5 font-normal pt-3">
           Publish New Ad
         </p>
-      </div>
+      </Link>
     </div>
   );
 }

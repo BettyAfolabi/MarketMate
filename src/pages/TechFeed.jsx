@@ -57,7 +57,7 @@ function TechFeed() {
               <h4>55</h4>
             </div>
           </div>
-          <div className="font-normal text-sm text-black p-[10px] mx-auto justify-center items-center">
+          <div className="font-normal text-sm text-black p-[10px] mx-auto lg:w-5/6  justify-center items-center">
             <p className="pb-2 text-start">
               Blue light lenses have become increasingly popular in our digital
               age. While there’s no proof they protect against certain eye

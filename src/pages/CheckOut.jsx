@@ -188,7 +188,7 @@ function CheckOut() {
                   placeholder="Zip Code"
                   id="zipcode"
                   name="zipcode"
-                  type="number"
+                  type="text"
                   register={register}
                   error={errors.zipcode}
                   pattern={/^\d{6}$/}

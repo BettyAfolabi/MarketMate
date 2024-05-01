@@ -9,7 +9,7 @@ function Footer() {
           <div className="flex justify-between">
             <div>
               <h3 className="text-2xl">Your all in one shopping site</h3>
-              <p className="text-sm">The quick fox jumps over the lazy dog</p>
+              <p className="text-sm">Shop with Affordability and Ease</p>
             </div>
             <Link to="/contact" className="bg-mred text-sm font-bold py-2 px-6">
               Contact Us
@@ -19,16 +19,16 @@ function Footer() {
             <ul>
               <li className="text-base pb-1.2">Company Info</li>
               <li className="pb-1 text-xs">
-                <a href="#">About Us</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="pb-1 text-xs">
-                <a href="#">Carrier</a>
+                <Link to="/about">About Us</Link>
               </li>
               <li className="pb-1 text-xs">
-                <a href="#">We are hiring</a>
+                <Link to="/contact">Contact</Link>
               </li>
               <li className=" text-xs">
-                <a href="#">Blog</a>
+                <Link to="/newsfeed">NewsFeed</Link>
               </li>
             </ul>
             <ul>
@@ -43,22 +43,22 @@ function Footer() {
                 <a href="#">Cookie Policy</a>
               </li>
               <li className=" text-xs">
-                <a href="#">Blog</a>
+                <a href="#">Return Policy</a>
               </li>
             </ul>
             <ul>
               <li className="text-base pb-1.2">Features</li>
               <li className="pb-1 text-xs">
-                <a href="#">Business Marketing</a>
-              </li>
-              <li className="pb-1 text-xs">
-                <a href="#">User Analytic</a>
+                <a href="#">Logistics</a>
               </li>
               <li className="pb-1 text-xs">
                 <a href="#">Live Chat</a>
               </li>
+              <li className="pb-1 text-xs">
+                <Link to="/newsfeed">NewsFeed</Link>
+              </li>
               <li className=" text-xs">
-                <a href="#">Unlimited Support</a>
+                <a href="#">User Analytic</a>
               </li>
             </ul>
             <ul>
@@ -79,19 +79,21 @@ function Footer() {
             <ul>
               <li className="text-base pb-1.2">Get In Touch</li>
               <li className="flex pb-1 text-xs">
-                <span className="material-symbols-outlined">call</span>
+                <span className="material-symbols-outlined pr-1">call</span>
                 <p>(234)800 555-0103</p>
               </li>
               <li className="pb-1 text-xs">
                 <a href="" className="flex">
-                  <span className="material-symbols-outlined">location_on</span>
+                  <span className="material-symbols-outlined pr-1">
+                    location_on
+                  </span>
                   <p>314 Lekki Phase 1. Lagos, Nigeria</p>
                 </a>
               </li>
               <li>
                 <a href="#" className="flex text-xs">
-                  <span className="material-symbols-outlined">mail</span>
-                  <p>debra.holt@example.com</p>
+                  <span className="material-symbols-outlined pr-1">mail</span>
+                  <p className="self-center">info@marketmate.com</p>
                 </a>
               </li>
             </ul>

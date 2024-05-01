@@ -4,12 +4,24 @@ import NavBar from "../components/NavBar";
 import Card from "../components/Card";
 import Awoof from "../components/Awoof";
 import CategoryList from "../components/CategoryList";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div className="w-full h-screen overflow-x-hidden bg-white">
       <NavBar />
       <div className="flex flex-col mx-auto bg-[#FCFCFC] font-poppins">
+        <div className="flex justify-center mx-auto mt-2 mb-2 font-semibold text-[18px] leading-7">
+          <Link
+            to="/"
+            className="text-white bg-[#1D4E89] rounded-lg px-[20px] py-[10px] hover:bg-secblue"
+          >
+            Products
+          </Link>
+          <Link to="/services" className="px-[20px] py-[10px] hover:underline">
+            Services
+          </Link>
+        </div>
         <nav className="hidden lg:flex flex-row gap-5 my-2 w-5/6 mx-10">
           <CategoryList />
           <button className="hover:underline">Beauty & Cosmetics</button>
@@ -141,7 +153,7 @@ function Home() {
               productName="Flare Dress"
               productDesc="Antheaa Black & Rust Orange Floral Print Tiered Midi F..."
               productPrice="₦12,000"
-              review="⭐⭐⭐⭐☆"
+              review="⭐⭐⭐⭐"
               reviewCount="3,35,566"
               showButton={false}
               symbol={false}
@@ -166,7 +178,7 @@ function Home() {
           <h3 className="text-sm font-normal pb-3">
             From accessories to trending outfits, we got you covered.
           </h3>
-          <div className="bg-white shadow-lg flex flex-row justify-center items-center p-2 w-fit">
+          <div className="bg-white shadow-lg flex flex-col lg:flex-row justify-center items-center p-2">
             <img src="../watcha.png" alt="watcha" />
             <img src="../watchb.png" alt="watchb" />
             <img src="../watches.png" alt="watches img" />

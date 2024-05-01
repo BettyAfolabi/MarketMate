@@ -18,17 +18,17 @@ const Card = ({
   imgHeight = "h-[240px]",
 }) => (
   <div
-    className={`mx-auto font-poppins flex flex-col bg-white shadow justify-center items-center p-2 rounded-2xl ${height} ${width}`}
+    className={`mx-auto font-poppins flex flex-col bg-white shadow justify-center items-center pt-3 p-2 rounded-2xl ${height} ${width}`}
   >
     {showImage && (
-      <div className="flex">
+      <div className="inline-flex ">
         <img
           src={imageSrc}
           alt={productName}
           className={`w-full ${imgHeight}`}
         />
         {symbol && (
-          <span className="material-symbols-outlined hover:text-primaryred focus:text-primaryred pl-0.5">
+          <span className="material-symbols-outlined hover:text-primaryred focus:text-primaryred pr-1 pt-1">
             favorite
           </span>
         )}

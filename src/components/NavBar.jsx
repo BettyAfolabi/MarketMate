@@ -10,9 +10,7 @@ import {
 import AccountList from "./AccountList";
 import Menu from "./Menu";
 
-
 const NavBar = () => {
-  
   return (
     <div className="sticky top-0 w-screen">
       <header className="hidden bg-darkred text-white w-full lg:flex  px-4 py-2 left-0  ">
@@ -47,12 +45,15 @@ const NavBar = () => {
           <div className="flex ">
             <Menu />
             <img src="../Logo.png" alt="Market mate Logo" />
-            <h1 className="font-lobstertwo text-primaryred text-3xl md:text-4xl">
+            <Link
+              to="/"
+              className="font-lobstertwo text-primaryred text-3xl md:text-4xl"
+            >
               MarketMate
-            </h1>
+            </Link>
           </div>
           <div className="hidden md:flex flex-row space-x-3 text-gray font-poppins text-xs font-bold">
-            <Link to="/home" className="hover:text-primaryred pt-0.5">
+            <Link to="/" className="hover:text-primaryred pt-0.5">
               Home
             </Link>
 
@@ -100,7 +101,7 @@ const NavBar = () => {
                 Login
               </Link>
               /
-              <Link to="/" className="px-0.5 hover:text-primaryred">
+              <Link to="/signup" className="px-0.5 hover:text-primaryred">
                 Register
               </Link>
             </div>

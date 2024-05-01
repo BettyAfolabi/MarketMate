@@ -8,7 +8,7 @@ function CategoryList() {
   return (
     <div>
       <Popover>
-        <Popover.Button className="bg-secblue hover:bg-blue-900 text-white px-3 py-[14px] flex gap-1 focus:outline-none relative">
+        <Popover.Button className="bg-[#F6F6F6] text-black hover:bg-secblue hover:text-white focus:bg-secblue focus:text-white px-3 py-[14px] flex gap-1 focus:outline-none">
           <span>All Category</span>
           <i className="bx bx-sm bx-chevron-down self-center"></i>
         </Popover.Button>

@@ -24,8 +24,13 @@ function Account() {
       <NavBar />
       <div className="flex justify-between w-5/6 mx-auto">
         <div className="hidden lg:flex">
-          <p className="px-2 text-sm">Home</p>/
-          <p className="px-2 text-terblue">My Account</p>
+          <Link to="/" className="px-2 text-sm">
+            Home
+          </Link>
+          /
+          <Link to="/account/*" className="px-2 text-terblue">
+            My Account
+          </Link>
         </div>
         <h2>
           Welcome <span className="text-primaryred">Jane</span>
@@ -65,7 +70,7 @@ function Account() {
             <Route path="ongoing" element={<OngoingOrders />} />
             <Route path="returns" element={<ReturnedOrders />} />
             <Route path="catalog" element={<CatalogProfile />} />
-            <Route path="advert" element={<Advert />} />
+            <Route path="advert/*" element={<Advert />} />
 
             <Route index element={<Profile />} />
           </Routes>

@@ -21,18 +21,19 @@ const Services = () => {
       <NavBar />
       <div className="min-h-screen">
         <div className="  ">
-          <div className="flex justify-center items-center gap-[10px]">
-            <Link 
-            to="/servicepage"
-            className="text-[#464646] font-semibold text-[18px] ml-2">
+          <div className="flex flex-row-reverse justify-center items-center gap-[10px]">
+            <Link
+              to="/servicepage"
+              className="text-white bg-[#1D4E89] rounded-lg px-[20px] py-[10px] hover:bg-secblue mb-2"
+            >
               Services
             </Link>
-            <button
+            <Link
               onClick={handleOpenModal}
-              className="border-2 border-[#1D4E89] bg-[#1D4E89] rounded-[6px] px-2 ml-1 gap-1 text-[18px] font-semibold text-white align-center h-[54px] w-[154px] mt- mb-2"
+              className="text-[#464646] font-semibold text-[18px] ml-2 mb-2"
             >
               Products
-            </button>
+            </Link>
             <Modal isOpen={isModalOpen} closeModal={handleCloseModal}>
               <div className="flex flex-wrap gap-2 w-[1800px]">
                 <div className="">
@@ -64,14 +65,16 @@ const Services = () => {
                     Design Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    DJ & Entertainment  Services
+                    DJ & Entertainment Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72]">
                     Educational Services
                   </p>
                 </div>
                 <div>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">Event Planning Services</p>
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
+                    Event Planning Services
+                  </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
                     Financial Services
                   </p>
@@ -79,7 +82,7 @@ const Services = () => {
                     Fitness & Personal Training
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                  Food & Bevarages
+                    Food & Bevarages
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
                     Health & Beauty
@@ -97,15 +100,16 @@ const Services = () => {
                     Landscaping & Gardening
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                  Online
+                    Online
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                  Personal Care
+                    Personal Care
                   </p>
                 </div>
                 <div>
-                
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">Photography Services</p>
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
+                    Photography Services
+                  </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
                     Publishing Services
                   </p>
@@ -115,9 +119,7 @@ const Services = () => {
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
                     Real Estate Services
                   </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    
-                  </p>
+                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1"></p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
                     Rental Services
                   </p>
@@ -131,16 +133,15 @@ const Services = () => {
                     Shoemaking Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                   Videography Services
+                    Videography Services
                   </p>
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
                     Translation Services
                   </p>
-                  
+
                   <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                   Other Services
+                    Other Services
                   </p>
-                  
                 </div>
               </div>
             </Modal>
@@ -252,7 +253,7 @@ const Services = () => {
           <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
             <img src="e.png" />
             <p className="text-center font-semibold font-poppins mt-2">
-             Caterer 
+              Caterer
             </p>
             <p className="ml-2">From #5000 Price</p>
             <p className="ml-2">Baba Tope Tasty Cuisine</p>

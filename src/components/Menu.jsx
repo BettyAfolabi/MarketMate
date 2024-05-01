@@ -21,7 +21,7 @@ function Menu() {
         >
           <Popover.Panel className="w-screen h-screen z-10 absolute mt-1">
             <div className="w-full bg-white text-gray font-poppins text-sm font-bold flex flex-col py-[12px] px-1">
-              <Link to="/home" className="hover:text-primaryred p-1">
+              <Link to="/" className="hover:text-primaryred p-1">
                 Home
               </Link>
 

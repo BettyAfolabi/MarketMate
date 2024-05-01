@@ -23,12 +23,12 @@ const App = () => {
   return (
     <div className="bg-white h-full">
       <Routes>
-        <Route path="/" element={<Signup />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<ContactComponent />} />
         <Route path="/account/*" element={<Account />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutComponent />} />
         <Route path="/services" element={<Services />} />
         <Route path="/servicepage" element={<ServicePage />} />

@@ -9,14 +9,15 @@ function WishlistService() {
       <NavBar />
       <div className="w-11/12 mx-auto my-2">
         <div className="flex justify-center mx-auto mt-2 mb-10 font-semibold text-[18px] leading-7">
-          <Link
-            to="/wishlist"
-            className="text-white bg-[#1D4E89] rounded-lg px-[20px] py-[10px] hover:bg-secblue"
-          >
+          <Link to="/wishlist" className="px-[20px] py-[10px] hover:underline">
             Products
           </Link>
           <Link
-          to="/wishListservice" className="px-[20px] py-[10px] hover:underline">Services</Link>
+            to="/wishListservice"
+            className="text-white bg-[#1D4E89] rounded-lg px-[20px] py-[10px] hover:bg-secblue"
+          >
+            Services
+          </Link>
         </div>
         <div className="flex justify-between text-[#121212] font-semibold my-5">
           <h2 className="text-2xl ">Wishlist(4)</h2>
@@ -41,47 +42,59 @@ function WishlistService() {
           <div className="w-[250px] h-[485px] flex flex-col justify-between ">
             <img src="/list1.png" alt="makeup img" className="h-[349px]" />
             <p>⭐⭐⭐⭐⭐</p>
-            <h3 className="font-semibold leading-[1px]">
-              Makeup Services
-            </h3>
-            <p className="font-semibold text-base leading-[1px]">₦10,000 <span className="text-gray text-xs leading-3 line-through"> #12,000</span></p>
-                      
+            <h3 className="font-semibold leading-[1px]">Makeup Services</h3>
+            <p className="font-semibold text-base leading-[1px]">
+              ₦10,000{" "}
+              <span className="text-gray text-xs leading-3 line-through">
+                {" "}
+                #12,000
+              </span>
+            </p>
           </div>
 
           <div className="w-[250px] h-[485px] flex flex-col justify-between">
-            <img src="/link2.png" alt="Basket Crafts img" className="h-[349px]" />
+            <img
+              src="/link2.png"
+              alt="Basket Crafts img"
+              className="h-[349px]"
+            />
             <p className="mt-2">⭐⭐⭐⭐⭐</p>
             <h3 className="font-semibold text-base leading-[18px] pt-3 mb-2">
-            Basket Crafts
+              Basket Crafts
             </h3>
-            <p className="font-semibold text-base leading-[18px]">₦10,000 <span className="text-gray text-xs leading-3 line-through pt-0.5">  #12,000</span></p>
-            <div className="flex my-1 gap-2 self-start">
-             
-            </div>
-
-           
-          </div>
-          <div className="w-[250px] h-[485px] flex flex-col justify-between">
-            <img src="/list3.png" alt="automotive repair img" className="h-[349px]" />
-            <p>⭐⭐⭐⭐⭐</p>
-            <h3 className="font-semibold text-base leading-[18px] py-2">
-             Automotive Repairs
-            </h3>
-            <p className="font-semibold text-base leading-[18px] py-1">Contact for price <span className="text-xs text-gray"></span></p>
+            <p className="font-semibold text-base leading-[18px]">
+              ₦10,000{" "}
+              <span className="text-gray text-xs leading-3 line-through pt-0.5">
+                {" "}
+                #12,000
+              </span>
+            </p>
+            <div className="flex my-1 gap-2 self-start"></div>
           </div>
           <div className="w-[250px] h-[485px] flex flex-col justify-between">
             <img
-              src="/list4.png"
-              alt=" Home tutor img"
+              src="/list3.png"
+              alt="automotive repair img"
               className="h-[349px]"
             />
-             <p>⭐⭐⭐⭐⭐</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <h3 className="font-semibold text-base leading-[18px] py-2">
+              Automotive Repairs
+            </h3>
+            <p className="font-semibold text-base leading-[18px] py-1">
+              Contact for price <span className="text-xs text-gray"></span>
+            </p>
+          </div>
+          <div className="w-[250px] h-[485px] flex flex-col justify-between">
+            <img src="/list4.png" alt=" Home tutor img" className="h-[349px]" />
+            <p>⭐⭐⭐⭐⭐</p>
             <h3 className="font-semibold text-base leading-[18px] py-2">
               Home Tutor(Primary level)
             </h3>
-            
-            <p className="font-semibold text-base leading-[18px] py-1">₦6000 <span className="text-xs text-gray">per month</span></p>
-            
+
+            <p className="font-semibold text-base leading-[18px] py-1">
+              ₦6000 <span className="text-xs text-gray">per month</span>
+            </p>
           </div>
         </div>
         <button className="border border-[#141718] rounded-[80px] px-5 py-1 font-medium text-base my-10 mx-auto flex justify-center hover:bg-lightgray">

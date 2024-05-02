@@ -45,7 +45,7 @@ function TechFeed() {
               </h3>
             </div>
           </div>
-          <div className="my-2 flex justify-between w-[640px] mx-auto items-center font-poppins text-sm font-normal">
+          <div className="my-2 flex justify-between w-screen lg:w-[640px] mx-auto items-center font-poppins text-sm font-normal">
             <h4>4 mins read </h4>
             <h4>5 hours ago</h4>
             <div className="flex gap-1">

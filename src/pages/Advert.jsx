@@ -6,6 +6,11 @@ import NewAd from "./NewAd";
 function Advert() {
   const [isTracking, setIsTracking] = useState(false);
 
+  const handleClick = (data) => {
+    console.log("submitted", data);
+    setIsTracking(true);
+  };
+
   if (isTracking) {
     return <NewAd />;
   }
@@ -77,7 +82,7 @@ function Advert() {
         />
       </div>
       <Link
-        to="/NewAd"
+        onClick={handleClick}
         className="flex flex-col justify-center items-center mb-3"
       >
         <div className="bg-[#EFCCCC] flex justify-center items-center w-[200px] h-[150px]">

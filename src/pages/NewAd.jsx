@@ -4,8 +4,7 @@ import Advert from "./Advert";
 function NewAd() {
   const [isTracking, setIsTracking] = useState(false);
 
-  const handleBack = (data) => {
-    console.log("submitted", data);
+  const handleBack = () => {
     setIsTracking(true);
   };
   if (isTracking) {
@@ -20,8 +19,8 @@ function NewAd() {
           <h3 className="text-primaryblue text-sm font-semibold">Back</h3>
         </button>
       </div>
-      <div className="flex font-medium text-base leading-[21px] border-b border-primaryred pb-2 justify-between">
-        <div className="flex">
+      <div className="flex font-medium text-base leading-[21px]  justify-between">
+        <div className="flex border-b border-primaryred pb-2">
           <i className="bx text-darkblue pr-1 bxs-layer"></i>
           <p className="text-[#1D2026]">Basic Information</p>
         </div>
@@ -34,10 +33,10 @@ function NewAd() {
           <p className="text-[#6E7485]">Publish Ad</p>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between pt-2">
         <h2 className="font-semibold text-[24px]">Basic Information</h2>
         <div className="flex gap-3">
-          <p className="text-secblue bg-[#EFCCCC80] p-3">Save</p>
+          <p className="text-secblue bg-[#EFCCCC80] px-2">Save</p>
           <p className="text-secblue">Save & Preview</p>
         </div>
       </div>

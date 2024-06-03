@@ -81,8 +81,8 @@ function Home() {
           />
         </div>
         <div className="self-center my-2">
-          <h2 className="font-extrabold pb-3 px-1">Awoof deals for you</h2>
-          <div className="mx-auto max-w-2xl px-2 py-8 sm:px-4 sm:py-10 lg:max-w-7xl lg:px-8">
+          <h2 className="font-extrabold text-[24px] pb-3">Awoof deals for you</h2>
+          <div className="mx-auto max-w-2xl px-2 py-7 sm:px-4 sm:py-10 lg:max-w-7xl lg:px-8">
             <Awoof />
             <div className="mt-4">
               <Awoof />

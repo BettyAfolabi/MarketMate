@@ -49,6 +49,13 @@ export default {
       lgl: "1024px",
       xl: "1280px",
     },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
+    },
     extend: {
       colors: {
         mred: "#BC2B2A",

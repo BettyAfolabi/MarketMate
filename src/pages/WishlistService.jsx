@@ -38,8 +38,8 @@ function WishlistService() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 my-10 justify-center mx-5 self-center">
-          <div className="w-[250px] h-[485px] flex flex-col justify-between ">
+        <div className="lg:mx-5 grid grid-cols-1 gap-x-2 sm:gap-x-2 gap-y-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <div className="lg:w-[250px] sm:w-[210px] h-[485px] flex flex-col justify-between ">
             <img src="/list1.png" alt="makeup img" className="h-[349px]" />
             <p>⭐⭐⭐⭐⭐</p>
             <h3 className="font-semibold leading-[1px]">Makeup Services</h3>
@@ -52,7 +52,7 @@ function WishlistService() {
             </p>
           </div>
 
-          <div className="w-[250px] h-[485px] flex flex-col justify-between">
+          <div className="lg:w-[250px] w-[210px] h-[485px] flex flex-col justify-between">
             <img
               src="/link2.png"
               alt="Basket Crafts img"
@@ -71,7 +71,7 @@ function WishlistService() {
             </p>
             <div className="flex my-1 gap-2 self-start"></div>
           </div>
-          <div className="w-[250px] h-[485px] flex flex-col justify-between">
+          <div className="lg:w-[250px] sm:w-[210px] h-[485px] flex flex-col justify-between">
             <img
               src="/list3.png"
               alt="automotive repair img"
@@ -85,7 +85,7 @@ function WishlistService() {
               Contact for price <span className="text-xs text-gray"></span>
             </p>
           </div>
-          <div className="w-[250px] h-[485px] flex flex-col justify-between">
+          <div className="lg:w-[250px] sm:w-[210px] h-[485px] flex flex-col justify-between">
             <img src="/list4.png" alt=" Home tutor img" className="h-[349px]" />
             <p>⭐⭐⭐⭐⭐</p>
             <h3 className="font-semibold text-base leading-[18px] py-2">

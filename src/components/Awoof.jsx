@@ -3,7 +3,7 @@ import Card from "./Card";
 
 function Awoof() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-7">
+    <div className="grid grid-cols-1 gap-x-3 gap-y-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
       <Card
         imageSrc="../tv.png"
         productName="Hisense 32 Inch A 4H Series HD Smart TV"

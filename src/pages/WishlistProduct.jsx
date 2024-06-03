@@ -16,7 +16,11 @@ function Wishlist() {
             Products
           </Link>
           <Link
-          to="/wishlistservice" className="px-[20px] py-[10px] hover:underline">Services</Link>
+            to="/wishlistservice"
+            className="px-[20px] py-[10px] hover:underline"
+          >
+            Services
+          </Link>
         </div>
         <div className="flex justify-between text-[#121212] font-semibold my-5">
           <h2 className="text-2xl ">Wishlist(4)</h2>
@@ -37,8 +41,8 @@ function Wishlist() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 my-10 justify-center mx-5 self-center">
-          <div className="w-[250px] h-[485px] flex flex-col justify-between ">
+        <div className="lg:mx-5 grid grid-cols-1 gap-x-2 sm:gap-x-2 gap-y-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <div className="lg:w-[250px] sm:w-[210px] h-[485px] flex flex-col justify-between ">
             <img src="/Paste image.png" alt="ipods img" className="h-[349px]" />
             <h3 className="font-normal text-base leading-[18px] py-2">
               Wireless Bluetooth Ear Pods - White
@@ -50,7 +54,7 @@ function Wishlist() {
             <p>⭐⭐⭐⭐☆</p>
           </div>
 
-          <div className="w-[250px] h-[485px] flex flex-col justify-between">
+          <div className="lg:w-[250px] sm:w-[210px] h-[485px] flex flex-col justify-between">
             <img src="/boxes.png" alt="suitcases img" className="h-[349px]" />
             <h3 className="font-normal text-base leading-[18px] py-2">
               Flare Dress
@@ -70,7 +74,7 @@ function Wishlist() {
             </p>
             <p>⭐⭐⭐⭐☆</p>
           </div>
-          <div className="w-[250px] h-[485px] flex flex-col justify-between">
+          <div className="lg:w-[250px] sm:w-[210px] h-[485px] flex flex-col justify-between">
             <img src="/Card.png" alt="flare dress img" className="h-[349px]" />
             <h3 className="font-normal text-base leading-[18px] py-2">
               Flare Dress
@@ -84,7 +88,7 @@ function Wishlist() {
             </p>
             <p>⭐⭐⭐⭐☆</p>
           </div>
-          <div className="w-[250px] h-[485px] flex flex-col justify-between">
+          <div className="lg:w-[250px] sm:w-[210px] h-[485px] flex flex-col justify-between">
             <img
               src="/denimdress.png"
               alt=" denim dress img"

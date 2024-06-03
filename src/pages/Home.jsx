@@ -5,10 +5,11 @@ import Card from "../components/Card";
 import Awoof from "../components/Awoof";
 import CategoryList from "../components/CategoryList";
 import { Link } from "react-router-dom";
+import HomeCarousel from "../components/HomeCarousel";
 
 function Home() {
   return (
-    <div className="w-full h-screen overflow-x-hidden bg-white">
+    <div className="w-full h-screen overflow-x-hidden bg-white ">
       <NavBar />
       <div className="flex flex-col mx-auto bg-[#FCFCFC] font-poppins">
         <div className="flex justify-center mx-auto mt-2 mb-2 font-semibold text-[18px] leading-7">
@@ -40,47 +41,17 @@ function Home() {
             className="w-full"
           />
         </div>
-        <div className="lg:hidden mt-1">
+        <div className="lg:hidden mt-1 mx-2">
           <img
             src="/Featured2.png"
             alt="featured image info"
-            className="w-full"
+            className="w-full "
           />
         </div>
-        <div className="grid lg:grid-cols-4 gap-5 my-10 justify-center self-center px-3">
-          <img
-            src="../Featured.png"
-            alt="featured img"
-            className="hidden lg:block"
-          />
-          <Card
-            width="w-[270px]"
-            height="h-[340px]"
-            imageSrc="../iphone.png"
-            productName="Apple iPhone 15 Pro 512GB Blue Titanium"
-            productPrice="₦1,856,800"
-            prevPrice="₦1,956,800"
-            showButton={false}
-          />
-          <Card
-            width="w-[270px]"
-            height="h-[332px]"
-            imageSrc="../nike.png"
-            productName=" Nike Sneakers"
-            productPrice="₦39,000"
-            prevPrice="₦42,000"
-            showButton={false}
-          />
-          <Card
-            width="w-[270px]"
-            height="h-[332px]"
-            imageSrc="../PC.png"
-            productName="HP ZBook Firefly 14 inch G10 A Mobile Workstation"
-            productPrice="₦2,350,499"
-            prevPrice="₦2400000"
-            showButton={false}
-          />
+        <div>
+          <HomeCarousel />
         </div>
+
         <div className="flex flex-col lg:flex-row justify-between bg-white p-3 shadow-lg w-11/12 mx-auto mb-5">
           <div className="w-[350px] self-end">
             <h1 className="font-semibold text-[42px] leading-10">
@@ -111,16 +82,17 @@ function Home() {
         </div>
         <div className="self-center my-2">
           <h2 className="font-extrabold pb-3 px-1">Awoof deals for you</h2>
-          <div>
+          <div className="mx-auto max-w-2xl px-2 py-8 sm:px-4 sm:py-10 lg:max-w-7xl lg:px-8">
             <Awoof />
-            <Awoof />
+            <div className="mt-4">
+              <Awoof />
+            </div>
           </div>
         </div>
-        <div className="my-2 self-center">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
           <h2 className="font-extrabold text-[24px] pb-4">Trending products</h2>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-2 px-1">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 px-1">
             <Card
-              width="w-[250px]"
               height="h-[350px]"
               imgHeight="h-[195px]"
               imageSrc="../shoe.png"
@@ -133,9 +105,9 @@ function Home() {
               symbol={false}
             />
             <Card
-              width="w-[250px]"
               height="h-[350px]"
-              imgHeight="h-[195px]"
+              imgHeight="h-[150px]"
+              imgWidth="w-[270px]"
               imageSrc="../short.png"
               productName="denim dress"
               productDesc="Blue cotton denim dress Look 2 Printed cotton dr..."
@@ -146,9 +118,9 @@ function Home() {
               symbol={false}
             />
             <Card
-              width="w-[250px]"
               height="h-[350px]"
-              imgHeight="h-[195px]"
+              imgHeight="h-[150px]"
+              imgWidth="w-[270px]"
               imageSrc="../dress.png"
               productName="Flare Dress"
               productDesc="Antheaa Black & Rust Orange Floral Print Tiered Midi F..."
@@ -159,9 +131,9 @@ function Home() {
               symbol={false}
             />
             <Card
-              width="w-[250px]"
               height="h-[350px]"
-              imgHeight="h-[195px]"
+              imgHeight="h-[150px]"
+              imgWidth="w-[270px]"
               imageSrc="../sneakers.png"
               productName="NIke Sneakers"
               productDesc="Nike Air Jordan Retro 1 Low Mystic Black"
@@ -179,8 +151,10 @@ function Home() {
             From accessories to trending outfits, we got you covered.
           </h3>
           <div className="bg-white shadow-lg flex flex-col lg:flex-row justify-center items-center p-2">
-            <img src="../watcha.png" alt="watcha" />
-            <img src="../watchb.png" alt="watchb" />
+            <div className="flex flex-row space-x-4">
+              <img src="../watcha.png" alt="watcha" />
+              <img src="../watchb.png" alt="watchb" />
+            </div>
             <img src="../watches.png" alt="watches img" />
           </div>
         </div>

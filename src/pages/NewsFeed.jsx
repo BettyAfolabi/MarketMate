@@ -20,7 +20,7 @@ function NewsFeed() {
         <h2 className="font-semibold text-[18px] leading-[27px] py-2">
           BEST OF THE WEEK
         </h2>
-        <div className="flex">
+        <div className="flex flex-col lg:flex-row">
           <div className="basis-3/5 flex flex-col ">
             <div className="flex text-base leading-6 gap-3 my-2 font-medium">
               <h3 className=" text-primaryred">

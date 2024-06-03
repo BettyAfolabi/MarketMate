@@ -18,6 +18,8 @@ import Complete from "./pages/Complete";
 import AboutComponent from "./components/ScreenSizes/AboutComponent";
 import WishlistService from "./pages/WishlistService";
 import ServicePage from "./pages/ServicePage";
+import ReturnPolicy from "./pages/ReturnPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
 
 const App = () => {
   return (
@@ -41,6 +43,8 @@ const App = () => {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/wishlistservice" element={<WishlistService />} />
         <Route path="/complete" element={<Complete />} />
+        <Route path="/returnpolicy" element={<ReturnPolicy />} />
+        <Route path="/cookiepolicy" element={<CookiePolicy />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>

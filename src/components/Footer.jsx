@@ -40,10 +40,10 @@ function Footer() {
                 <a href="#">Terms & Condition</a>
               </li>
               <li className="pb-1 text-xs">
-                <a href="#">Cookie Policy</a>
+                <Link to="/cookiepolicy">Cookie Policy</Link>
               </li>
               <li className=" text-xs">
-                <a href="#">Return Policy</a>
+                <Link to="/returnpolicy">Return Policy</Link>
               </li>
             </ul>
             <ul>

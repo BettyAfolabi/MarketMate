@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 const Card = ({
@@ -13,22 +14,22 @@ const Card = ({
   showButton = true,
   showImage = true,
   symbol = true,
-  width = "w-[285px]",
-  height = "h-[480px]",
-  imgHeight = "h-[240px]",
+  width = "w-[270px] lg:w-[250px] sm:w-[200px]",
+  imgWidth = "w-[200px] sm:w-[160px] ",
+  imgHeight = "h-[200px]",
 }) => (
   <div
-    className={`mx-auto font-poppins flex flex-col bg-white shadow justify-center items-center pt-3 p-2 rounded-2xl ${height} ${width}`}
+    className={`font-poppins flex flex-col bg-white shadow justify-center items-center pt-3 p-2 rounded-2xl aspect-h-1 aspect-w-1 ${width} overflow-hidden xl:aspect-h-8 xl:aspect-w-7`}
   >
     {showImage && (
-      <div className="inline-flex ">
+      <div className="flex ">
         <img
           src={imageSrc}
           alt={productName}
-          className={`w-full ${imgHeight}`}
+          className={`${imgWidth} ${imgHeight}`}
         />
         {symbol && (
-          <span className="material-symbols-outlined hover:text-primaryred focus:text-primaryred pr-1 pt-1">
+          <span className="material-symbols-outlined hover:text-primaryred focus:text-primaryred pr-1 sm:pr-2">
             favorite
           </span>
         )}
@@ -53,9 +54,12 @@ const Card = ({
       <p className="text-[10px] text-[#A4A9B3] pt-0.5">{reviewCount}</p>
     </div>
     {showButton && (
-      <button className="border border-mred py-[15px] px-[40px] font-bold text-sm text-mred text-center hover:border-red-500 hover:text-red-500 rounded-md mt-3 mb-2">
+      <Link
+        to="/cart"
+        className="border border-mred py-[15px] px-[40px] font-bold text-sm text-mred text-center hover:border-red-500 hover:text-red-500 rounded-md mt-3 mb-2"
+      >
         Add to Cart
-      </button>
+      </Link>
     )}
   </div>
 );
@@ -73,7 +77,7 @@ Card.propTypes = {
   showImage: PropTypes.bool,
   symbol: PropTypes.bool,
   width: PropTypes.string,
-  height: PropTypes.string,
+  imgWidth: PropTypes.string,
   imgHeight: PropTypes.string,
 };
 export default Card;

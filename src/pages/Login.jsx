@@ -1,13 +1,16 @@
 import { useForm } from "react-hook-form";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/InputField";
+import { auth } from "../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [msg, setMsg] = useState('');
+
   const form = useForm({
     defaultValues: {
       email: "",
@@ -19,9 +22,14 @@ const Login = () => {
   const { register, handleSubmit, reset, formState } = form;
   const { errors, isSubmitSuccessful, isSubmitting } = formState;
 
-  const onSubmit = (data) => {
-    console.log("submitted", data);
-    navigate("/home");
+  const onSubmit = async (data) => {
+    try {
+      await signInWithEmailAndPassword(auth, data.email, data.password);
+      navigate("/cart");
+    } catch (error) {
+      setMsg('Your email or password is incorrect');
+      console.error("Login Error:", error);
+    }
   };
 
   const onError = (errors) => {
@@ -46,12 +54,12 @@ const Login = () => {
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className=" lg:w-1/2 space-y-4 md: p-5 align-center "
+          className="lg:w-1/2 space-y-4 p-5"
         >
-          <h2 className=" md:hidden lg:block lg:text-[38px] h-[58px] font-catamaran text-[] ">
+          <h2 className="md:hidden lg:block lg:text-[38px] h-[58px] font-catamaran">
             Login to MarketMate
           </h2>
-          <h3 className="lg:hidden md: w-[299px] text-[38px] ">
+          <h3 className="lg:hidden md:w-[299px] text-[38px]">
             Log in to{" "}
             <span className="text-mred font-bold font-lobstertwo">
               MarketMate
@@ -61,7 +69,6 @@ const Login = () => {
             <p className="block mb-2 lg:text-[16px] text-textcol font-poppins">
               Enter your details below
             </p>
-
             <InputField
               placeholder="Email or Phone Number"
               id="email"
@@ -88,13 +95,15 @@ const Login = () => {
                 /^(?=.*)(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,16}$/
               }
               required={true}
-              patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
+              patternMessage="Password should be 7-16 characters"
             />
           </div>
+          <span className="text-mred mt-3">{msg}</span>
           <div>
             <button
               disabled={isSubmitting}
-              className="w-[143px] h-[56px] bg-mred text-white p-2 rounded-md hover:bg-mred  py-[16px] px-[48px] m-4"
+              type="submit"
+              className="w-[143px] h-[56px] bg-mred text-white p-2 rounded-md hover:bg-mred py-[16px] px-[48px] m-4"
             >
               Log in
             </button>
@@ -104,14 +113,13 @@ const Login = () => {
           </div>
           <button
             type="button"
-            className="inline-flex items-center  font-medium text-gray-800 border rounded-lg bg-white hover:bg-gray-100 lg:w-[365px] lg: h-[56px]  gap-2 py-2 px-10"
+            className="inline-flex items-center font-medium text-gray-800 border rounded-lg bg-white hover:bg-gray-100 lg:w-[365px] lg:h-[56px] gap-2 py-2 px-10"
           >
-            <img src="./google.svg" alt="Google logo" className=" w-2 h-5 " />
+            <img src="./google.svg" alt="Google logo" className="w-2 h-5" />
             Sign in with Google
           </button>
         </form>
       </div>
-
       <Footer />
     </div>
   );

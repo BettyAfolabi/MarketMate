@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { auth } from "../firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import InputField from "../components/InputField";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
@@ -7,6 +9,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 function Signup() {
   const navigate = useNavigate();
+  const [msg, setMsg] = useState('');
+
   const form = useForm({
     defaultValues: {
       name: "",
@@ -16,12 +20,21 @@ function Signup() {
     mode: "onTouched",
   });
 
-  const { register, handleSubmit, reset, formState, watch } = form;
+  const { register, handleSubmit, reset, formState } = form;
   const { errors, isSubmitSuccessful, isSubmitting } = formState;
 
-  const onSubmit = (data) => {
-    console.log("submitted", data);
-    navigate("/login");
+  const onSubmit = async (data) => {
+    try {
+      await createUserWithEmailAndPassword(auth, data.email, data.password);
+      navigate("/login");
+    } catch (error) {
+      if (error.code === 'auth/network-request-failed') {
+        setMsg("Network error. Please check your connection and try again.");
+      } else {
+        setMsg("Sorry, something went wrong. Please try again later");
+      }
+      console.log(error);
+    }
   };
 
   const onError = (errors) => {
@@ -33,8 +46,6 @@ function Signup() {
       reset();
     }
   }, [isSubmitSuccessful, reset]);
-
-  const name = watch("name");
 
   return (
     <div className="w-screen">
@@ -48,7 +59,7 @@ function Signup() {
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className=" lg:w-1/2 space-y-4 md: p-5 align-center mt-6"
+          className="lg:w-1/2 space-y-4 md: p-5 align-center mt-6"
         >
           <h3 className="font-catamaran block text-[38px] h-[58px] w-[312px] font-bold">
             Create an account
@@ -94,13 +105,13 @@ function Signup() {
               patternMessage="Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character"
             />
           </div>
+          <span className="text-mred mt-3">{msg}</span>
           <button
             disabled={isSubmitting}
-            className="bg-mred text-white p-2 rounded-md hover:bg-mred  py-2 px-6 font-poppins w-full"
+            className="bg-mred text-white p-2 rounded-md hover:bg-mred py-2 px-6 font-poppins w-full"
           >
             Create Account
           </button>
-
           <button
             type="button"
             className="flex items-center font-medium text-gray-800 border rounded-lg border-gray hover:border-primaryred lg:w-full gap-2 px-8 py-1 text-center"
@@ -110,7 +121,7 @@ function Signup() {
           </button>
           <div className="flex flex-row space-x-1 pt-2 justify-center text-[16px] font-poppins">
             <p>Already have account?</p>
-            <Link to="/login" className="text-textcol  border-b border-textcol">
+            <Link to="/login" className="text-textcol border-b border-textcol">
               Log in
             </Link>
           </div>

@@ -1,11 +1,7 @@
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-
 
 const AboutMobile = () => {
   return (
     <div className="w-screen">
-      <NavBar />
       <div className="min-h-screen">
         <div className=" ">
           <div className="  text-center bg-[#0E2744] w-full  h-[300px]">
@@ -366,7 +362,6 @@ const AboutMobile = () => {
           {/* <img src="mm.png"></img> */}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

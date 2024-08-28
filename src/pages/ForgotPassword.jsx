@@ -1,10 +1,7 @@
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 
 const ForgotPassword = () => {
   return (
     <div className="w-screen">
-      <NavBar />
       <div className="items-center  bg-dgray min-h-screen flex justify-center">
         <div className="bg-white p-8  shadow-lg max-w-md mx-auto">
           <h5 className="font-catamara text-secblue text-[35px] ">
@@ -28,7 +25,6 @@ const ForgotPassword = () => {
           </button>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

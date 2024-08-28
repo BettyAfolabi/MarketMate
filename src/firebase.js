@@ -1,6 +1,9 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import {getAuth} from 'firebase/auth'
+import { getDatabase } from "firebase/database";
+
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -11,9 +14,11 @@ const firebaseConfig = {
   projectId: "marketmate-auth24",
   storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID
+  appId: import.meta.env.VITE_APP_ID,
+  databaseURL: "https://marketmate-auth24-default-rtdb.firebaseio.com"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app)
+export const database = getDatabase(app);

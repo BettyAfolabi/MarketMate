@@ -1,9 +1,8 @@
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 function SideBar({ onLinkClick }) {
-  const location = useLocation();
-  const searchParams = new URLSearchParams(location.search);
-  const name = searchParams.get("name");
+  
 
   return (
     <div>
@@ -28,7 +27,7 @@ function SideBar({ onLinkClick }) {
           </label>
         </div>
         <h2 className="text-[20px] font-semibold py-2 text-center lg:text-start">
-          {name || "Jane Amokoko"}
+          {"Jane Amokoko"}
         </h2>
       </div>
       <div className="py-[10px] gap-2 text-base font-normal text-lightblack">

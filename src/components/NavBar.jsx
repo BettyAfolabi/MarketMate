@@ -1,4 +1,8 @@
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { auth } from "../firebase";
+import { signOut, onAuthStateChanged } from "firebase/auth";
+import { getDatabase, ref, get } from "firebase/database";
 import {
   FaPhone,
   FaRegEnvelope,
@@ -11,12 +15,42 @@ import AccountList from "./AccountList";
 import Menu from "./Menu";
 
 const NavBar = () => {
+  const navigate = useNavigate();
+  const [name, setName] = useState('');
+
+  const logOutUser = async (e) => {
+    e.preventDefault();
+    await signOut(auth);
+    navigate('/login');
+  };
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const db = getDatabase();
+        const userRef = ref(db, `users/${user.uid}`);
+        const snapshot = await get(userRef);
+
+        if (snapshot.exists()) {
+          const userData = snapshot.val();
+          setName(userData.name); // Retrieve name from database
+        } else {
+          console.log("No data available for this user");
+        }
+      } else {
+        setName(''); // Clear name if no user is logged in
+      }
+    });
+
+    return unsubscribe; // Cleanup subscription on component unmount
+  }, []);
+
   return (
     <div className="sticky top-0 w-screen">
       <header className="hidden bg-darkred text-white w-full lg:flex  px-4 py-2 left-0  ">
         <div className="w-4/5 flex items-center mx-auto justify-between">
           <div className="flex items-center space-x-4">
-            <p className="flex items-center ">
+            <p className="flex items-center">
               <FaPhone />
               (225) 555-0118
             </p>
@@ -42,7 +76,7 @@ const NavBar = () => {
 
       <nav className=" bg-white py-4 justify-center">
         <div className="w-11/12 flex items-center mx-auto justify-between">
-          <div className="flex ">
+          <div className="flex">
             <Menu />
             <img src="../Logo.png" alt="Market mate Logo" />
             <Link
@@ -56,7 +90,6 @@ const NavBar = () => {
             <Link to="/" className="hover:text-primaryred pt-0.5">
               Home
             </Link>
-
             <Link to="/about" className="hover:text-primaryred pt-0.5">
               About
             </Link>
@@ -94,16 +127,22 @@ const NavBar = () => {
                 favorite
               </span>
             </Link>
-            <AccountList />
+            <AccountList logOutUser={logOutUser} />
 
             <div className="hidden md:flex pt-0.5 flex-row text-secblue font-bold">
-              <Link to="/login" className="px-0.5 hover:text-primaryred">
-                Login
-              </Link>
-              /
-              <Link to="/signup" className="px-0.5 hover:text-primaryred">
-                Register
-              </Link>
+              {name ? (
+                <h2>Welcome {name}</h2>
+              ) : (
+                <>
+                  <Link to="/login" className="px-0.5 hover:text-primaryred">
+                    Login
+                  </Link>
+                  /
+                  <Link to="/signup" className="px-0.5 hover:text-primaryred">
+                    Register
+                  </Link>
+                </>
+              )}
             </div>
           </div>
         </div>

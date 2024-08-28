@@ -1,12 +1,9 @@
-import React from "react";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
 
 function Wishlist() {
   return (
     <div className="w-full h-screen overflow-x-hidden bg-white font-poppins">
-      <NavBar />
+
       <div className="w-11/12 mx-auto my-2">
         <div className="flex justify-center mx-auto mt-2 mb-10 font-semibold text-[18px] leading-7">
           <Link
@@ -27,7 +24,7 @@ function Wishlist() {
           <div className="flex">
             <div className="flex self-center">
               <p className="text-base pr-0.5">Sort by</p>
-              <i class="bx bx-sm bx-chevron-down"></i>
+              <i className="bx bx-sm bx-chevron-down"></i>
             </div>
             <div className="flex border border-[#E8ECEF] gap-x-1">
               <i className="bx bx-md bxs-grid border-r border-[#E8ECEF] text-[#6C7275]"></i>
@@ -111,7 +108,6 @@ function Wishlist() {
           Show More
         </button>
       </div>
-      <Footer />
     </div>
   );
 }

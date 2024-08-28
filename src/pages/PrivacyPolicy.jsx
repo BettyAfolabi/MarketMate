@@ -1,18 +1,15 @@
-import React from "react";
+//import React from "react";
 import { Link } from "react-router-dom";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 
 function PrivacyPolicy() {
   return (
     <div>
-      <NavBar />
       <div className="w-5/6 mx-auto font-poppins">
         <div className="flex flex-row space-x-1 text-base my-3 ml-3">
           <Link to="/" className="text-deepgray hover:bg-lightgray">
             Home
           </Link>
-          <i class="bx bx-chevron-right"></i>
+          <i className="bx bx-chevron-right"></i>
           <Link className="text-primaryred">Privacy Policy</Link>
         </div>
         <h1 className="font-bold text-2xl py-2">TERMS AND CONDITIONS</h1>
@@ -20,13 +17,13 @@ function PrivacyPolicy() {
         <h2 className="font-bold text-2xl py-2">
           AGREEMENT TO OUR LEGAL TERMS
         </h2>
-        <p className="text-lg font-medium py-2">
+        <p className="text-lg font-medium py-2">{`
           We are MarketMate Inc, ("Company," “we,” “us,” or “our”), a company
           registered operating in Nigeria. We operate the website
           https://market-mate.netlify.app (the “Site”) the mobile application
           MarketMate (the “App”)], as well as any other related products and
           services that refer or link to these legal terms (the “Legal Terms”)
-          (collectively, the “Services”).
+          (collectively, the “Services”).`}
         </p>
         <p className="text-lg font-medium py-2">
           At MarketMate, we provide platform that connects buyers, sellers,
@@ -50,7 +47,6 @@ function PrivacyPolicy() {
           USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.
         </p>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,4 @@
 import { useState } from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 const Contact = () => {
   const [formValues, setFormValues] = useState({
     name: "",
@@ -45,8 +43,6 @@ const Contact = () => {
 
   return (
     <div className="w-screen">
-      <NavBar />
-
       <div className="min-h-screen">
         <div className="flex ml-10 mt-10 pl-10">
           <button className="pr-2 font-bold">Login</button>/
@@ -158,8 +154,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

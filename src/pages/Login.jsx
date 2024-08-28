@@ -3,9 +3,7 @@ import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import InputField from "../components/InputField";
 import { auth } from "../firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import { signInWithEmailAndPassword} from "firebase/auth";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -25,10 +23,10 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password);
-      navigate("/cart");
+      navigate("/");
     } catch (error) {
       setMsg('Your email or password is incorrect');
-      console.error("Login Error:", error);
+      
     }
   };
 
@@ -44,17 +42,16 @@ const Login = () => {
 
   return (
     <div className="w-screen">
-      <NavBar />
-      <div className="w-5/6 flex flex-col lg:flex-row justify-between items-center lg:space-x-4">
+      <div className="flex flex-col lg:flex-row justify-between items-center lg:space-x-4">
         <img
           src="./login.png"
           alt="login image"
-          className="hidden lg:block w-[805px] h-[781px] pt-[25px] rounded-tr-lg rounded-lg pb-4 px-3"
+          className="hidden lg:block w-[700px] h-[751px] rounded-tr-lg rounded-lg pb-4 pr-3"
         />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
           noValidate
-          className="lg:w-1/2 space-y-4 p-5"
+          className="lg:w-1/2 space-y-4 md:py-4 md:px-2 align-center mt-6"
         >
           <h2 className="md:hidden lg:block lg:text-[38px] h-[58px] font-catamaran">
             Login to MarketMate
@@ -111,16 +108,22 @@ const Login = () => {
               Forgot Password?
             </Link>
           </div>
+          
+          <div className="flex flex-row space-x-1 justify-center text-[16px] font-poppins">
+            <p>{`Don't have account?`}</p>
+            <Link to="/signup" className="text-textcol border-b border-textcol">
+              Register
+            </Link>
+          </div>
           <button
             type="button"
             className="inline-flex items-center font-medium text-gray-800 border rounded-lg bg-white hover:bg-gray-100 lg:w-[365px] lg:h-[56px] gap-2 py-2 px-10"
           >
             <img src="./google.svg" alt="Google logo" className="w-2 h-5" />
-            Sign in with Google
+            Sign up with Google
           </button>
         </form>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -1,12 +1,8 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function TechFeed() {
   return (
     <div>
-      <NavBar />
       <div className="w-11/12 mx-auto my-2">
         <div className="flex flex-row font-poppins">
           <h1 className="font-semibold text-[26px] leading-[39px] basis-2/5">
@@ -49,46 +45,46 @@ function TechFeed() {
             <h4>4 mins read </h4>
             <h4>5 hours ago</h4>
             <div className="flex gap-1">
-              <i class="bx bx-show"></i>
+              <i className="bx bx-show"></i>
               <h4>2K</h4>
             </div>
             <div className="flex gap-1">
-              <i class="bx bx-message-dots"></i>
+              <i className="bx bx-message-dots"></i>
               <h4>55</h4>
             </div>
           </div>
           <div className="font-normal text-sm text-black p-[10px] mx-auto lg:w-5/6  justify-center items-center">
-            <p className="pb-2 text-start">
+            <p className="pb-2 text-start">{`
               Blue light lenses have become increasingly popular in our digital
-              age. While there’s no proof they protect against certain eye
+              age. While there's no proof they protect against certain eye
               conditions, there are well-documented benefits, particularly in
-              regulating our sleep-wake cycle.
+              regulating our sleep-wake cycle.`}
             </p>
-            <p className="pb-2 text-start">
+            <p className="pb-2 text-start">{`
               Exposure to blue light, particularly during the evening, has been
-              shown to disrupt melatonin production, the hormone responsible for
+              shown to disrupt melatonin production, the hormone responsible for
               regulating our sleep-wake cycle. This disruption can lead to
-              difficulties falling asleep and achieving restful sleep.  Blue
+              difficulties falling asleep and achieving restful sleep. Blue
               light lenses can help mitigate the impact of blue light by
-              limiting how much reaches your eyes, supporting the natural
-              release of melatonin and promoting a more restful and rejuvenating
-              sleep.
+              limiting how much reaches your eyes,supporting the natural
+              release of melatonin and promoting a more restful and rejuvenating
+              sleep.`}
             </p>
-            <p className="pb-2 text-start">
+            <p className="pb-2 text-start">{`
               Blue light lenses can help signal to our bodies that it’s time to
               wind down and prepare for a restful sleep. This, in turn, can
               contribute to increased alertness and productivity during the day,
               as we give our bodies the essential rest and rejuvenation they
               require for optimal performance. So, incorporating blue light
               lenses into our routine can be a valuable step towards achieving a
-              well-balanced and energized lifestyle.
+              well-balanced and energized lifestyle.`}
             </p>
             <p className="pb-2 text-start">Depression & Anxiety Management</p>
-            <p className="pb-2 text-start">
+            <p className="pb-2 text-start">{`
               Research has consistently indicated a connection between disrupted
               sleep and susceptibility to depression and anxiety. Blue light
               lenses can effectively regulate our sleep-wake cycle and
-              indirectly support mental health. These lenses promote healthier
+              indirectly support mental health. These lenses promote healthier
               sleep patterns and overall well-being. Blue light lenses may
               contribute to improved hormone regulation and alertness and
               provide benefits for managing depression and anxiety. But blue
@@ -96,7 +92,7 @@ function TechFeed() {
               front of digital devices—they can also be beneficial for outdoor
               use, such as when engaging in activities in direct sunlight. These
               lenses help reduce glare and make it easier to focus on your
-              activity or enjoy the scenery around you.
+              activity or enjoy the scenery around you.`}
             </p>
           </div>
         </div>
@@ -117,7 +113,6 @@ function TechFeed() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

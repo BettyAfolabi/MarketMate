@@ -1,5 +1,3 @@
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import SideBar from "../components/SideBar";
 import Profile from "./Profile";
 import Billing from "./Billing";
@@ -21,10 +19,9 @@ function Account() {
 
   return (
     <div className="w-full overflow-x-hidden">
-      <NavBar />
       <div className="flex justify-between w-5/6 mx-auto">
         <div className="hidden lg:flex">
-          <Link to="/" className="px-2 text-sm">
+          <Link to="/" className="px-2">
             Home
           </Link>
           /
@@ -32,9 +29,6 @@ function Account() {
             My Account
           </Link>
         </div>
-        <h2>
-          Welcome <span className="text-primaryred">Jane</span>
-        </h2>
       </div>
 
       <div className="flex flex-row w-screen lg:w-5/6 mx-auto my-4 h-full">
@@ -76,8 +70,6 @@ function Account() {
           </Routes>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

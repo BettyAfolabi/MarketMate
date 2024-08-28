@@ -1,6 +1,4 @@
 import { useState } from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 
 const ContactMobile = () => {
   const [formValues, setFormValues] = useState({
@@ -46,7 +44,6 @@ const ContactMobile = () => {
 
   return (
     <div className="w-screen">
-      <NavBar />
       <div className="  flex flex-col items-center justify-center min-h-screen">
         <h4 className="font-catamaran mt-5 text-[21px] text-center text-[#0E2744] font-bold">
           Contact Us
@@ -171,7 +168,6 @@ const ContactMobile = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

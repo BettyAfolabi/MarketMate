@@ -1,9 +1,10 @@
-import React from "react";
+//import React from "react";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Link } from "react-router-dom";
 
-function AccountList() {
+// eslint-disable-next-line react/prop-types
+const AccountList = ({ logOutUser }) => {
   return (
     <div>
       <Popover>
@@ -37,7 +38,7 @@ function AccountList() {
                 <i className="bx bx-xs bx-store-alt pr-2"></i>Order History
               </Link>
               <Link className="p-1 hover:bg-secblue hover:text-white">
-                <i class="bx bx-xs bx-message-rounded-detail pr-2"></i>Messages
+                <i className="bx bx-xs bx-message-rounded-detail pr-2"></i>Messages
               </Link>
               <Link
                 className="p-1 hover:bg-secblue hover:text-white"
@@ -52,25 +53,26 @@ function AccountList() {
                 <i className="bx bx-xs bx-heart pr-2"></i>WishList
               </Link>
               <Link className="p-1 hover:bg-secblue hover:text-white flex flex-row gap-2">
-                <i class="bx bx-xs bx-history bx-rotate-270"></i>
+                <i className="bx bx-xs bx-history bx-rotate-270"></i>
                 <span>Browsing History</span>
               </Link>
               <Link className="p-1 hover:bg-secblue hover:text-white">
                 <i className="bx bx-xs bx-cog pr-2"></i>Setting
               </Link>
-              <Link
+              <button
                 className="p-1 hover:bg-secblue hover:text-white flex flex-row gap-2"
-                to="/login"
+                onClick={logOutUser}
               >
-                <i class="bx bx-xs bx-log-out bx-flip-horizontal"></i>
+                <i className="bx bx-xs bx-log-out bx-flip-horizontal"></i>
                 <span>Log out</span>
-              </Link>
+              </button>
             </div>
           </Popover.Panel>
         </Transition>
       </Popover>
     </div>
-  );
-}
+  )
+};
+
 
 export default AccountList;

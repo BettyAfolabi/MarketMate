@@ -1,12 +1,8 @@
-
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
 import { Link } from "react-router-dom";
 const ServicePage = () => {
   return (
     
       <div className="w-full h-screen overflow-x-hidden bg-white font-poppins">
-      <NavBar />
       <div className="w-11/12 mx-auto my-2">
         <div className="flex justify-center mx-auto mt-2 mb-10 font-semibold text-[18px] leading-7">
           <Link
@@ -223,7 +219,6 @@ const ServicePage = () => {
           Show More
         </button>
         </div>
-        <Footer/>
         </div>
         
   )

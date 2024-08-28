@@ -1,11 +1,10 @@
 import { useForm } from "react-hook-form";
-import { useEffect, useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { auth } from "../firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { getDatabase, ref, set } from "firebase/database";
+import { useEffect, useState } from "react"; 
 import InputField from "../components/InputField";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
-import { Link, useNavigate } from "react-router-dom";
 
 function Signup() {
   const navigate = useNavigate();
@@ -25,14 +24,21 @@ function Signup() {
 
   const onSubmit = async (data) => {
     try {
-      await createUserWithEmailAndPassword(auth, data.email, data.password);
+      const userCredential = await createUserWithEmailAndPassword(auth, data.email, data.password);
+      const user = userCredential.user;
+
+      // Get a reference to the user's document in the database
+      const db = getDatabase();
+      const userRef = ref(db, `users/${user.uid}`);
+
+      // Set the name in the user document
+      await set(userRef, {
+        name: data.name,
+      });
+
       navigate("/login");
     } catch (error) {
-      if (error.code === 'auth/network-request-failed') {
-        setMsg("Network error. Please check your connection and try again.");
-      } else {
-        setMsg("Sorry, something went wrong. Please try again later");
-      }
+      setMsg("Sorry, something went wrong. Please try again later");
       console.log(error);
     }
   };
@@ -49,12 +55,11 @@ function Signup() {
 
   return (
     <div className="w-screen">
-      <NavBar />
-      <div className="w-5/6 flex flex-col lg:flex-row items-center lg:space-x-4 justify-between">
+      <div className="flex flex-col lg:flex-row items-center lg:space-x-4 justify-between">
         <img
           src="./login.png"
           alt="signup image"
-          className="hidden lg:block w-[805px] h-[781px] pt-[20px] rounded-tr-lg rounded-lg pb-4 px-3"
+          className="hidden lg:block w-[705px] h-[751px] rounded-tr-lg rounded-lg pb-4 pr-3"
         />
         <form
           onSubmit={handleSubmit(onSubmit, onError)}
@@ -79,7 +84,7 @@ function Signup() {
               patternMessage="Name should contain 3-16 characters and shouldn't contain any special characters"
             />
             <InputField
-              placeholder="Email or Phone Number"
+              placeholder="Email"
               id="email"
               name="email"
               type="email"
@@ -127,7 +132,6 @@ function Signup() {
           </div>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,7 +1,4 @@
-
-import Footer from '../components/Footer'
 import Modal from "../components/Modal"
-import NavBar from '../components/NavBar'
 import { useState } from "react"
 const ServicesDetails = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -15,7 +12,6 @@ const ServicesDetails = () => {
   };
   return (
     <div className="w-screen">
-    <NavBar />
    <div className="min-h-screen"> 
    <div className="  ">
     <div className="flex justify-center items-center gap-[10px]">
@@ -72,7 +68,6 @@ const ServicesDetails = () => {
     </div>
 
     </div>
-    <Footer/>
     </div>
     
   )

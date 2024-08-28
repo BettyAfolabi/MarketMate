@@ -1,12 +1,8 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function Cart() {
   return (
     <div className="w-full h-screen overflow-x-hidden bg-white font-poppins">
-      <NavBar />
       <div className="lg:w-11/12 w-4/5 mx-auto my-2">
         <h1 className="text-center font-semibold text-4xl my-3">Cart</h1>
         <div className="flex flex-row lg:justify-center gap-3 my-3 ">
@@ -116,7 +112,6 @@ function Cart() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

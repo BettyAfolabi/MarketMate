@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import TrackModal from "../components/TrackModal";
 import Review from "./Review";
 import Track from "./Track";
@@ -32,7 +32,7 @@ function TrackedOrder() {
         </button>
         <button className="flex" onClick={handleClick}>
           <p className="text-secblue text-sm">Leave a Rating</p>
-          <i class="bx bx-plus"></i>
+          <i className="bx bx-plus"></i>
         </button>
         <TrackModal isOpen={showModal} onClose={handleClose}>
           <Review />

@@ -1,8 +1,6 @@
 import Modal from "../components/Modal";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
 import ServicesDetails from "./ServicesDetails";
 const Services = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -18,7 +16,6 @@ const Services = () => {
 
   return (
     <div className="w-screen">
-      <NavBar />
       <div className="min-h-screen">
         <div className="  ">
           <div className="flex flex-row-reverse justify-center items-center gap-[10px]">
@@ -240,7 +237,7 @@ const Services = () => {
               Knitter
             </p>
             <p className="ml-2">From #3,000</p>
-            <p className="ml-2">Shade's Knittery </p>
+            <p className="ml-2">{`Shade's Knittery `}</p>
           </div>
           <div className="flex  flex-col w-[341.33px] h-[483px] border-[#949494] border-2 rounded-[12px] mb-4">
             <img src="d.png" />
@@ -333,7 +330,6 @@ const Services = () => {
           <Route path="/tailor" element={<ServicesDetails />} />
         </Routes>
       </div>
-      <Footer />
     </div>
   );
 };

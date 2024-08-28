@@ -1,6 +1,6 @@
 import ForgotPassword from "./pages/ForgotPassword";
 import Login from "./pages/Login";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Signup from "./pages/Signup";
 import ContactComponent from "./components/ScreenSizes/ContactComponent";
 import ErrorPage from "./pages/ErrorPage";
@@ -20,10 +20,16 @@ import WishlistService from "./pages/WishlistService";
 import ServicePage from "./pages/ServicePage";
 import ReturnPolicy from "./pages/ReturnPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 const App = () => {
-  return (
+  const location = useLocation();
+    const hideHeader = location.pathname.startsWith('/login') || location.pathname.startsWith('/signup')
+  
+    return (
     <div className="bg-white h-full">
+       {!hideHeader && <NavBar />}
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
@@ -47,6 +53,7 @@ const App = () => {
         <Route path="/cookiepolicy" element={<CookiePolicy />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 };

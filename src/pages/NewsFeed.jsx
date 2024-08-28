@@ -1,12 +1,8 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function NewsFeed() {
   return (
     <div>
-      <NavBar />
       <div className="w-11/12 mx-auto my-2">
         <div className="flex flex-row font-poppins">
           <h1 className="font-semibold text-[26px] leading-[39px] basis-2/5">
@@ -83,7 +79,6 @@ function NewsFeed() {
           Load More
         </Link>
       </div>
-      <Footer />
     </div>
   );
 }

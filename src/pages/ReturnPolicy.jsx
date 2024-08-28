@@ -1,18 +1,15 @@
-import React from "react";
+//import React from "react";
 import { Link } from "react-router-dom";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 
 function ReturnPolicy() {
   return (
     <div className="w-full overflow-x-hidden">
-      <NavBar />
       <div className="w-5/6 mx-auto font-poppins mb-6">
         <div className="flex flex-row space-x-1 text-base my-3 ml-2">
           <Link to="/" className="text-deepgray hover:bg-lightgray">
             Home
           </Link>
-          <i class="bx bx-sm bx-chevron-right"></i>
+          <i className="bx bx-sm bx-chevron-right"></i>
           <Link className="text-primaryred">Return Policy</Link>
         </div>
         <div className="text-sm font-normal">
@@ -81,7 +78,6 @@ function ReturnPolicy() {
           <p>info@marketmate.com</p>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

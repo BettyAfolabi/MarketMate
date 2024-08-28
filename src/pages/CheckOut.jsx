@@ -1,6 +1,3 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import InputField from "../components/InputField";
@@ -44,7 +41,6 @@ function CheckOut() {
 
   return (
     <div className="w-full h-screen overflow-x-hidden bg-white font-poppins">
-      <NavBar />
       <div className="w-4/5 mx-auto my-3">
         <h1 className="text-center font-semibold text-4xl my-3">Check Out</h1>
         <div className="flex flex-row justify-center gap-3 my-5">
@@ -311,7 +307,6 @@ function CheckOut() {
           </fieldset>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }

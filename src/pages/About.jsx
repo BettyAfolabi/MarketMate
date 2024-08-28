@@ -1,11 +1,8 @@
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
-
 
 const About = () => {
   return (
     <div className="w-screen">
-      <NavBar />
+      
       <div className="min-h-screen">
         <div className="  ">
           {/* <div className="flex justify-center items-center gap-[10px]">
@@ -302,9 +299,9 @@ const About = () => {
               <img src="a2.png" className="absolute w-[48px] h-[48px] -left-4" />
               <img src="a3.png" className="relative w-[48px] h-[48px]" />
             </div>
-            <p className="font-poppins font-normal text-[18px] text-[#8d8d8d]">
+            <p className="font-poppins font-normal text-[18px] text-[#8d8d8d]">{`
             Build your brand with a comprehensive <br></br>and attractive catalog.
-                Show the world <br></br>what you've got!
+                Show the world <br></br>what you've got!`}
             </p>
             </div>
 
@@ -384,7 +381,7 @@ const About = () => {
           <img src="mm.png"></img>
         </div>
       </div>
-      <Footer />
+     
     </div>
   );
 };

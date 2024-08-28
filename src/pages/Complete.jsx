@@ -1,12 +1,8 @@
-import React from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 function Complete() {
   return (
     <div>
-      <NavBar />
       <div className="w-4/5 mx-auto my-3 font-poppins">
         <h1 className="text-center font-semibold text-4xl my-3">Check Out</h1>
         <div className="flex flex-row justify-center gap-3 my-5">
@@ -58,7 +54,6 @@ function Complete() {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

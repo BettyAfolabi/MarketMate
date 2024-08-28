@@ -1,6 +1,4 @@
-import React from "react";
-import Footer from "../components/Footer";
-import NavBar from "../components/NavBar";
+//import React from "react";
 import Card from "../components/Card";
 import Awoof from "../components/Awoof";
 import CategoryList from "../components/CategoryList";
@@ -10,7 +8,6 @@ import HomeCarousel from "../components/HomeCarousel";
 function Home() {
   return (
     <div className="w-full h-screen overflow-x-hidden bg-white ">
-      <NavBar />
       <div className="flex flex-col mx-auto bg-[#FCFCFC] font-poppins">
         <div className="flex justify-center mx-auto mt-2 mb-2 font-semibold text-[18px] leading-7">
           <Link
@@ -159,7 +156,6 @@ function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
-import React from "react";
 import InputField from "../components/InputField";
 import TrackedOrder from "./TrackedOrder";
 

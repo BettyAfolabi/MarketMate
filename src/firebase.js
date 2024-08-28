@@ -15,7 +15,7 @@ const firebaseConfig = {
   storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_SENDER_ID,
   appId: import.meta.env.VITE_APP_ID,
-  databaseURL: "https://marketmate-auth24-default-rtdb.firebaseio.com"
+  databaseURL: import.meta.env.VITE_DATABASE_URL
 };
 
 // Initialize Firebase

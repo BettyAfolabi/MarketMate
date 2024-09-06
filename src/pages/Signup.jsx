@@ -119,7 +119,7 @@ function Signup() {
           </button>
           <button
             type="button"
-            className="flex items-center font-medium text-gray-800 border rounded-lg border-gray hover:border-primaryred lg:w-full gap-2 px-8 py-1 text-center"
+            className="flex items-center justify-center font-medium text-gray-800 border rounded-lg border-gray hover:bg-lightgray lg:w-full gap-2 px-8 py-1 text-center"
           >
             <img src="./google.svg" alt="Google logo" className=" w-2 h-5 " />
             Sign in with Google

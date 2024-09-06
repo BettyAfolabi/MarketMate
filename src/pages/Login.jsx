@@ -96,11 +96,11 @@ const Login = () => {
             />
           </div>
           <span className="text-mred mt-3">{msg}</span>
-          <div>
+          <div className="flex items-center justify-center">
             <button
               disabled={isSubmitting}
               type="submit"
-              className="w-[143px] h-[56px] bg-mred text-white p-2 rounded-md hover:bg-mred py-[16px] px-[48px] m-4"
+              className="w-[143px] h-[56px] bg-mred text-white rounded-md hover:bg-mred py-[16px] px-[48px] m-4"
             >
               Log in
             </button>
@@ -115,13 +115,16 @@ const Login = () => {
               Register
             </Link>
           </div>
-          <button
-            type="button"
-            className="inline-flex items-center font-medium text-gray-800 border rounded-lg bg-white hover:bg-gray-100 lg:w-[365px] lg:h-[56px] gap-2 py-2 px-10"
-          >
-            <img src="./google.svg" alt="Google logo" className="w-2 h-5" />
-            Sign up with Google
-          </button>
+          <div className="flex justify-center">
+            <button
+              type="button"
+              className="flex items-center justify-center font-medium text-gray-800 border rounded-lg bg-white hover:bg-lightgray lg:w-[365px] lg:h-[56px] gap-2 py-2 px-10"
+            >
+              <img src="./google.svg" alt="Google logo" className="w-2 h-5" />
+              Sign up with Google
+            </button>
+          </div>
+          
         </form>
       </div>
     </div>

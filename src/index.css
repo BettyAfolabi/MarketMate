@@ -3,7 +3,7 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
-
+  
 body {
     width: 100%;
     margin: 0;

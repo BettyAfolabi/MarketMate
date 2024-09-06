@@ -13,6 +13,8 @@ export default {
           fontWeight: "400",
         },
       ],
+      lg: "18px",
+      xl: "20px",
       "2xl": [
         "1.5rem",
         {

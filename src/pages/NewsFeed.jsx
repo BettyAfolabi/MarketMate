@@ -75,7 +75,7 @@ function NewsFeed() {
             </div>
           </div>
         </div>
-        <Link className="border border-mred rounded-[37px] px-[20px] py-[10px] font-bold text-sm text-mred mx-auto text-center my-4 w-[120px] flex justify-center items-center">
+        <Link className="border border-mred rounded-[37px] px-[20px] py-[10px] font-bold text-sm text-mred mx-auto text-center my-4 w-[120px] flex justify-center items-center transition ease-in-out duration-300 transform hover:scale-105">
           Load More
         </Link>
       </div>

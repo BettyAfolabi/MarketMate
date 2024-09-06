@@ -7,7 +7,7 @@ import HomeCarousel from "../components/HomeCarousel";
 
 function Home() {
   return (
-    <div className="w-full h-screen overflow-x-hidden bg-white ">
+    <div className="w-full overflow-x-hidden bg-white ">
       <div className="flex flex-col mx-auto bg-[#FCFCFC] font-poppins">
         <div className="flex justify-center mx-auto mt-2 mb-2 font-semibold text-[18px] leading-7">
           <Link
@@ -81,9 +81,6 @@ function Home() {
           <h2 className="font-extrabold text-[24px] pb-3">Awoof deals for you</h2>
           <div className="mx-auto max-w-2xl px-2 py-7 sm:px-4 sm:py-10 lg:max-w-7xl lg:px-8">
             <Awoof />
-            <div className="mt-4">
-              <Awoof />
-            </div>
           </div>
         </div>
         <div className="mx-auto max-w-2xl px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">

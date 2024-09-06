@@ -11,7 +11,7 @@ function SideBar({ onLinkClick }) {
           <img
             src="https://randomuser.me/api/portraits/women/79.jpg"
             alt="random user"
-            className="h-20 w-20 rounded-full"
+            className="h-20 w-20 rounded-full absolute"
           />
           <label
             htmlFor="file-upload"

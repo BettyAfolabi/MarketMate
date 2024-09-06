@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
@@ -15,7 +15,7 @@ const Card = ({
   showImage = true,
   symbol = true,
   width = "w-[270px] lg:w-[250px] sm:w-[220px]",
-  imgWidth = "w-[200px] sm:w-[160px] ",
+  imgWidth = "md:w-auto sm:w-[160px] ",
   imgHeight = "h-[200px]",
 }) => (
   <div
@@ -46,7 +46,7 @@ const Card = ({
     </div>
     {tag && (
       <p className="text-xs text-gray self-start">
-        Sold by<span className="text-secblue">{tag}</span>
+        Sold by<span className="text-secblue px-1">{tag}</span>
       </p>
     )}
     <div className="flex gap-2 self-start">

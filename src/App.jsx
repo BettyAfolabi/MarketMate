@@ -1,3 +1,4 @@
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import ForgotPassword from "./pages/ForgotPassword";
 import Login from "./pages/Login";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -22,6 +23,7 @@ import ReturnPolicy from "./pages/ReturnPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import './transitions.css'
 
 const App = () => {
   const location = useLocation();
@@ -30,29 +32,33 @@ const App = () => {
     return (
     <div className="bg-white h-full">
        {!hideHeader && <NavBar />}
-      <Routes>
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/forgot-password" element={<ForgotPassword />} />
-        <Route path="/contact" element={<ContactComponent />} />
-        <Route path="/account/*" element={<Account />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutComponent />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/servicepage" element={<ServicePage />} />
-        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/newsfeed" element={<NewsFeed />} />
-        <Route path="/techfeed" element={<TechFeed />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<CheckOut />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/wishlistservice" element={<WishlistService />} />
-        <Route path="/complete" element={<Complete />} />
-        <Route path="/returnpolicy" element={<ReturnPolicy />} />
-        <Route path="/cookiepolicy" element={<CookiePolicy />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+       <TransitionGroup>
+        <CSSTransition key={location.key} classNames="fade" timeout={300}>
+          <Routes>
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+            <Route path="/contact" element={<ContactComponent />} />
+            <Route path="/account/*" element={<Account />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutComponent />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/servicepage" element={<ServicePage />} />
+            <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/newsfeed" element={<NewsFeed />} />
+            <Route path="/techfeed" element={<TechFeed />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<CheckOut />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/wishlistservice" element={<WishlistService />} />
+            <Route path="/complete" element={<Complete />} />
+            <Route path="/returnpolicy" element={<ReturnPolicy />} />
+            <Route path="/cookiepolicy" element={<CookiePolicy />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </CSSTransition>
+      </TransitionGroup>
       <Footer />
     </div>
   );

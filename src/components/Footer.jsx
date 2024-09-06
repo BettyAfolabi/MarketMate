@@ -5,13 +5,13 @@ function Footer() {
   return (
     <>
       <div className="w-screen bg-terblue bottom-0">
-        <div className="hidden lg:block w-4/5 items-center mx-auto font-poppins text-white pt-6">
+        <div className="hidden lg:block w-4/5 items-center mx-auto font-poppins text-white pt-6 pb-3">
           <div className="flex justify-between">
             <div>
               <h3 className="text-2xl">Your all in one shopping site</h3>
               <p className="text-sm">Shop with Affordability and Ease</p>
             </div>
-            <Link to="/contact" className="bg-mred text-sm font-bold py-2 px-6">
+            <Link to="/contact" className="bg-mred text-sm font-bold py-2 px-6 rounded-md transition-all ease-in-out duration-300 transform hover:scale-105">
               Contact Us
             </Link>
           </div>

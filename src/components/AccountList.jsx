@@ -8,10 +8,8 @@ const AccountList = ({ logOutUser }) => {
   return (
     <div>
       <Popover>
-        <Popover.Button className="relative focus:outline-none">
-          <span className="material-symbols-outlined text-darkblue hover:text-primaryred">
-            person
-          </span>
+        <Popover.Button className="relative focus:outline-none bg-[#920100] hover:bg-primaryred rounded-full w-3 h-3">
+          <i className='bx bx-user text-[#FFFFFF]' ></i>
         </Popover.Button>
         <Transition
           as={Fragment}

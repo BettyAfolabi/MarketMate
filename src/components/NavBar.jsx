@@ -46,7 +46,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 w-screen">
+    <div className="sticky top-0 w-screen z-10">
       <header className="hidden bg-darkred text-white w-full lg:flex  px-4 py-2 left-0  ">
         <div className="w-4/5 flex items-center mx-auto justify-between">
           <div className="flex items-center space-x-4">

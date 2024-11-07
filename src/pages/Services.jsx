@@ -1,148 +1,23 @@
-import Modal from "../components/Modal";
 import { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import ServicesDetails from "./ServicesDetails";
 const Services = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
 
-  const handleOpenModal = () => {
-    setModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalOpen(false);
-  };
   const [input, setInput] = useState("");
 
   return (
     <div className="w-screen">
       <div className="min-h-screen">
-        <div className="  ">
-          <div className="flex flex-row-reverse justify-center items-center gap-[10px]">
-            <Link
-              to="/servicepage"
-              className="text-white bg-[#1D4E89] rounded-lg px-[20px] py-[10px] hover:bg-secblue mb-2"
-            >
-              Services
-            </Link>
-            <Link
-              onClick={handleOpenModal}
-              className="text-[#464646] font-semibold text-[18px] ml-2 mb-2"
-            >
-              Products
-            </Link>
-            <Modal isOpen={isModalOpen} closeModal={handleCloseModal}>
-              <div className="flex flex-wrap gap-2 w-[1800px]">
-                <div className="">
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1 ">
-                    Advertising Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Automotive Service
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1 ">
-                    Beauty Sevices
-                  </p>
-                  <p className="text-[12px] font-poppins text-[rgb(95,108,114)] mb-1">
-                    Building Materials
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Chauffeur Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Childcare Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Cleaning Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Computer & IT Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Design Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    DJ & Entertainment Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72]">
-                    Educational Services
-                  </p>
-                </div>
-                <div>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Event Planning Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Financial Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Fitness & Personal Training
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Food & Bevarages
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Health & Beauty
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Hospitality Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Legal Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Computer Accessories
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Landscaping & Gardening
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Online
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Personal Care
-                  </p>
-                </div>
-                <div>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Photography Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Publishing Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72]  mb-1">
-                    Pet Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Real Estate Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1"></p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Rental Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Repair Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Security Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Shoemaking Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Videography Services
-                  </p>
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Translation Services
-                  </p>
-
-                  <p className="text-[12px] font-poppins text-[#5F6C72] mb-1">
-                    Other Services
-                  </p>
-                </div>
-              </div>
-            </Modal>
-          </div>
+        <div className="flex justify-center mx-auto mt-2 mb-2 font-semibold text-[18px] leading-7">
+          <Link
+            to="/"
+            className="px-[20px] py-[10px] hover:underline"
+          >
+            Products
+          </Link>
+          <Link to="/services" className="text-white bg-[#1D4E89] rounded-lg px-[20px] py-[10px] hover:bg-secblue" >
+            Services
+          </Link>
         </div>
         <div className="flex mb-4">
           <div className=" ">

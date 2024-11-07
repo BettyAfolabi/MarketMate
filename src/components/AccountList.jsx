@@ -20,8 +20,8 @@ const AccountList = ({ logOutUser }) => {
           leaveFrom="opacity-100 translate-y-0"
           leaveTo="opacity-0 translate-y-1"
         >
-          <Popover.Panel className=" z-10 absolute right-8 mt-2">
-            <div className="w-[200px] bg-white text-notactive font-normal py-[12px] px-1 font-poppins text-xs flex flex-col">
+          <Popover.Panel className=" z-10 absolute right-8 mt-2 shadow-lg">
+            <div className="w-[200px] lg:w-[230px] bg-white text-notactive font-normal py-[12px] px-1 font-poppins text-xs flex flex-col">
               <Link
                 to="/account"
                 className="p-1 hover:bg-secblue hover:text-white"

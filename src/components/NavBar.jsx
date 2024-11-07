@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { auth } from "../firebase";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { getDatabase, ref, get } from "firebase/database";
@@ -47,20 +48,19 @@ const NavBar = () => {
 
   return (
     <div className="sticky top-0 w-screen z-10">
-      <header className="hidden bg-darkred text-white w-full lg:flex  px-4 py-2 left-0  ">
+      <header className="hidden bg-darkred text-white w-full lg:flex  px-4 py-2">
         <div className="w-4/5 flex items-center mx-auto justify-between">
-          <div className="flex items-center space-x-4">
-            <p className="flex items-center">
-              <FaPhone />
-              (225) 555-0118
-            </p>
-            <p className="flex items-center">
-              <FaRegEnvelope />
-              info@marketmate.com
-            </p>
+          <div className="flex items-center">
+            <FaPhone />
+            <p className="text-xs lg:text-sm">(225) 555-0118</p>
           </div>
 
-          <p className="flex-grow text-center">
+          <div className="flex items-center">
+            <FaRegEnvelope />
+            <p className="text-xs lg:text-sm">info@marketmate.com</p>
+          </div>
+
+          <p className="text-center text-xs lg:text-sm">
             Follow Us and get a chance to win 80% off
           </p>
 
@@ -78,32 +78,59 @@ const NavBar = () => {
         <div className="w-11/12 flex items-center mx-auto justify-between">
           <div className="flex">
             <Menu />
-            <img src="../Logo.png" alt="Market mate Logo" />
+            <img src="../Logo.png" alt="Market mate Logo" className="h-4 lg:h-auto"/>
             <Link
               to="/"
-              className="font-lobstertwo text-primaryred text-3xl md:text-4xl"
+              className="font-lobstertwo text-primaryred text-xl lg:text-4xl"
             >
               MarketMate
             </Link>
           </div>
+
           <div className="hidden md:flex flex-row space-x-3 text-gray font-poppins text-xs font-bold">
-            <Link to="/" className="hover:text-primaryred pt-0.5">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `pt-0.5 ${isActive ? 'text-primaryred' : 'hover:text-primaryred'}`
+              }
+            >
               Home
-            </Link>
-            <Link to="/about" className="hover:text-primaryred pt-0.5">
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `pt-0.5 ${isActive ? 'text-primaryred' : 'hover:text-primaryred'}`
+              }
+            >
               About
-            </Link>
-            <Link to="/contact" className="hover:text-primaryred pt-0.5">
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `pt-0.5 ${isActive ? 'text-primaryred' : 'hover:text-primaryred'}`
+              }
+            >
               Contact
-            </Link>
-            <Link to="/services" className="hover:text-primaryred pt-0.5">
+            </NavLink>
+            <NavLink
+              to="/services"
+              className={({ isActive }) =>
+                `pt-0.5 ${isActive ? 'text-primaryred' : 'hover:text-primaryred'}`
+              }
+            >
               Services
-            </Link>
-            <Link to="/newsfeed" className="hover:text-primaryred pt-0.5">
+            </NavLink>
+            <NavLink
+              to="/newsfeed"
+              className={({ isActive }) =>
+                `pt-0.5 ${isActive ? 'text-primaryred' : 'hover:text-primaryred'}`
+              }
+            >
               NewsFeed
-            </Link>
+            </NavLink>
           </div>
-          <div className="flex flex-row basis-5/12 space-x-1 lg:space-x-3 justify-end text-gray font-poppins text-xs font-light">
+
+          <div className="flex flex-row lg:basis-5/12 space-x-1 lg:space-x-3 justify-end text-gray font-poppins text-xs font-light items-center self-center">
             <div className="relative hidden lg:block">
               <input
                 type="text"
